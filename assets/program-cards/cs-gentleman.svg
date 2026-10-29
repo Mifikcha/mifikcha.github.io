@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 140" width="320" height="140"
+     fill="none" stroke="#000" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+  <title>branch and loop</title>
+  <defs>
+    <radialGradient id="vg" cx="50%" cy="52%" r="85%">
+      <stop offset="0.60" stop-color="#fff"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="tl" x1="0" y1="0" x2="0.46" y2="0.56">
+      <stop offset="0" stop-color="#fff" stop-opacity="0.5"/>
+      <stop offset="1" stop-color="#fff"/>
+    </linearGradient>
+    <mask id="vignette" maskContentUnits="userSpaceOnUse">
+      <rect width="320" height="140" fill="url(#vg)"/>
+    </mask>
+    <mask id="corner" maskContentUnits="userSpaceOnUse">
+      <rect width="320" height="140" fill="url(#tl)"/>
+    </mask>
+    <marker id="ah" viewBox="0 0 10 10" refX="8.4" refY="5" markerWidth="5.2" markerHeight="5.2"
+            orient="auto-start-reverse" markerUnits="strokeWidth">
+      <path d="M0.8 1.1 L9 5 L0.8 8.9" fill="none" stroke="#000" stroke-width="1.7"
+            stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+  <g mask="url(#corner)"><g mask="url(#vignette)">
+    <rect x="16" y="48" width="56" height="40" rx="12" stroke-width="2.6" opacity="1.0"/>
+    <line x1="72" y1="69" x2="88" y2="69" stroke-width="2.3" opacity="1.0" marker-end="url(#ah)"/>
+    <rect x="92" y="48" width="62" height="42" rx="2" stroke-width="2.6" opacity="1.0"/>
+    <line x1="154" y1="69" x2="166" y2="69" stroke-width="2.3" opacity="1.0" marker-end="url(#ah)"/>
+    <path d="M168 69 L202 41 L236 69 L202 97 Z" stroke-width="2.6" opacity="1.0"/>
+    <line x1="236" y1="69" x2="252" y2="69" stroke-width="2.3" opacity="1.0" marker-end="url(#ah)"/>
+    <rect x="254" y="48" width="54" height="40" rx="12" stroke-width="2.6" opacity="1.0"/>
+    <path d="M202 97 L202 120 L123 120 L123 92" stroke-width="2.1" opacity="1.0" marker-end="url(#ah)"/>
+    <g fill="#000" stroke="none" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="15" font-weight="700" opacity="0.85">
+      <text x="245" y="59" text-anchor="middle">+</text>
+      <text x="214" y="110" text-anchor="middle">−</text>
+    </g>
+  </g></g>
+</svg>

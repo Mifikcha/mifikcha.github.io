@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-220 -180 440 360" role="img" aria-labelledby="title desc">
+  <title id="title">Единичная окружность</title>
+  <desc id="desc">Точка A на единичной окружности и проекции cos(alpha) и sin(alpha).</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#2f3448"/>
+    </marker>
+    <style>
+      .axis,.ray,.drop{stroke:#2f3448;stroke-width:3;fill:none;stroke-linecap:round;stroke-linejoin:round}
+      .circle{stroke:#4f67c6;stroke-width:4;fill:#eef2ff}
+      .drop{stroke:#85a06a;stroke-dasharray:7 7}
+      .arc{stroke:#d28b42;stroke-width:3;fill:none;marker-end:url(#arrow)}
+      .label{font:600 24px Georgia,"Times New Roman",serif;fill:#23283a}
+      .small{font-size:20px}
+      .green{fill:#557245}
+      .orange{fill:#a45f16}
+    </style>
+  </defs>
+  <circle class="circle" cx="0" cy="0" r="120"/>
+  <path class="axis" d="M-175 0H175" marker-end="url(#arrow)"/>
+  <path class="axis" d="M0 140V-145" marker-end="url(#arrow)"/>
+  <path class="ray" d="M0 0L86 -84"/>
+  <path class="drop" d="M86 -84V0M0 -84H86"/>
+  <path class="arc" d="M34 0A34 34 0 0 1 25 -24"/>
+  <circle cx="86" cy="-84" r="7" fill="#d64b4b"/>
+  <text class="label" x="180" y="8">x</text>
+  <text class="label" x="10" y="-150">y</text>
+  <text class="label" x="96" y="-91">A</text>
+  <text class="label orange small" x="39" y="-14">α</text>
+  <text class="label green small" x="38" y="28">cos(α)</text>
+  <text class="label green small" x="95" y="-39">sin(α)</text>
+  <text class="label small" x="-46" y="-90">R=1</text>
+  <text class="label small" x="89" y="25">x<tspan baseline-shift="sub" font-size="14">A</tspan></text>
+  <text class="label small" x="9" y="-91">y<tspan baseline-shift="sub" font-size="14">A</tspan></text>
+</svg>

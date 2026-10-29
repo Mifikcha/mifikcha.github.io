@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr"><head><title>№15 Флажки</title><meta charset="utf-8"/><link rel="preload" href="../../index-30a4b807.css" as="style"/><link rel="preload" href="../../prescript-2083b193.js" as="script"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libertinus Serif:wght@400;700&amp;family=Libertinus Serif:ital,wght@0,400;0,600;1,400;1,600&amp;family=JetBrains Mono:wght@400;600&amp;display=swap"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libertinus Serif:wght@400;700&amp;text=Hopes%20and%20Dreams&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="Hopes and Dreams"/><meta property="og:title" content="№15 Флажки"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="№15 Флажки"/><meta name="twitter:description" content="№15 Флажки Перед разбором: минимальный Питон."/><meta property="og:description" content="№15 Флажки Перед разбором: минимальный Питон."/><meta property="og:image:alt" content="№15 Флажки Перед разбором: минимальный Питон."/><meta property="twitter:domain" content="mifikcha.github.io"/><meta property="og:url" content="https://mifikcha.github.io/информатика/_разборы-задач/№15-флажки"/><meta property="twitter:url" content="https://mifikcha.github.io/информатика/_разборы-задач/№15-флажки"/><link rel="icon" href="../../static/icon.png"/><meta name="description" content="№15 Флажки Перед разбором: минимальный Питон."/><meta name="generator" content="Quartz"/><link href="../../index-30a4b807.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../component-735924e0.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../component-589c1cea.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../component-bbc3f7c0.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../component-e427079e.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../component-34bdfded.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../component-53b25b2b.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../component-c93c6a44.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../component-8a06014f.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../component-1ea6ad18.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../component-7989faaa.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../component-788c9ca3.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../component-4abc06bd.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../component-274a3dfe.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../component-94cb6c84.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../component-58d5ff56.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../component-4f0286a0.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../component-7262b5a7.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../static/resource-style-11d41004.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../static/resource-style-fe38486b.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../static/resource-style-a5c806d2.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../static/resource-style-6bd36952.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../static/resource-style-6bc9bf1e.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../static/resource-style-7945cb86.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" data-persist="true"/><script src="../../prescript-2083b193.js" type="application/javascript" data-persist="true"></script><script type="application/javascript" data-persist="true">const fetchData = fetch("../../static/contentIndex.json").then(data => data.json())</script><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libertinus%20Serif%3Aital%2Cwght%400%2C400%3B0%2C600%3B0%2C700%3B1%2C400%3B1%2C600%3B1%2C700&amp;family=JetBrains%20Mono%3Awght%40400%3B600&amp;display=swap"/><meta property="og:image:width" content="1200"/><meta property="og:image:height" content="630"/><meta property="og:image" content="https://mifikcha.github.io/информатика/_разборы-задач/№15-флажки-og-image.webp"/><meta property="og:image:url" content="https://mifikcha.github.io/информатика/_разборы-задач/№15-флажки-og-image.webp"/><meta name="twitter:image" content="https://mifikcha.github.io/информатика/_разборы-задач/№15-флажки-og-image.webp"/><meta property="og:image:type" content="image/webp"/><style data-hopes-layout-fix="true">
+@media (min-width: 1200px) {
+  html body[data-slug] #quartz-root.page:not([data-frame="canvas"]):not([data-frame="excalidraw"]) {
+    width: 100vw !important;
+    max-width: none !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    transform: none !important;
+  }
+
+  html body[data-slug] #quartz-root.page > #quartz-body {
+    width: 100vw !important;
+    max-width: none !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    grid-template-columns: 320px minmax(0, 1fr) 320px !important;
+    column-gap: 0.5rem !important;
+  }
+
+  html body[data-slug] #quartz-root.page > #quartz-body > .left.sidebar {
+    margin-left: 0 !important;
+    transform: none !important;
+  }
+}
+
+html body[data-slug] #quartz-root.page[data-frame="excalidraw"] {
+  position: fixed !important;
+  inset: 0 !important;
+  width: 100vw !important;
+  max-width: none !important;
+  height: 100dvh !important;
+  min-height: 100dvh !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+  background: var(--excalidraw-bg, var(--light)) !important;
+}
+
+html body[data-slug] #quartz-root.page[data-frame="coding-lesson"] {
+  width: 100vw !important;
+  max-width: none !important;
+  min-height: 100dvh !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+html body[data-slug] #quartz-root.page[data-frame="coding-lesson"] > #quartz-body {
+  display: block !important;
+  width: 100% !important;
+  max-width: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+html body[data-slug] #quartz-root.page[data-frame="excalidraw"] > #quartz-body {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) !important;
+  grid-template-rows: minmax(0, 1fr) !important;
+  grid-template-areas: "grid-center" !important;
+  width: 100vw !important;
+  height: 100dvh !important;
+  min-height: 100dvh !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+}
+
+html body[data-slug] #quartz-root.page[data-frame="excalidraw"] .center.excalidraw-frame,
+html body[data-slug] #quartz-root.page[data-frame="excalidraw"] .excalidraw-stage,
+html body[data-slug] #quartz-root.page[data-frame="excalidraw"] .excalidraw-page,
+html body[data-slug] #quartz-root.page[data-frame="excalidraw"] .excalidraw-container {
+  box-sizing: border-box !important;
+  width: 100vw !important;
+  max-width: none !important;
+  height: 100dvh !important;
+  min-height: 100dvh !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+}
+
+html body[data-slug] #quartz-root.page[data-frame="excalidraw"] .excalidraw-container {
+  background-color: var(--excalidraw-bg, #121212) !important;
+}
+
+html body[data-slug] #quartz-root.page[data-frame="excalidraw"] .excalidraw-container svg {
+  width: 100vw !important;
+  height: 100dvh !important;
+  max-width: none !important;
+  max-height: none !important;
+}
+
+html body[data-slug] #quartz-root.page[data-frame="excalidraw"] .excalidraw-controls {
+  right: 1rem !important;
+  bottom: 1rem !important;
+}
+
+html {
+  --scrollbar-bg: var(--site-scrollbar-track) !important;
+  --scrollbar-thumb-bg: var(--site-scrollbar-thumb) !important;
+  --scrollbar-active-thumb-bg: var(--site-scrollbar-thumb-hover) !important;
+  --scrollbar-width: var(--site-scrollbar-size) !important;
+  --scrollbar-height: var(--site-scrollbar-size) !important;
+  --scrollbar-border-width: 2px !important;
+  --scrollbar-radius: var(--site-scrollbar-radius) !important;
+  scrollbar-color: var(--site-scrollbar-thumb) var(--site-scrollbar-track) !important;
+  scrollbar-width: thin !important;
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar,
+*::-webkit-scrollbar {
+  width: var(--site-scrollbar-size) !important;
+  height: var(--site-scrollbar-size) !important;
+}
+
+html::-webkit-scrollbar-track,
+body::-webkit-scrollbar-track,
+*::-webkit-scrollbar-track {
+  border-radius: var(--site-scrollbar-radius) !important;
+  background: var(--site-scrollbar-track) !important;
+  background-color: var(--site-scrollbar-track) !important;
+}
+
+html::-webkit-scrollbar-thumb,
+body::-webkit-scrollbar-thumb,
+*::-webkit-scrollbar-thumb {
+  min-width: 2.5rem !important;
+  min-height: 2.5rem !important;
+  border: 2px solid var(--site-scrollbar-track) !important;
+  border-radius: var(--site-scrollbar-radius) !important;
+  background: var(--site-scrollbar-thumb) !important;
+  background-color: var(--site-scrollbar-thumb) !important;
+}
+
+html::-webkit-scrollbar-thumb:hover,
+body::-webkit-scrollbar-thumb:hover,
+*::-webkit-scrollbar-thumb:hover {
+  background: var(--site-scrollbar-thumb-hover) !important;
+  background-color: var(--site-scrollbar-thumb-hover) !important;
+}
+
+html::-webkit-scrollbar-thumb:active,
+body::-webkit-scrollbar-thumb:active,
+*::-webkit-scrollbar-thumb:active {
+  background: var(--site-scrollbar-thumb-active) !important;
+  background-color: var(--site-scrollbar-thumb-active) !important;
+}
+
+html::-webkit-scrollbar-corner,
+body::-webkit-scrollbar-corner,
+*::-webkit-scrollbar-corner {
+  background: var(--site-scrollbar-track) !important;
+  background-color: var(--site-scrollbar-track) !important;
+}
+
+.python-checker {
+  --scrollbar-bg: var(--python-scrollbar-track) !important;
+  --scrollbar-thumb-bg: var(--python-scrollbar-thumb) !important;
+  --scrollbar-active-thumb-bg: var(--python-scrollbar-thumb-hover) !important;
+}
+
+.python-checker-editor,
+.python-checker-output {
+  scrollbar-color: var(--python-scrollbar-thumb) var(--python-scrollbar-track) !important;
+}
+
+.python-checker-editor::-webkit-scrollbar-track,
+.python-checker-output::-webkit-scrollbar-track {
+  background: var(--python-scrollbar-track) !important;
+  background-color: var(--python-scrollbar-track) !important;
+}
+
+.python-checker-editor::-webkit-scrollbar-thumb,
+.python-checker-output::-webkit-scrollbar-thumb {
+  border-color: var(--python-scrollbar-track) !important;
+  background: var(--python-scrollbar-thumb) !important;
+  background-color: var(--python-scrollbar-thumb) !important;
+}
+
+.python-checker-editor::-webkit-scrollbar-thumb:hover,
+.python-checker-output::-webkit-scrollbar-thumb:hover {
+  background: var(--python-scrollbar-thumb-hover) !important;
+  background-color: var(--python-scrollbar-thumb-hover) !important;
+}
+
+.katex,
+.katex .katex-html,
+html body[data-slug] .katex-display > .katex,
+html body[data-slug] .katex-display > .katex > .katex-html,
+.katex .mrel,
+.katex .mrel .mord,
+.katex .mrel .inner {
+  font-family: KaTeX_Main, "Times New Roman", serif !important;
+}
+
+.katex {
+  overflow-wrap: normal !important;
+  text-wrap: nowrap !important;
+  word-break: normal !important;
+}
+
+html body[data-slug] .katex-display {
+  display: block !important;
+  overflow-x: auto !important;
+  overflow-y: hidden !important;
+  padding-block: 0.55em !important;
+  scrollbar-width: none !important;
+  -ms-overflow-style: none !important;
+}
+
+html body[data-slug] .katex-display::-webkit-scrollbar {
+  width: 0 !important;
+  height: 0 !important;
+}
+
+html body[data-slug] .search > .search-container.active {
+  background: rgba(250, 246, 215, 0.48) !important;
+  -webkit-backdrop-filter: blur(10px) saturate(1.05) !important;
+  backdrop-filter: blur(10px) saturate(1.05) !important;
+}
+
+html[saved-theme="dark"] body[data-slug] .search > .search-container.active {
+  background: rgba(17, 19, 32, 0.52) !important;
+}
+
+html body[data-slug] .search > .search-container.active > .search-space > input,
+html body[data-slug] .search > .search-container.active > .search-space > .search-layout,
+html body[data-slug] .search > .search-container.active > .search-space > .tag-suggestions {
+  background:
+    linear-gradient(
+      135deg,
+      color-mix(in srgb, var(--site-panel-glass) 82%, var(--secondary)),
+      color-mix(in srgb, var(--light) 68%, transparent) 135%
+    ),
+    color-mix(in srgb, var(--light) 74%, transparent) !important;
+}
+
+html body[data-slug] .callout.is-collapsed > .callout-content {
+  display: none !important;
+}
+
+@supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+  html body[data-slug] .search > .search-container.active {
+    background: rgba(250, 246, 215, 0.68) !important;
+  }
+
+  html[saved-theme="dark"] body[data-slug] .search > .search-container.active {
+    background: rgba(17, 19, 32, 0.72) !important;
+  }
+}
+</style></head><body data-slug="информатика/_разборы-задач/№15-флажки" data-basepath><div id="quartz-root" class="page" data-frame="default"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="/">Hopes and Dreams</a></h2><div class="mobile-only"><div class="spacer"></div></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 0.5rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button" aria-label="Поиск" aria-expanded="false"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>Поиск</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="Найти что-нибудь" placeholder="Найти что-нибудь"/><div class="search-layout" data-preview="true" data-field-priority="[&quot;title&quot;,&quot;content&quot;,&quot;tags&quot;]"></div></div></div></div></div></div><div class="explorer nav-files-container" data-behavior="collapse" data-collapsed="open" data-savestate="false" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a, b) => {\n  const isStudentStats = (node) =>\n    node.slugSegments?.length === 1 &amp;&amp;\n    (node.slugSegment === \&quot;статистика-учеников\&quot; || node.displayName === \&quot;Статистика учеников\&quot;)\n\n  if (a.isFolder &amp;&amp; b.isFolder) {\n    if (isStudentStats(a) &amp;&amp; !isStudentStats(b)) return 1\n    if (!isStudentStats(a) &amp;&amp; isStudentStats(b)) return -1\n  }\n\n  if ((!a.isFolder &amp;&amp; !b.isFolder) || (a.isFolder &amp;&amp; b.isFolder)) {\n    return (a.displayName || \&quot;\&quot;).localeCompare(b.displayName || \&quot;\&quot;, undefined, {\n      numeric: true,\n      sensitivity: \&quot;base\&quot;,\n    })\n  }\n\n  if (!a.isFolder &amp;&amp; b.isFolder) return 1\n  return -1\n}\n&quot;,&quot;filterFn&quot;:&quot;(node) => node.slugSegment !== \&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;(node) => {\n    return node;\n  }&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-9" aria-label="Проводник"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>Проводник</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-9" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#" class="nav-file-title tree-item-self"></a></li></template><template id="template-folder"><li><div class="folder-container nav-folder-title tree-item-self"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon nav-folder-collapse-indicator collapse-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content tree-item-children"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../информатика/">Информатика</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../информатика/_разборы-задач/">_Разборы задач</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>№15 Флажки</a></div></nav><h1 class="article-title">№15 Флажки</h1></div></div><article class="popover-hint"><div class="markdown-preview-view markdown-rendered"><h1 id="15-флажки">№15 Флажки<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#15-флажки" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<p>Перед разбором: <a href="../../информатика/истинный-фундамент/02-минимальный-python/02.1-первая-программа" class="internal internal-link alias" data-slug="информатика/истинный-фундамент/02-минимальный-python/02.1-первая-программа">минимальный Питон</a>.</p>
+<p>Задание имеет несколько прототипов (я насчитал 4), один из которых (с числовыми отрезками) быстрее решать руками, нежели кодом. Остальные 3 прототипа довольно легко прогаются.</p>
+<p>Критически важно знать логические законы для прототипа, который решается руками. Вам может показаться, что последний прототип - это задание из разряда “очень неприятно”, но, уверяю вас, это не так. Стоит порешать их штучек 10-15 и все, вы станете неотразимы.</p>
+<blockquote class="callout danger" data-callout="danger">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>Подлянка </p></div>
+                  
+                </div>
+<div class="callout-content">
+<p>15ый номер - это один из тех номеров, где ФИПИ решило подложить свинью сдающим в 2026 году. Здесь начали встречаться задания с большими числами, которые требуют дополнительных действий в коде по поводу его оптимизации. Разумно ожидать такую же тенденцию в будущем. Об этом будем говорить отдельно.</p>
+<p>В то же время, задания с большими числами поддаются решению руками. Однако, зная, что лишняя когнитивная нагрузка из разряда “проанализировать что происходит” никому не нужна, я постараюсь модифицировать именно код. Не значит, что думать не придется, но, на мой взгляд, это проще.</p>
+</div>
+</blockquote>
+<h2 id="разборы">Разборы<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#разборы" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="пример-1">Пример 1)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#пример-1" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><img src="../../_resours/pasted-image-20241102150532.png" alt width="auto" height="auto" decoding="async" loading="eager" fetchpriority="high"/></p>
+<p>Итак, задание решается перебором (эксплуатируем скорость вычисления машин на полную). Идея такая: мы переберем произвольное кол-во A от 0 до n (где <code>n</code> выбирается методом тыка), для каждого значения А мы прогоним n циклов со значениями x и если хоть в одном из них окажется, что функция ложна - это значения А не подходит.</p>
+<p>Начнем с написания функции, которая задана в условии. Ее можно написать по-разному, можно перефразировать итд. Я, для наглядности, буду писать ее в первозданном виде, как она описана в условии:</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="python" data-theme="github-light github-dark"><code data-language="python" data-theme="github-light github-dark" style="display:grid;"><span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="keyword">def</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;" data-token-type="function"> f</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">(x,A):</span></span>
+<span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="keyword">    if</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation"> (x </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="operator">&amp;</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value"> 85</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="operator"> ==</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value"> 0</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">) </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="operator">&lt;=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation"> ((x </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="operator">&amp;</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value"> 54</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="operator"> !=</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value"> 0</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">) </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="operator">&lt;=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation"> (x </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="operator">&amp;</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> A </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="operator">!=</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value"> 0</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">)): </span><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D;" data-token-type="comment">#Вот это и есть функция</span></span>
+<span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="keyword">        return</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value"> True</span></span>
+<span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="keyword">    else</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">:</span></span>
+<span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="keyword">        return</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value"> False</span></span></code></pre></figure>
+<blockquote class="callout note" data-callout="note">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>Нюанс </p></div>
+                  
+                </div>
+<div class="callout-content">
+<p><code>return True</code> и <code>return False</code> здесь написаны исключительно для вашего лучшего понимания что делает функция. Сама по себе функция - это законченное логическое выражение, оно и так возвращает <code>True</code> в случае <code>1</code> и <code>False</code> в случае <code>0</code>.</p>
+</div>
+</blockquote>
+<p>Обратите внимание:</p>
+<ol>
+<li>Побитовая конъюнкция уже закреплена в питоне и обозначается как &amp;.</li>
+<li>Импликация или следование имеет обозначение &lt;= (легко проверить, что это так, их таблицы истинности совпадают).</li>
+</ol>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th style="text-align:center;">X</th><th style="text-align:center;">Y</th><th style="text-align:center;">F (<span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.3669em;"></span><span class="mrel">→</span></span></span></span>)</th></tr></thead><tbody><tr><td style="text-align:center;">0</td><td style="text-align:center;">0</td><td style="text-align:center;">1</td></tr><tr><td style="text-align:center;">0</td><td style="text-align:center;">1</td><td style="text-align:center;">1</td></tr><tr><td style="text-align:center;">1</td><td style="text-align:center;">0</td><td style="text-align:center;">0</td></tr><tr><td style="text-align:center;">1</td><td style="text-align:center;">1</td><td style="text-align:center;">1</td></tr></tbody></table></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th style="text-align:center;">X</th><th style="text-align:center;">Y</th><th style="text-align:center;">F (&lt;=)</th></tr></thead><tbody><tr><td style="text-align:center;">0</td><td style="text-align:center;">0</td><td style="text-align:center;">1</td></tr><tr><td style="text-align:center;">0</td><td style="text-align:center;">1</td><td style="text-align:center;">1</td></tr><tr><td style="text-align:center;">1</td><td style="text-align:center;">0</td><td style="text-align:center;">0</td></tr><tr><td style="text-align:center;">1</td><td style="text-align:center;">1</td><td style="text-align:center;">1</td></tr></tbody></table></div>
+<ol start="3">
+<li>Нам не нужно ставить какое-то итоговое числовое значение функции, мы просто ретерним истину либо ложь в зависимости от того выполняется ли условие.</li>
+</ol>
+<p>А далее мы должны для каждого <code>А</code> чекнуть все-все-все х из определенного диапазона. Диапазон выбирается наугад, может быть больше или меньше (при вашем желании его можно менять, зависит от условия).</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="python" data-theme="github-light github-dark"><code data-language="python" data-theme="github-light github-dark" style="display:grid;"><span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="keyword">for</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> A </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="keyword">in</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="function"> range</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="function"> (</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value">300</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">):</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">    flag </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="operator">=</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value"> True</span></span>
+<span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="keyword">    for</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> x </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="keyword">in</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="function"> range</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="function"> (</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value">300</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">):</span></span>
+<span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="keyword">        if</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="operator"> not</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">(f(x,A)):</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">            flag </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="operator">=</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value"> False</span></span>
+<span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="keyword">    if</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation"> flag:</span></span>
+<span data-line><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="function">        print</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">(A)</span></span></code></pre></figure>
+<p>Соединяем:</p>
+<div class="python-checker" data-title="Пример 1" data-code="def f(x,A):
+    if (x &amp; 85 == 0) &lt;= ((x &amp; 54 != 0) &lt;= (x &amp; A != 0)):
+        return True
+    else:
+        return False
+for A in range (300):
+    flag = True
+    for x in range (300):
+        if not(f(x,A)):
+            flag = False
+    if flag:
+        print(A)"></div>
+<p>Что круто: в таких заданиях вторая часть с циклами остается неизменной от задания к заданию. Т.е. вам нужно менять только саму функцию. Программка выдаст список чисел, которые удовлетворяют условию. Нам нужно наименьшее.</p>
+<p><strong>Ответ: 34</strong></p>
+<p>Сильно назад время отматывать не надо. Задание под номером 15 в ЕГЭ по информатике достаточно сильно изменилось начиная с 2022-2023 годов.</p>
+<h3 id="пример-2">Пример 2)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#пример-2" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><img src="../../_resours/pasted-image-20241102154349.png" alt width="auto" height="auto" decoding="async" loading="lazy"/></p>
+<p>Собсна, все то же самое, только функция другая. Обратите внимание на расставленные скобки. Они нужны здесь для того, чтобы верно расставить приоритеты выполнения операций.</p>
+<div class="python-checker" data-title="Пример 2" data-code="def f(x,A):
+    if ((x &amp; 42 != 0) or (x &amp; 13 != 0)) &lt;= ((x &amp; 30 == 0) &lt;= (x &amp; A != 0)):
+        return True
+    else:
+        return False
+for A in range (300):
+    flag = True
+    for x in range (300):
+        if not(f(x,A)):
+            flag = False
+    if flag:
+        print(A)"></div>
+<p>Нужно наименьшее. Берем 33.</p>
+<p><strong>Ответ: 33.</strong></p>
+<p>Закрепляющая для этого прототипа:</p>
+<h3 id="пример-3">Пример 3)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#пример-3" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><img src="../../_resours/pasted-image-20241102155607.png" alt width="auto" height="auto" decoding="async" loading="lazy"/></p>
+<p>Как и говорилось ранее, от предыдущих отличается лишь функцией:</p>
+<div class="python-checker" data-title="Пример 3" data-code="def f(x,A):
+    if (x &amp; 39 == 0) or ((x &amp; 11 == 0) &lt;= (x &amp; A != 0)):
+        return True
+    else:
+        return False
+for A in range (300):
+    flag = True
+    for x in range (300):
+        if not(f(x,A)):
+            flag = False
+    if flag:
+        print(A)"></div>
+<p><strong>Ответ: 39.</strong></p>
+<p>Рассмотрим другой прототип этого задания:</p>
+<h3 id="пример-4">Пример 4)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#пример-4" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><img src="../../_resours/pasted-image-20241103204531.png" alt width="auto" height="auto" decoding="async" loading="lazy"/></p>
+<p>Несмотря на то, что формулировка немного отличается, с формальной точки зрения, ничего не поменялось. Мы все также должны указать правильное логическое условие в нашей функции и все также перебирать значения x и А. Единственное отличие - диапазон стоит взять побольше.</p>
+<div class="python-checker" data-title="Пример 4" data-code="def f(x,A):
+    if (120 % A == 0) and ((x % A != 0) &lt;= ((x % 18 == 0) &lt;= (x % 24 != 0))):
+        return True
+    else:
+        return False
+for A in range (1,1000):
+    flag = True
+    for x in range (1,1000):
+        if not(f(x,A)):
+            flag = False
+    if flag:
+        print(A)"></div>
+<p>Обратите внимание: каждое действие с ДЕЛ заключено в скобки. Это связано с тем, что без них питон ставит первый приоритет не тем операциям, который нам нужны. В частности, если убрать скобки из-под операции <code>x % A != 0</code> программа ничего не выдаст. Будьте внимательны и аккуратны (подробный порядок операций распишу позже; Если вы его не увидите до конца разбора этого номера - разбудите автора, мб он просто устал и уснул).</p>
+<h3 id="пример-5">Пример 5)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#пример-5" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><img src="../../_resours/pasted-image-20241103205154.png" alt width="auto" height="auto" decoding="async" loading="lazy"/></p>
+<p>Не стоит пугаться новой для нас операции - включения т.е. проверки на то, что х принадлежит отрезку В. Нам придется отдельно задать этот отрезок в качестве списка и чекать напрямую состоит ли х в В командой <code>x in B</code>. В остальном решение то же самое.</p>
+<div class="python-checker" data-title="Пример 5" data-code="b = list(range(70,91)) #Задаем отрезок
+def f(x,A):
+    if ((x % A == 0) or ((x in b) &lt;= (x % 22 != 0))):
+        return True
+    else:
+        return False
+for A in range (1,1000):
+    flag = True
+    for x in range (1,1000):
+        if not(f(x,A)):
+            flag = False
+    if flag:
+        print(A)"></div>
+<p>Этот прототип также не отличается оригинальностью,,,</p>
+<h3 id="пример-6">Пример 6)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#пример-6" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><img src="../../_resours/pasted-image-20241103210932.png" alt width="auto" height="auto" decoding="async" loading="lazy"/></p>
+<div class="python-checker" data-title="Пример 6" data-code="def f(x,A):
+    if ((x % 3 == 0) &lt;= (x % 5 != 0)) or (x + A >= 90):
+        return True
+    else:
+        return False
+for A in range (1,300):
+    flag = True
+    for x in range (1,300):
+        if not(f(x,A)):
+            flag = False
+    if flag:
+        print(A)"></div>
+<p><strong>Ответ: 75</strong></p>
+<p>Разберем третий прототип: когда даны x и y.</p>
+<h3 id="пример-7">Пример 7)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#пример-7" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><img src="../../_resours/pasted-image-20241103211230.png" alt width="auto" height="auto" decoding="async" loading="lazy"/></p>
+<p>Все что меняется - так это то, что нам придется прогонять еще одну переменную - переменную y, причем в том же месте, что и переменную x. Само собой, теперь наша <code>f(x,A)</code> превратиться в <code>f(x,y,A)</code>.</p>
+<div class="python-checker" data-title="Пример 7" data-code="def f(x,y,A):
+    if ((x + 2 * y &lt; A) or (y > x) or (x > 60)):
+        return True
+    else:
+        return False
+        
+for A in range (1,300):
+    flag = True
+    for x in range (1,300):
+        for y in range (1,300):
+            if not(f(x,y,A)):
+                flag = False
+    if flag:
+        print(A)"></div>
+<p>Кста, если ваш комп (почему-то) не вывозит <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">300</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">300</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">300</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.8389em;vertical-align:-0.1944em;"></span><span class="mord">2</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">7</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.8141em;"></span><span class="mord">1</span><span class="mord"><span class="mord">0</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">7</span></span></span></span></span></span></span></span></span></span></span> операций можно уменьшить <code>range</code>, ведь нас интересует именно наименьшее возможное.</p>
+<p><strong>Ответ: 181</strong></p>
+<h3 id="пример-8">Пример 8)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#пример-8" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><img src="../../_resours/pasted-image-20241103212944.png" alt width="auto" height="auto" decoding="async" loading="lazy"/></p>
+<p>Ровно ничем не отличается от предыдущего, разве что функция другая:</p>
+<div class="python-checker" data-title="Пример 8" data-code="def f(x,y,A):
+    if (4 * x + 3 * y &lt; A) or (x >= y) or (y >= 13):
+        return True
+    else:
+        return False
+        
+for A in range (1,300):
+    flag = True
+    for x in range (1,300):
+        for y in range (1,300):
+            if not(f(x,y,A)):
+                flag = False
+    if flag:
+        print(A)"></div>
+<h3 id="пример-9">Пример 9)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#пример-9" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><img src="../../_resours/pasted-image-20241103213230.png" alt width="auto" height="auto" decoding="async" loading="lazy"/></p>
+<div class="python-checker" data-title="Пример 9" data-code="def f(x,y,A):
+    if (2 * x + 3 * y &lt; A) or (x >= y) or (y > 24):
+        return True
+    else:
+        return False
+
+for A in range (1,300):
+    flag = True
+    for x in range (1,300):
+        for y in range (1,300):
+            if not(f(x,y,A)):
+                flag = False
+    if flag:
+        print(A)"></div>
+<p>Наконец, рассмотрим прототип задания, который решается ручками. В целом, последний прототип можно запрогать, однако тут надо быть максимально аккуратным, знать особенности работы циклов и нигде не ошибиться, что, конкретно в этом прототипе, будет довольно сложно. Вариант запрогать оставляю на самостоятельность: это отдельный челлендж.</p>
+<h3 id="пример-10">Пример 10)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#пример-10" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><img src="../../_resours/pasted-image-20241103215115.png" alt width="auto" height="auto" decoding="async" loading="lazy"/></p>
+<p>Собсна, для того, чтобы решить это задание нам нужно как-то упростить логическую функцию, которую мы видим. Делается это с помощью законов логики. Вот все, которые нужны для решения подобных заданий (чисто для того, чтобы проще было писать - конъюнкция это умножение т.е. <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4653em;"></span><span class="mord">∗</span></span></span></span>, а дизъюнкция - это <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6667em;vertical-align:-0.0833em;"></span><span class="mord">+</span></span></span></span>):</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th style="text-align:left;">Название</th><th style="text-align:left;">Для конъюнкции</th><th style="text-align:left;">Для дизъюнкции</th></tr></thead><tbody><tr><td style="text-align:left;">Закон повторения (идемпотенции)</td><td style="text-align:left;"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal">A</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal">A</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal">A</span></span></span></span></td><td style="text-align:left;"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7667em;vertical-align:-0.0833em;"></span><span class="mord mathnormal">A</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal">A</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal">A</span></span></span></span></td></tr><tr><td style="text-align:left;">Третьего не дано</td><td style="text-align:left;"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal">A</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.8201em;"></span><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8201em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord mathnormal">A</span></span><span style="top:-3.2523em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.1111em;"><span class="mord">ˉ</span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">0</span></span></span></span></td><td style="text-align:left;"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7667em;vertical-align:-0.0833em;"></span><span class="mord mathnormal">A</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.8201em;"></span><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8201em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord mathnormal">A</span></span><span style="top:-3.2523em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.1111em;"><span class="mord">ˉ</span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">1</span></span></span></span></td></tr><tr><td style="text-align:left;">Поглощение</td><td style="text-align:left;"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal">A</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathnormal">A</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.0502em;">B</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal">A</span></span></span></span></td><td style="text-align:left;"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7667em;vertical-align:-0.0833em;"></span><span class="mord mathnormal">A</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathnormal">A</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.0502em;">B</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal">A</span></span></span></span></td></tr><tr><td style="text-align:left;">Коммутативность (переместительный)</td><td style="text-align:left;"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal">A</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.0502em;">B</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.0502em;">B</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal">A</span></span></span></span></td><td style="text-align:left;"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7667em;vertical-align:-0.0833em;"></span><span class="mord mathnormal">A</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.0502em;">B</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.7667em;vertical-align:-0.0833em;"></span><span class="mord mathnormal" style="margin-right:0.0502em;">B</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal">A</span></span></span></span></td></tr><tr><td style="text-align:left;">Ассоциативность (сочетательный)</td><td style="text-align:left;"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal">A</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.0502em;">B</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.0715em;">C</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathnormal">A</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.0502em;">B</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.0715em;">C</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal">A</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.0502em;">B</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.0715em;">C</span></span></span></span></td><td style="text-align:left;"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7667em;vertical-align:-0.0833em;"></span><span class="mord mathnormal">A</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.0502em;">B</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.0715em;">C</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathnormal">A</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.0502em;">B</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.0715em;">C</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.7667em;vertical-align:-0.0833em;"></span><span class="mord mathnormal">A</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.7667em;vertical-align:-0.0833em;"></span><span class="mord mathnormal" style="margin-right:0.0502em;">B</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.0715em;">C</span></span></span></span></td></tr><tr><td style="text-align:left;">Дистрибутивность (распределительный)</td><td style="text-align:left;"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal">A</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.0502em;">B</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.0715em;">C</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal">A</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.7667em;vertical-align:-0.0833em;"></span><span class="mord mathnormal" style="margin-right:0.0502em;">B</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal">A</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.0715em;">C</span></span></span></span></td><td style="text-align:left;"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7667em;vertical-align:-0.0833em;"></span><span class="mord mathnormal">A</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.0502em;">B</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.0715em;">C</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathnormal">A</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.0502em;">B</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathnormal">A</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.0715em;">C</span><span class="mclose">)</span></span></span></span></td></tr><tr><td style="text-align:left;">Закон двойного отрицания</td><td style="text-align:left;"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.9569em;"></span><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.9569em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8201em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord mathnormal">A</span></span><span style="top:-3.2523em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.1111em;"><span class="mord">ˉ</span></span></span></span></span></span></span></span><span style="top:-3.3891em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.25em;"><span class="mord">ˉ</span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal">A</span></span></span></span> (это не значит, что этот закон работает только для конъюнкции, он универсален)</td><td style="text-align:left;">-</td></tr><tr><td style="text-align:left;">Закон де Моргана</td><td style="text-align:left;"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8201em;"></span><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8201em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal">A</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mord mathnormal" style="margin-right:0.0502em;">B</span></span></span><span style="top:-3.2523em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.25em;"><span class="mord">ˉ</span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.9034em;vertical-align:-0.0833em;"></span><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8201em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord mathnormal">A</span></span><span style="top:-3.2523em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.1111em;"><span class="mord">ˉ</span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.8201em;"></span><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8201em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord mathnormal" style="margin-right:0.0502em;">B</span></span><span style="top:-3.2523em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.1667em;"><span class="mord">ˉ</span></span></span></span></span></span></span></span></span></span> (тут имеется ввиду, что знак отрицания слева стоит над всем выражением, я прост хз эту палочку растянуть)</td><td style="text-align:left;"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.9034em;vertical-align:-0.0833em;"></span><span class="mord accent"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8201em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal">A</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mord mathnormal" style="margin-right:0.0502em;">B</span></span></span><span style="top:-3.2523em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.25em;"><span class="mord">ˉ</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.0833em;"><span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.8201em;"></span><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8201em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord mathnormal">A</span></span><span style="top:-3.2523em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.1111em;"><span class="mord">ˉ</span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.8201em;"></span><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8201em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord mathnormal" style="margin-right:0.0502em;">B</span></span><span style="top:-3.2523em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.1667em;"><span class="mord">ˉ</span></span></span></span></span></span></span></span></span></span> (опять же, отрицается полное выражение слева)</td></tr><tr><td style="text-align:left;">Импликация</td><td style="text-align:left;"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal">A</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.0502em;">B</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.9034em;vertical-align:-0.0833em;"></span><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8201em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord mathnormal">A</span></span><span style="top:-3.2523em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.1111em;"><span class="mord">ˉ</span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.0502em;">B</span></span></span></span></td><td style="text-align:left;">-</td></tr><tr><td style="text-align:left;">Эквивалентность</td><td style="text-align:left;"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal">A</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">↔</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.0502em;">B</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal">A</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.7667em;vertical-align:-0.0833em;"></span><span class="mord mathnormal" style="margin-right:0.0502em;">B</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.8201em;"></span><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8201em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord mathnormal">A</span></span><span style="top:-3.2523em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.1111em;"><span class="mord">ˉ</span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.8201em;"></span><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8201em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord mathnormal" style="margin-right:0.0502em;">B</span></span><span style="top:-3.2523em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.1667em;"><span class="mord">ˉ</span></span></span></span></span></span></span></span></span></span> (стрелочка влево и вправо - это эквивалентность, иногда обозначается как тройное равно ”≡”)</td><td style="text-align:left;">-</td></tr><tr><td style="text-align:left;">XOR или исключающее или или антиэквивалентность</td><td style="text-align:left;"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7667em;vertical-align:-0.0833em;"></span><span class="mord mathnormal">A</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">⊕</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.0502em;">B</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.8201em;"></span><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8201em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord mathnormal">A</span></span><span style="top:-3.2523em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.1111em;"><span class="mord">ˉ</span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.7667em;vertical-align:-0.0833em;"></span><span class="mord mathnormal" style="margin-right:0.0502em;">B</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal">A</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.8201em;"></span><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8201em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord mathnormal" style="margin-right:0.0502em;">B</span></span><span style="top:-3.2523em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.1667em;"><span class="mord">ˉ</span></span></span></span></span></span></span></span></span></span> (иногда обозначают как перечеркнутая эквивалентность)</td><td style="text-align:left;"></td></tr></tbody></table></div>
+<p>Итак, перепишем это выражение и будем последовательно его преобразовывать:</p>
+<p><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathnormal">x</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">∈</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.1389em;">P</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(((</span><span class="mord mathnormal">x</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">∈</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">Q</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1.0701em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord accent"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8201em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal">x</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">∈</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord mathnormal">A</span></span></span><span style="top:-3.2523em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.25em;"><span class="mord">ˉ</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.0391em;"><span></span></span></span></span></span><span class="mclose">))</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1.0701em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord accent"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8201em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal">x</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">∈</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord mathnormal" style="margin-right:0.1389em;">P</span></span></span><span style="top:-3.2523em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.25em;"><span class="mord">ˉ</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.0391em;"><span></span></span></span></span></span><span class="mclose">))</span></span></span></span></p>
+<p>Чтобы было проще работать, давайте введем обозначения: <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathnormal">x</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">∈</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.1389em;">P</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.1389em;">P</span></span></span></span>; <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathnormal">x</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">∈</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">Q</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.8778em;vertical-align:-0.1944em;"></span><span class="mord mathnormal">Q</span></span></span></span>; <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathnormal">x</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">∈</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">A</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal">A</span></span></span></span>. Перепишем выражение, используя новые обозначения:</p>
+<p><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.1389em;">P</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">((</span><span class="mord mathnormal">Q</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1.0701em;vertical-align:-0.25em;"></span><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8201em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord mathnormal">A</span></span><span style="top:-3.2523em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.1111em;"><span class="mord">ˉ</span></span></span></span></span></span></span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1.0701em;vertical-align:-0.25em;"></span><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8201em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord mathnormal" style="margin-right:0.1389em;">P</span></span><span style="top:-3.2523em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.1667em;"><span class="mord">ˉ</span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span></p>
+<p>Раскроем внешнюю импликацию:</p>
+<p><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.9034em;vertical-align:-0.0833em;"></span><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8201em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord mathnormal" style="margin-right:0.1389em;">P</span></span><span style="top:-3.2523em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.1667em;"><span class="mord">ˉ</span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">((</span><span class="mord mathnormal">Q</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1.0701em;vertical-align:-0.25em;"></span><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8201em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord mathnormal">A</span></span><span style="top:-3.2523em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.1111em;"><span class="mord">ˉ</span></span></span></span></span></span></span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1.0701em;vertical-align:-0.25em;"></span><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8201em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord mathnormal" style="margin-right:0.1389em;">P</span></span><span style="top:-3.2523em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.1667em;"><span class="mord">ˉ</span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span></p>
+<p>Раскроем внутреннюю импликацию (ту, которая в скобках):</p>
+<p><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.9034em;vertical-align:-0.0833em;"></span><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8201em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord mathnormal" style="margin-right:0.1389em;">P</span></span><span style="top:-3.2523em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.1667em;"><span class="mord">ˉ</span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1.2069em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord accent"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.9569em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mopen">(</span><span class="mord mathnormal">Q</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8201em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord mathnormal">A</span></span><span style="top:-3.2523em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.1111em;"><span class="mord">ˉ</span></span></span></span></span></span></span><span class="mclose">)</span></span></span><span style="top:-3.3891em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.25em;"><span class="mord">ˉ</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.25em;"><span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1.0701em;vertical-align:-0.25em;"></span><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8201em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord mathnormal" style="margin-right:0.1389em;">P</span></span><span style="top:-3.2523em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.1667em;"><span class="mord">ˉ</span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span></p>
+<p>Для скобки <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.2069em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord accent"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.9569em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal">Q</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8201em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord mathnormal">A</span></span><span style="top:-3.2523em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.1111em;"><span class="mord">ˉ</span></span></span></span></span></span></span></span></span><span style="top:-3.3891em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.25em;"><span class="mord">ˉ</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.1944em;"><span></span></span></span></span></span><span class="mclose">)</span></span></span></span> воспользуемся законом де Моргана:</p>
+<p><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.9034em;vertical-align:-0.0833em;"></span><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8201em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord mathnormal" style="margin-right:0.1389em;">P</span></span><span style="top:-3.2523em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.1667em;"><span class="mord">ˉ</span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1.0701em;vertical-align:-0.25em;"></span><span class="mopen">((</span><span class="mord accent"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8201em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord mathnormal">Q</span></span><span style="top:-3.2523em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.1667em;"><span class="mord">ˉ</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.1944em;"><span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1.2069em;vertical-align:-0.25em;"></span><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.9569em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8201em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord mathnormal">A</span></span><span style="top:-3.2523em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.1111em;"><span class="mord">ˉ</span></span></span></span></span></span></span></span><span style="top:-3.3891em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.25em;"><span class="mord">ˉ</span></span></span></span></span></span></span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1.0701em;vertical-align:-0.25em;"></span><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8201em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord mathnormal" style="margin-right:0.1389em;">P</span></span><span style="top:-3.2523em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.1667em;"><span class="mord">ˉ</span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span></p>
+<p>Двойное отрицание А даст просто А:</p>
+<p><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.9034em;vertical-align:-0.0833em;"></span><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8201em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord mathnormal" style="margin-right:0.1389em;">P</span></span><span style="top:-3.2523em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.1667em;"><span class="mord">ˉ</span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1.0701em;vertical-align:-0.25em;"></span><span class="mopen">((</span><span class="mord accent"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8201em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord mathnormal">Q</span></span><span style="top:-3.2523em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.1667em;"><span class="mord">ˉ</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.1944em;"><span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">A</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1.0701em;vertical-align:-0.25em;"></span><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8201em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord mathnormal" style="margin-right:0.1389em;">P</span></span><span style="top:-3.2523em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.1667em;"><span class="mord">ˉ</span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span></p>
+<p>Скобки с <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.0701em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord accent"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8201em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord mathnormal">Q</span></span><span style="top:-3.2523em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.1667em;"><span class="mord">ˉ</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.1944em;"><span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">A</span><span class="mclose">)</span></span></span></span> можно опустить:</p>
+<p><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.9034em;vertical-align:-0.0833em;"></span><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8201em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord mathnormal" style="margin-right:0.1389em;">P</span></span><span style="top:-3.2523em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.1667em;"><span class="mord">ˉ</span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1.0701em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord accent"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8201em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord mathnormal">Q</span></span><span style="top:-3.2523em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.1667em;"><span class="mord">ˉ</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.1944em;"><span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.7667em;vertical-align:-0.0833em;"></span><span class="mord mathnormal">A</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1.0701em;vertical-align:-0.25em;"></span><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8201em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord mathnormal" style="margin-right:0.1389em;">P</span></span><span style="top:-3.2523em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.1667em;"><span class="mord">ˉ</span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span></p>
+<p>Опускаем скобки и применяем закон повторения для <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8201em;"></span><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8201em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord mathnormal" style="margin-right:0.1389em;">P</span></span><span style="top:-3.2523em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.1667em;"><span class="mord">ˉ</span></span></span></span></span></span></span></span></span></span>:</p>
+<p><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.9034em;vertical-align:-0.0833em;"></span><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8201em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord mathnormal" style="margin-right:0.1389em;">P</span></span><span style="top:-3.2523em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.1667em;"><span class="mord">ˉ</span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1.0145em;vertical-align:-0.1944em;"></span><span class="mord accent"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8201em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord mathnormal">Q</span></span><span style="top:-3.2523em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.1667em;"><span class="mord">ˉ</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.1944em;"><span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal">A</span></span></span></span></p>
+<p>Вуаля, мы получили адекватное выражение.</p>
+<p>Теперь, вспоминаем, что отрезок <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.1389em;">P</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">[</span><span class="mord">15</span><span class="mpunct">;</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">40</span><span class="mclose">]</span></span></span></span>, а отрезок <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8778em;vertical-align:-0.1944em;"></span><span class="mord mathnormal">Q</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">[</span><span class="mord">21</span><span class="mpunct">;</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">63</span><span class="mclose">]</span></span></span></span>. Стоит нарисовать числовую прямую для наглядности:</p>
+<p><img src="../../_resours/15-номер-инфа,-1ый.png" alt width="auto" height="auto" decoding="async" loading="lazy"/></p>
+<p>Это я уже сразу нарисовал нужные интервалы (х не принадлежит Р и х не принадлежит Q).</p>
+<p>По сути, нам надо дозакрыть числовую прямую так, чтобы какой бы ни был х он бы попал в один из этих трех промежутков (либо А, либо не Р, либо не Q). По рисунку видно, что нам нужен вот такой отрезок:</p>
+<p><img src="../../_resours/15-номер-инфа,-2ой.png" alt width="auto" height="auto" decoding="async" loading="lazy"/></p>
+<p>Длина этого отрезка и есть наш ответ. Найти его длину довольно просто: <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">40</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">21</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">19</span></span></span></span>.</p>
+<p><strong>Ответ: 19</strong></p>
+<h3 id="пример-11">Пример 11)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#пример-11" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><img src="../../_resours/pasted-image-20241103225930.png" alt width="auto" height="auto" decoding="async" loading="lazy"/></p>
+<p>Введем обозначения: <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathnormal">x</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">∈</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">A</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal">A</span></span></span></span>; <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathnormal">x</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">∈</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.1389em;">P</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.1389em;">P</span></span></span></span>; <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathnormal">x</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">∈</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">Q</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.8778em;vertical-align:-0.1944em;"></span><span class="mord mathnormal">Q</span></span></span></span> и преобразуем выражение:</p>
+<p><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathnormal">A</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1.0701em;vertical-align:-0.25em;"></span><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8201em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord mathnormal" style="margin-right:0.1389em;">P</span></span><span style="top:-3.2523em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.1667em;"><span class="mord">ˉ</span></span></span></span></span></span></span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathnormal">A</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">Q</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1.0701em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8201em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord mathnormal">A</span></span><span style="top:-3.2523em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.1111em;"><span class="mord">ˉ</span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1.0701em;vertical-align:-0.25em;"></span><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8201em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord mathnormal" style="margin-right:0.1389em;">P</span></span><span style="top:-3.2523em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.1667em;"><span class="mord">ˉ</span></span></span></span></span></span></span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1.0701em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8201em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord mathnormal">A</span></span><span style="top:-3.2523em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.1111em;"><span class="mord">ˉ</span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">Q</span><span class="mclose">)</span></span></span></span></p>
+<p><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.0701em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8201em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord mathnormal">A</span></span><span style="top:-3.2523em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.1111em;"><span class="mord">ˉ</span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1.0701em;vertical-align:-0.25em;"></span><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8201em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord mathnormal" style="margin-right:0.1389em;">P</span></span><span style="top:-3.2523em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.1667em;"><span class="mord">ˉ</span></span></span></span></span></span></span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1.0701em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8201em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord mathnormal">A</span></span><span style="top:-3.2523em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.1111em;"><span class="mord">ˉ</span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">Q</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1.2069em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord accent"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.9569em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8201em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord mathnormal">A</span></span><span style="top:-3.2523em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.1111em;"><span class="mord">ˉ</span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8201em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord mathnormal" style="margin-right:0.1389em;">P</span></span><span style="top:-3.2523em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.1667em;"><span class="mord">ˉ</span></span></span></span></span></span></span></span></span><span style="top:-3.3891em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.25em;"><span class="mord">ˉ</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.0833em;"><span></span></span></span></span></span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1.0701em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8201em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord mathnormal">A</span></span><span style="top:-3.2523em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.1111em;"><span class="mord">ˉ</span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">Q</span><span class="mclose">)</span></span></span></span></p>
+<p><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.2069em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord accent"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.9569em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8201em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord mathnormal">A</span></span><span style="top:-3.2523em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.1111em;"><span class="mord">ˉ</span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8201em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord mathnormal" style="margin-right:0.1389em;">P</span></span><span style="top:-3.2523em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.1667em;"><span class="mord">ˉ</span></span></span></span></span></span></span></span></span><span style="top:-3.3891em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.25em;"><span class="mord">ˉ</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.0833em;"><span></span></span></span></span></span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1.0701em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8201em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord mathnormal">A</span></span><span style="top:-3.2523em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.1111em;"><span class="mord">ˉ</span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">Q</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathnormal">A</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.1389em;">P</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.9034em;vertical-align:-0.0833em;"></span><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8201em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord mathnormal">A</span></span><span style="top:-3.2523em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.1111em;"><span class="mord">ˉ</span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.8778em;vertical-align:-0.1944em;"></span><span class="mord mathnormal">Q</span></span></span></span></p>
+<p>Воспользуемся дистрибутивным законом для дизъюнкции:</p>
+<p><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathnormal">A</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.1389em;">P</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.9034em;vertical-align:-0.0833em;"></span><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8201em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord mathnormal">A</span></span><span style="top:-3.2523em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.1111em;"><span class="mord">ˉ</span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.8778em;vertical-align:-0.1944em;"></span><span class="mord mathnormal">Q</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.9034em;vertical-align:-0.0833em;"></span><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8201em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord mathnormal">A</span></span><span style="top:-3.2523em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.1111em;"><span class="mord">ˉ</span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.7667em;vertical-align:-0.0833em;"></span><span class="mord mathnormal" style="margin-right:0.1389em;">P</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.8778em;vertical-align:-0.1944em;"></span><span class="mord mathnormal">Q</span></span></span></span></p>
+<p>Изобразим это на числовой прямой:</p>
+<p><img src="../../_resours/15-номер-инфа,-3ий.png" alt width="auto" height="auto" decoding="async" loading="lazy"/></p>
+<p>Теперь ситуация такая: вне зависимости от того че там с А, попадает туда х или нет, он лярд проц должен попадать либо в Р либо в Q т.е. в отрезок с 10 до 48, а т.к. нас просят указать именно максимальную длину отрезка А, то она равна <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">48</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">10</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">38</span></span></span></span>.</p>
+<p><img src="../../_resours/15-номер-инфа,-3ий-1.png" alt width="auto" height="auto" decoding="async" loading="lazy"/></p>
+<p><strong>Ответ: 38</strong></p>
+<h3 id="пример-12">Пример 12)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#пример-12" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><img src="../../_resours/pasted-image-20241103234327.png" alt width="auto" height="auto" decoding="async" loading="lazy"/></p>
+<p>Обозначения: <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathnormal">x</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">∈</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.1389em;">P</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.1389em;">P</span></span></span></span>; <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathnormal">x</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">∈</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">Q</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.8778em;vertical-align:-0.1944em;"></span><span class="mord mathnormal">Q</span></span></span></span>; <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathnormal">x</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">∈</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">A</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal">A</span></span></span></span>.</p>
+<p><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.1389em;">P</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">↔</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">Q</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.8201em;"></span><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8201em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord mathnormal">A</span></span><span style="top:-3.2523em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.1111em;"><span class="mord">ˉ</span></span></span></span></span></span></span></span></span></span></p>
+<p><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.1389em;">P</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">⊕</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">Q</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.8201em;"></span><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8201em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord mathnormal">A</span></span><span style="top:-3.2523em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.1111em;"><span class="mord">ˉ</span></span></span></span></span></span></span></span></span></span></p>
+<p>В данном случае лучше на этом остановиться. Исключающее или работает так: оно включает все, кроме пересечения множеств:</p>
+<p><img src="../../_resours/исключающее-или.png" alt width="auto" height="auto" decoding="async" loading="lazy"/></p>
+<p>Нарисуем числовую прямую и отметим на ней наши Р и Q:</p>
+<p><img src="../../_resours/15-номер-инфа,-4ый.png" alt width="auto" height="auto" decoding="async" loading="lazy"/></p>
+<p>И изобразим подходящие А:</p>
+<p><img src="../../_resours/15-номер-инфа,-4ый-1.png" alt width="auto" height="auto" decoding="async" loading="lazy"/></p>
+<p>Просят наибольший. Из этих двух наибольший имеет длину <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">14</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">11</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">3</span></span></span></span></p>
+<p><strong>Ответ: 3</strong></p>
+<hr/>
+<h3 id="решение-4ого-прототипа-кодом">Решение 4ого прототипа кодом<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#решение-4ого-прототипа-кодом" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>В чем проблема решения 4ого прототипа 15ого номера кодом? В том, что подходов много и все они в относительно равной степени правдивы. Универсальность остается под вопросом в случае отдельных представителей 15ого номера.</p>
+<p>Однако, я все равно расскажу.</p>
+<h5 id="первый-способ">Первый способ<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#первый-способ" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h5>
+<p><img src="../../_resours/pasted-image-20251104122457.png" alt width="auto" height="auto" decoding="async" loading="lazy"/></p>
+<div class="python-checker" data-title="Первый способ" data-code="def f(x):
+	P = 17 &lt;= x &lt;= 58
+	Q = 29 &lt;= x &lt;= 80
+	A = a1 &lt;= x &lt;= a2
+	return P &lt;= ((Q and (not A)) &lt;= (not P ))
+	
+r = []
+d = [y for x in (17, 29, 58, 80) for y in (x, x - 0.1, x + 0.1)]
+for a1 in d:
+	for a2 in d:
+		if all(f(x) == 1 for x in d) and a2 >= a1: # а2 >= f1 чтобы не получился переврнутый отрезок
+			r += [a2 - a1]
+print(round(min(r)))"></div>
+<p>Идея такая: мы формируем нашу логическую функцию как функцию в python, перебираем значения из наших множеств и если так станется, что <code>f(x) == 1 for x in d</code> - это будет истинной всегда, тогда мы нашли наш отрезок А.</p>
+<p>Самая мутная строка здесь - это <code>d = [y for x in (17, 29, 58, 80) for y in (x, x - 0.1, x + 0.1)]</code>. Из плюсов - она шаблонная. Из минусов: непонятно, что она вообще делает.</p>
+<p>Эта строка для каждого граничного значения <code>x</code> из кортежа <code>(17, 29, 58, 80)</code> формирует по 3 значения <code>x, x - 0.1, x + 0.1</code> и записывает всех их в список <code>d</code>. Т.е., фактически, в <code>d</code> записаны значения <code>[17, 16.9, 17.1, 29, 28.9, 29.1, 58, 57.9, 58.1, 80, 79.9, 80.1]</code>. Теперь главный вопрос - зачем, а главное: зачем?</p>
+<p>Дело в том, что истинность выражения может меняться только при переходе через границы <code>P, Q, A</code>. Мы заранее знаем границы <code>P</code>и <code>Q</code>: <code>17, 29, 58, 80</code>. Поэтому мы тестируем: сами границы и точки чуть левее и чуть правее от границ, чтобы уловить различия между значениями функций.</p>
+<p>А потом мы в <code>a1</code> и <code>a2</code> будущего отрезка <code>A</code> тоже перебираем по множеству <code>d</code>. Таким образом, узнаем наилучший отрезок <code>A</code>, который делает формулу истинной. Как-то так.</p>
+<h5 id="второй-способ">Второй способ<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#второй-способ" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h5>
+<p>Простой и банальный перебор. <strong>ВАЖНО</strong>: этот код нужно проверить, я его мало проверял и в нем, на самом деле, есть нюансы.</p>
+<ul>
+<li>Нам не обязательно задавать всю длину отрезка от <code>-inf</code> до <code>inf</code>, достаточно просто большого с определенным шагом.</li>
+<li>Отрезки задаются также, как и до этого, в первом способе</li>
+<li>Функция переписывается из условия</li>
+<li>Отрезок <code>A</code> изначально будет равен 0, а <code>f != 1</code>, если просят наименьший и наоборот, если наибольший.</li>
+</ul>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="python" data-theme="github-light github-dark"><code data-language="python" data-theme="github-light github-dark" style="display:grid;"><span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="keyword">for</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> x </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="keyword">in</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation"> [k </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="operator">*</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value"> 0.25</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="keyword"> for</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> k </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="keyword">in</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="function"> range</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="function"> (</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="operator">-</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value">10000</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">, </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value">10000</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">)]</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">	A </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="operator">=</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value"> 0</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">	P </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="operator">=</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value"> 13</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="operator"> &lt;=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> x </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="operator">&lt;=</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value"> 27</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">	Q </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="operator">=</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value"> 24</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="operator"> &lt;=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> x </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="operator">&lt;=</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value"> 36</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">	f </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="operator">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> P </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="operator">&lt;=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation"> (Q </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="operator">and</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation"> A)</span></span>
+<span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="keyword">	if</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> f </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="operator">!=</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value"> 1</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">:</span></span>
+<span data-line><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="function">		print</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">(x)</span></span></code></pre></figure>
+<p>Такой код выводит вам числа от и до. Разница между максимальным и минимальным числом в терминале - это и есть ваш ответ.</p>
+<h5 id="авось-способ">Авось способ<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#авось-способ" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h5>
+<p>Есть еще вот такая идея:</p>
+<div class="python-checker" data-title="Авось способ" data-code="P = [10, 35]
+Q = [17, 48]
+
+start_A = min(P[0], Q[0])
+end_A = max(P[1], Q[1])
+length_A = end_A - start_A
+
+print(length_A)"></div>
+<p><strong>Этот код - полная туфта.</strong> Основывается он на том, что в большинстве заданий 4ого прототипа 15ого номера в результате логических преобразований получается функция <code>not(P) + not(Q) + A</code>. Естественно, надеяться на это можно, но не нужно,,,</p>
+<h5 id="иные-варианты">Иные варианты<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#иные-варианты" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h5>
+<p>Еще есть два вот таких варианта, я их оставлю без комментариев.</p>
+<div class="python-checker" data-title="Иные варианты" data-code="p = range(55, 80)  # задаём отрезки из условия
+q = range(20, 105)
+
+def f(x, a):  # создаём функцию от x и отрезка a
+    return (x in q) &lt;= (((x in p) == (x in q)) or ((x not in p) &lt;= (x in a)))  # переписываем выражение из условия
+
+ms = 10**20  # создаём переменную, в которую будем записывать минимальную длину отрезка a
+for start in range(150):  # перебираем различные границы отрезка a
+    for end in range(start, 150):
+        a = range(start, end)  # задаём отрезок a границами
+        if all(f(x, a) == 1 for x in range(150)):  # если для любого перебираемого х выражение будет истинно
+            ms = min(ms, len(a))  # то записываем в ms минимальное из длины отрезка a и уже записанного значения
+print(ms)  # выводим минимальную длину отрезка"></div>
+<div class="python-checker" data-title="Иные варианты" data-code="from itertools import combinations as c
+P, Q = range(25, 40), range(11, 32)
+li = [range(*x) for x in c((11, 25, 32, 40), 2)]
+mi = 1000
+for A in li:
+    if all((x in P) &lt;= (((x in Q) and (x in P)) &lt;= (x in A))\
+           for x in range(-3000, 3000)):
+        mi = min(mi, len(A))
+print(mi)"></div>
+<hr/>
+<blockquote class="callout danger" data-callout="danger">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>Вот дальше и начинается свинство </p></div>
+                  
+                </div>
+</blockquote>
+<h3 id="пример-13-большие-числа-и-способ-побыстрее">Пример 13) Большие числа и способ побыстрее<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#пример-13-большие-числа-и-способ-побыстрее" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><img src="../../_resours/pasted-image-20260301130902.png" alt width="auto" height="auto" decoding="async" loading="lazy"/></p>
+<p>В чем проблема? Вот в этом условии: <code>78125 != y + 4x</code>. Во-первых, в связи с ним надо перебирать А в диапазоне от 0 до 100_000 хотя бы. Во-вторых - х и у в диапазоне ну хотя бы 80_000. Т.е. это дает нам по итогу вот такой код:</p>
+<div class="python-checker" data-title="Пример 13 Большие числа и способ побыстрее" data-code="def f(x,y,A):
+	return ((78125 != y + 4*x) or (A > x) and (A > y))
+
+for A in range (1,100_000):
+    flag = True
+    for x in range (1,80_000):
+        for y in range (1,80_000):
+            if not(f(x,y,A)):
+                flag = False
+    if flag:
+        print(A)"></div>
+<p>Так вот, проблема в числе перебора: <code>100_000 * 80_000 * 80_000</code>. Это вот столько: <code>640 000 000 000 000</code>. Это типа много окда. Даже на домашних компах будет долго считать, а на школьных и подавно. Поэтому нам надо как-то упростить этот перебор, чтобы компику было полегче. Предлагаю сделать так:</p>
+<ol>
+<li>Что-то одно т.е. либо x либо y придется изначально (т.е. в первом цикле) перебирать много раз. Много - это столько, сколько говорит само условие <code>78125 != y + 4x</code>. Т.е. если речь о <code>y</code> - то 80_000 раз, а если <code>x</code> - то 20_000 раз, поскольку там у нас <code>4x</code> стоит.</li>
+<li>Исходя из этого, будем перебирать <code>х</code> 20_000 раз. Но тогда нужно перебирать конкретные значения <code>у</code>. Найти их просто - выразить из нашего условия. Т.е. <code>y = 78125 - 4*x</code> Однако в таком случае нам нужно поставить дополнительно условие, что <code>y > 0</code>, ведь там у нас вычитание происходит.</li>
+<li>И вот только тогда писать наши обычные <code>if not (f (x,y,A)):</code> и <code>flag = False</code></li>
+</ol>
+<p>Т.е., по итогу, все это выглядит так:</p>
+<div class="python-checker" data-title="Пример 13 Большие числа и способ побыстрее" data-code="def f(x, y, A):
+    return ((78125 != y + 4*x) or (A > x) and (A > y))
+
+for A in range(0, 100_000):
+    flag = True
+    for x in range (1, 20_000):
+        y = 78125 - 4*x
+        if y > 0:
+            if not (f (x,y,A)):
+                flag = False
+                break
+    if flag:
+        print(A)
+        exit()"></div>
+<p><strong>Ответ: 78122</strong></p>
+<h3 id="пример-14">Пример 14)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#пример-14" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><img src="../../_resours/pasted-image-20260828113651.png" alt width="1361" height="auto" decoding="async" loading="lazy"/></p>
+<p>Еще одно наглядное доказательство живодерства. Опять же, вот такой, шаблонный код будет работать очень долго:</p>
+<div class="python-checker" data-title="Пример 14" data-code="def f(x,y,A):
+	return ((x * y &lt; A) or (5 * x &lt; y) or (486 &lt;= x))
+
+for A in range (1,100_000):
+    flag = True
+    for x in range (1,100_000):
+        for y in range (1,100_000):
+            if not(f(x,y,A)):
+                flag = False
+    if flag:
+        print(A)"></div>
+<p>Это специально сделано. Здесь ответ больше <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8141em;"></span><span class="mord">1</span><span class="mord"><span class="mord">0</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">6</span></span></span></span></span></span></span></span></span></span></span>. А как тогда? Перебирать не все подряд, а выборочно. Т.е. аналогично предыдущему:</p>
+<div class="python-checker" data-title="Пример 14" data-code="def f(x, y, A):
+    return (x * y &lt; A) or (5 * x &lt; y) or (486 &lt;= x)
+
+
+for A in range(0, 2_000_000):
+    flag = True
+
+    for x in range(0, 486):
+        y = 5 * x
+
+        if not f(x, y, A):
+            flag = False
+            break
+
+    if flag:
+        print(A)
+        exit()"></div>
+<p>Этот выполняется уже меньше минуты (у меня на компьютере). Но можно еще быстрее, если немного пораскинуть мозгами по поводу условия.</p>
+<h4 id="еще-быстрее">Еще быстрее<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#еще-быстрее" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p>Итак, давайте подумаем когда у нас выражение выдает <code>False</code>. Это происходит при одновременном выполнении трех условий (поскольку там между скобками в функции стоит дизъюнкция т.е. <code>or</code>):</p>
+<p><strong>Для референса: оригинал</strong></p>
+<ul>
+<li><code>x * y &lt; A</code> - оригинальная первая скобка</li>
+<li><code>y > 5 * x</code> - оригинальная вторая скобка</li>
+<li><code>x >= 486</code> - оригинальная третья скобка</li>
+</ul>
+<p><strong>Развернутые условия</strong></p>
+<ul>
+<li><code>x * y >= A</code> - отрицается первая скобка</li>
+<li><code>y &lt;= 5 * x</code> - отрицается вторая скобка</li>
+<li><code>x &lt; 486</code> - отрицается третья скобка</li>
+</ul>
+<p>Причем последние 2 выражения вообще не зависят от <code>A</code>. Раз так, то если <code>x</code> и <code>y</code> такие, что последние 2 условия не выполняются, то чтобы выражение было <code>True</code> должно выполняться только первое условие т.е. <code>A</code> должно быть таким большим, чтобы превосходить произведение <code>x * y</code>.</p>
+<blockquote class="callout tip" data-callout="tip">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>Переформулирую </p></div>
+                  
+                </div>
+<div class="callout-content">
+<p>Таким образом, мы можем переформулировать задачу: нужно найти максимальное значение <code>x * y</code> при условиях <code>y &lt;= 5 * x</code> и <code>x &lt; 486</code></p>
+</div>
+</blockquote>
+<p>Так как <code>x</code> и <code>y</code> неотрицательные, максимум будет при максимально возможном <code>x</code> и максимально возможном <code>y</code>. Максимальное <code>x = 485</code>, а максимальное <code>y = 5 * x = 5 * 485 = 2425</code>. Т.е. максимальное значение <code>x * y = 485 * 2425 = 1176125</code>. Однако, у нас <code>A > x * y</code>. Значит надо взять на единицу больше т.е. <strong>ответ здесь <code>1176126</code>.</strong></p>
+<p>Соответственно, код:</p>
+<div class="python-checker" data-title="Еще быстрее" data-code="mx = 0
+for x in range(486):
+    y = 5 * x
+    mx = max(mx, x * y)
+print(mx + 1)"></div>
+<p>Аналогичные рассуждения можно привести с примером 13. Там у нас была вот такая задача:</p>
+<p><img src="../../_resours/pasted-image-20260301130902.png" alt width="auto" height="auto" decoding="async" loading="lazy"/></p>
+<p>Здесь у нас выражение <code>(78125 != y + 4x) or (A > x) and (A > y)</code> может стать ложным тогда, когда первая скобка ложна т.е. <code>78125 == y + 4x</code>.</p>
+<blockquote class="callout note" data-callout="note">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>Кста </p></div>
+                  
+                </div>
+<div class="callout-content">
+<p>Если что, то в питоне выражение выше читается как <code>(78125 != y + 4*x) or ((A > x) and (A > y))</code>, поскольку <code>and</code> имеет приоритет выполнения выше чем <code>or</code>.</p>
+</div>
+</blockquote>
+<p>Стало быть, мы должны проверить только значения <code>y = 78125 - 4x</code>. Для всех остальных пар первая часть уже истинна, и <code>A</code> вообще не важно. Если же пара такая, что <code>78125 == y + 4x</code>, то выражение спасается от ложности двумя скобками <code>A > x</code> и <code>A > y</code>. Значит, <code>A</code> должно быть больше и <code>x</code>, и <code>y</code> для всех таких пар. Поэтому мы ищем максимальное значение среди всех опасных <code>x</code> и <code>y</code>, а потом прибавляем 1.</p>
+<div class="python-checker" data-title="Еще быстрее" data-code="mx = 0
+
+for x in range(1, 20_000):
+    y = 78125 - 4 * x
+
+    if y > 0:
+        mx = max(mx, x, y)
+
+print(mx + 1)"></div>
+<h3 id="пример-15">Пример 15)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#пример-15" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><img src="../../_resours/pasted-image-20260828123028.png" alt width="auto" height="auto" decoding="async" loading="lazy"/></p>
+<div class="python-checker" data-title="Пример 15" data-code="def d(n, m):
+    return n % m == 0
+
+
+def f(x, A):
+    return d(x, 33) &lt;= ((not d(x, A)) &lt;= (not d(x, 242)))
+
+
+for A in range(1000, 0, -1):
+    flag = True
+
+    for x in range(1, 5000):
+        if not f(x, A):
+            flag = False
+            break
+
+    if flag:
+        print(A)
+        break"></div>
+<h3 id="пример-16">Пример 16)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#пример-16" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><img src="../../_resours/pasted-image-20260828123106.png" alt width="1448" height="auto" decoding="async" loading="lazy"/></p>
+<div class="python-checker" data-title="Пример 16" data-code="def f(x, y, A):
+    return (x + y &lt;= 27) or (y &lt;= x - 1) or (y >= A)
+
+
+for A in range(1000, -1, -1):
+    flag = True
+
+    for x in range(100):
+        for y in range(100):
+            if not f(x, y, A):
+                flag = False
+                break
+        if not flag:
+            break
+
+    if flag:
+        print(A)
+        break"></div>
+<h3 id="пример-17">Пример 17)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#пример-17" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><img src="../../_resours/pasted-image-20260828123214.png" alt width="auto" height="auto" decoding="async" loading="lazy"/></p>
+<div class="python-checker" data-title="Пример 17" data-code="def f(x, a1, a2):
+    B = 290 &lt;= x &lt;= 750
+    C = 135 &lt;= x &lt;= 675
+    A = a1 &lt;= x &lt;= a2
+
+    return ((not B) and C) &lt;= (((not A) and C) &lt;= B)
+
+
+d = []
+
+for x in (135, 290, 675, 750):
+    d += [x - 0.1, x, x + 0.1]
+
+ans = 10**10
+
+for a1 in d:
+    for a2 in d:
+        if a2 >= a1:
+            if all(f(x, a1, a2) for x in d):
+                ans = min(ans, a2 - a1)
+
+print(round(ans))"></div>
+<p>Ну, или руками конкретно этот прототип тоже можно.</p>
+<h3 id="пример-18">Пример 18)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#пример-18" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><img src="../../_resours/pasted-image-20260828123239.png" alt width="1448" height="auto" decoding="async" loading="lazy"/></p>
+<div class="python-checker" data-title="Пример 18" data-code="def f(x, y, A):
+    return (x > A) or (y > A) or (x + 2 * y &lt; 80)
+
+
+for A in range(1000, -1, -1):
+    flag = True
+
+    for x in range(100):
+        for y in range(100):
+            if not f(x, y, A):
+                flag = False
+                break
+        if not flag:
+            break
+
+    if flag:
+        print(A)
+        break"></div></div></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><aside class="study-player" data-study-player="true"><div class="study-player-compact"><div class="study-player-heading"><div class="study-player-signal" aria-hidden="true"><span></span><span></span><span></span></div><span class="study-player-label">STUDY PLAYER</span><button type="button" class="study-player-expand" data-player-action="expand" aria-label="Expand player" aria-haspopup="dialog" aria-expanded="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 4H4v4M16 4h4v4M20 16v4h-4M4 16v4h4"></path></svg></button></div><div class="study-player-trackline"><strong data-player-title="true">Rain-2</strong><span data-player-subtitle="true">Ambient sound</span></div><div class="study-player-compact-row"><div class="study-player-transport"><button type="button" class="study-player-control" data-player-action="previous" aria-label="Previous track"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.5 5.5v13M18 6.75 9.5 12l8.5 5.25z"></path></svg></button><button type="button" class="study-player-play" data-player-action="toggle" aria-label="Play"><svg class="study-player-icon-play" viewBox="0 0 24 24" aria-hidden="true"><path d="m8 5.75 10 6.25-10 6.25z"></path></svg><svg class="study-player-icon-pause" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 6.5h3v11H8zM13 6.5h3v11h-3z"></path></svg></button><button type="button" class="study-player-control" data-player-action="next" aria-label="Next track"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.5 5.5v13M6 6.75 14.5 12 6 17.25z"></path></svg></button></div><div class="study-player-progress-compact" data-player-progress="true" role="progressbar" aria-label="Track progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><span></span></div></div></div><section class="study-player-popover" data-player-popover="true" popover="manual" role="dialog" aria-modal="false" aria-labelledby="study-player-dialog-title" hidden><header class="study-player-popover-header"><div><span class="study-player-label">STUDY PLAYER</span><h2 id="study-player-dialog-title">Focus audio</h2></div><button type="button" class="study-player-close" data-player-action="close" aria-label="Close player"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"></path></svg></button></header><div class="study-player-now"><span>NOW PLAYING</span><strong data-player-title="true">Rain-2</strong><small data-player-subtitle="true">Ambient sound</small></div><div class="study-player-main-controls"><div class="study-player-transport expanded"><button type="button" class="study-player-control" data-player-action="previous" aria-label="Previous track"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.5 5.5v13M18 6.75 9.5 12l8.5 5.25z"></path></svg></button><button type="button" class="study-player-play" data-player-action="toggle" aria-label="Play"><svg class="study-player-icon-play" viewBox="0 0 24 24" aria-hidden="true"><path d="m8 5.75 10 6.25-10 6.25z"></path></svg><svg class="study-player-icon-pause" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 6.5h3v11H8zM13 6.5h3v11h-3z"></path></svg></button><button type="button" class="study-player-control" data-player-action="next" aria-label="Next track"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.5 5.5v13M6 6.75 14.5 12 6 17.25z"></path></svg></button></div><button type="button" class="study-player-repeat" data-player-action="repeat" aria-label="Repeat track" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m17 3 3 3-3 3M4 11V9a3 3 0 0 1 3-3h13M7 21l-3-3 3-3m13-2v2a3 3 0 0 1-3 3H4"></path><path d="M12 9.5v5M10.5 11l1.5-1.5 1.5 1.5"></path></svg><span>Repeat</span></button></div><div class="study-player-timeline"><input type="range" min="0" max="1" step="0.1" value="0" data-player-seek="true" aria-label="Seek" disabled/><div class="study-player-time"><span data-player-elapsed="true">00:00</span><span data-player-duration="true">--:--</span></div></div><div class="study-player-queue-wrap"><span class="study-player-section-label">QUEUE</span><ol class="study-player-queue"><li><button type="button" data-player-track="rain-2" aria-label="Select Rain-2" aria-current="true"><span class="study-player-queue-index">01</span><span class="study-player-queue-copy"><strong>Rain-2</strong><small>Ambient sound</small></span><span class="study-player-queue-source">LOCAL</span></button></li><li><button type="button" data-player-track="cyberpunk" aria-label="Select Cyberpunk"><span class="study-player-queue-index">02</span><span class="study-player-queue-copy"><strong>Cyberpunk</strong><small>Study ambience</small></span><span class="study-player-queue-source">LOCAL</span></button></li><li><button type="button" data-player-track="quite-stars" aria-label="Select Quite-Stars"><span class="study-player-queue-index">03</span><span class="study-player-queue-copy"><strong>Quite-Stars</strong><small>Study ambience</small></span><span class="study-player-queue-source">LOCAL</span></button></li></ol></div><label class="study-player-volume"><span>Volume</span><input type="range" min="0" max="1" step="0.01" value="0.72" data-player-volume="true" aria-label="Volume"/><output data-player-volume-value="true">72%</output></label><p class="study-player-status" data-player-status="true" aria-live="polite"></p></section></aside><aside class="note-cheatsheet" aria-labelledby="note-cheatsheet-title"><h3 id="note-cheatsheet-title">Шпора</h3><p>Здесь скоро появится короткая шпора по этой заметке.</p></aside><div class="toc"><button type="button" class="toc-header" aria-controls="toc-6" aria-expanded="true"><h3>Оглавление</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-0" class="toc-content overflow"><li class="depth-0"><a href="#15-флажки" data-for="15-флажки">№15 Флажки</a></li><li class="depth-1"><a href="#разборы" data-for="разборы">Разборы</a></li><li class="depth-2"><a href="#пример-1" data-for="пример-1">Пример 1)</a></li><li class="depth-2"><a href="#пример-2" data-for="пример-2">Пример 2)</a></li><li class="depth-2"><a href="#пример-3" data-for="пример-3">Пример 3)</a></li><li class="depth-2"><a href="#пример-4" data-for="пример-4">Пример 4)</a></li><li class="depth-2"><a href="#пример-5" data-for="пример-5">Пример 5)</a></li><li class="depth-2"><a href="#пример-6" data-for="пример-6">Пример 6)</a></li><li class="depth-2"><a href="#пример-7" data-for="пример-7">Пример 7)</a></li><li class="depth-2"><a href="#пример-8" data-for="пример-8">Пример 8)</a></li><li class="depth-2"><a href="#пример-9" data-for="пример-9">Пример 9)</a></li><li class="depth-2"><a href="#пример-10" data-for="пример-10">Пример 10)</a></li><li class="depth-2"><a href="#пример-11" data-for="пример-11">Пример 11)</a></li><li class="depth-2"><a href="#пример-12" data-for="пример-12">Пример 12)</a></li><li class="depth-2"><a href="#решение-4ого-прототипа-кодом" data-for="решение-4ого-прототипа-кодом">Решение 4ого прототипа кодом</a></li><li class="depth-2"><a href="#пример-13-большие-числа-и-способ-побыстрее" data-for="пример-13-большие-числа-и-способ-побыстрее">Пример 13) Большие числа и способ побыстрее</a></li><li class="depth-2"><a href="#пример-14" data-for="пример-14">Пример 14)</a></li><li class="depth-2"><a href="#пример-15" data-for="пример-15">Пример 15)</a></li><li class="depth-2"><a href="#пример-16" data-for="пример-16">Пример 16)</a></li><li class="depth-2"><a href="#пример-17" data-for="пример-17">Пример 17)</a></li><li class="depth-2"><a href="#пример-18" data-for="пример-18">Пример 18)</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Создано с помощью <a href="https://quartz.jzhao.xyz/">Quartz v5.0.0</a> © 2026</p><ul><li><a href="https://t.me/Skifcha">Telegram</a></li></ul></footer></div></div></body><script src="../../static/resource-after-e13fffa1.js" type="application/javascript" data-persist="true"></script><script src="../../static/resource-after-8b336f9a.js" type="application/javascript" data-persist="true"></script><script src="../../static/resource-after-baba652b.js" type="application/javascript" data-persist="true"></script><script src="../../static/resource-after-5eb75950.js" type="module" data-persist="true"></script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript" data-persist="true"></script><script src="../../postscript-911c8fe1.js" type="module" data-persist="true"></script></html>

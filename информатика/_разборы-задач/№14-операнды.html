@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr"><head><title>№14 Операнды</title><meta charset="utf-8"/><link rel="preload" href="../../index-30a4b807.css" as="style"/><link rel="preload" href="../../prescript-2083b193.js" as="script"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libertinus Serif:wght@400;700&amp;family=Libertinus Serif:ital,wght@0,400;0,600;1,400;1,600&amp;family=JetBrains Mono:wght@400;600&amp;display=swap"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libertinus Serif:wght@400;700&amp;text=Hopes%20and%20Dreams&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="Hopes and Dreams"/><meta property="og:title" content="№14 Операнды"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="№14 Операнды"/><meta name="twitter:description" content="№14 Операнды Перед разбором: минимальный Питон. Это задание представляет из себя работу с числами и системами счисления."/><meta property="og:description" content="№14 Операнды Перед разбором: минимальный Питон. Это задание представляет из себя работу с числами и системами счисления."/><meta property="og:image:alt" content="№14 Операнды Перед разбором: минимальный Питон. Это задание представляет из себя работу с числами и системами счисления."/><meta property="twitter:domain" content="mifikcha.github.io"/><meta property="og:url" content="https://mifikcha.github.io/информатика/_разборы-задач/№14-операнды"/><meta property="twitter:url" content="https://mifikcha.github.io/информатика/_разборы-задач/№14-операнды"/><link rel="icon" href="../../static/icon.png"/><meta name="description" content="№14 Операнды Перед разбором: минимальный Питон. Это задание представляет из себя работу с числами и системами счисления."/><meta name="generator" content="Quartz"/><link href="../../index-30a4b807.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../component-735924e0.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../component-589c1cea.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../component-bbc3f7c0.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../component-e427079e.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../component-34bdfded.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../component-53b25b2b.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../component-c93c6a44.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../component-8a06014f.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../component-1ea6ad18.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../component-7989faaa.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../component-788c9ca3.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../component-4abc06bd.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../component-274a3dfe.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../component-94cb6c84.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../component-58d5ff56.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../component-4f0286a0.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../component-7262b5a7.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../static/resource-style-11d41004.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../static/resource-style-fe38486b.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../static/resource-style-a5c806d2.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../static/resource-style-6bd36952.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../static/resource-style-6bc9bf1e.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../static/resource-style-7945cb86.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" data-persist="true"/><script src="../../prescript-2083b193.js" type="application/javascript" data-persist="true"></script><script type="application/javascript" data-persist="true">const fetchData = fetch("../../static/contentIndex.json").then(data => data.json())</script><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libertinus%20Serif%3Aital%2Cwght%400%2C400%3B0%2C600%3B0%2C700%3B1%2C400%3B1%2C600%3B1%2C700&amp;family=JetBrains%20Mono%3Awght%40400%3B600&amp;display=swap"/><meta property="og:image:width" content="1200"/><meta property="og:image:height" content="630"/><meta property="og:image" content="https://mifikcha.github.io/информатика/_разборы-задач/№14-операнды-og-image.webp"/><meta property="og:image:url" content="https://mifikcha.github.io/информатика/_разборы-задач/№14-операнды-og-image.webp"/><meta name="twitter:image" content="https://mifikcha.github.io/информатика/_разборы-задач/№14-операнды-og-image.webp"/><meta property="og:image:type" content="image/webp"/><style data-hopes-layout-fix="true">
+@media (min-width: 1200px) {
+  html body[data-slug] #quartz-root.page:not([data-frame="canvas"]):not([data-frame="excalidraw"]) {
+    width: 100vw !important;
+    max-width: none !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    transform: none !important;
+  }
+
+  html body[data-slug] #quartz-root.page > #quartz-body {
+    width: 100vw !important;
+    max-width: none !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    grid-template-columns: 320px minmax(0, 1fr) 320px !important;
+    column-gap: 0.5rem !important;
+  }
+
+  html body[data-slug] #quartz-root.page > #quartz-body > .left.sidebar {
+    margin-left: 0 !important;
+    transform: none !important;
+  }
+}
+
+html body[data-slug] #quartz-root.page[data-frame="excalidraw"] {
+  position: fixed !important;
+  inset: 0 !important;
+  width: 100vw !important;
+  max-width: none !important;
+  height: 100dvh !important;
+  min-height: 100dvh !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+  background: var(--excalidraw-bg, var(--light)) !important;
+}
+
+html body[data-slug] #quartz-root.page[data-frame="coding-lesson"] {
+  width: 100vw !important;
+  max-width: none !important;
+  min-height: 100dvh !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+html body[data-slug] #quartz-root.page[data-frame="coding-lesson"] > #quartz-body {
+  display: block !important;
+  width: 100% !important;
+  max-width: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+html body[data-slug] #quartz-root.page[data-frame="excalidraw"] > #quartz-body {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) !important;
+  grid-template-rows: minmax(0, 1fr) !important;
+  grid-template-areas: "grid-center" !important;
+  width: 100vw !important;
+  height: 100dvh !important;
+  min-height: 100dvh !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+}
+
+html body[data-slug] #quartz-root.page[data-frame="excalidraw"] .center.excalidraw-frame,
+html body[data-slug] #quartz-root.page[data-frame="excalidraw"] .excalidraw-stage,
+html body[data-slug] #quartz-root.page[data-frame="excalidraw"] .excalidraw-page,
+html body[data-slug] #quartz-root.page[data-frame="excalidraw"] .excalidraw-container {
+  box-sizing: border-box !important;
+  width: 100vw !important;
+  max-width: none !important;
+  height: 100dvh !important;
+  min-height: 100dvh !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+}
+
+html body[data-slug] #quartz-root.page[data-frame="excalidraw"] .excalidraw-container {
+  background-color: var(--excalidraw-bg, #121212) !important;
+}
+
+html body[data-slug] #quartz-root.page[data-frame="excalidraw"] .excalidraw-container svg {
+  width: 100vw !important;
+  height: 100dvh !important;
+  max-width: none !important;
+  max-height: none !important;
+}
+
+html body[data-slug] #quartz-root.page[data-frame="excalidraw"] .excalidraw-controls {
+  right: 1rem !important;
+  bottom: 1rem !important;
+}
+
+html {
+  --scrollbar-bg: var(--site-scrollbar-track) !important;
+  --scrollbar-thumb-bg: var(--site-scrollbar-thumb) !important;
+  --scrollbar-active-thumb-bg: var(--site-scrollbar-thumb-hover) !important;
+  --scrollbar-width: var(--site-scrollbar-size) !important;
+  --scrollbar-height: var(--site-scrollbar-size) !important;
+  --scrollbar-border-width: 2px !important;
+  --scrollbar-radius: var(--site-scrollbar-radius) !important;
+  scrollbar-color: var(--site-scrollbar-thumb) var(--site-scrollbar-track) !important;
+  scrollbar-width: thin !important;
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar,
+*::-webkit-scrollbar {
+  width: var(--site-scrollbar-size) !important;
+  height: var(--site-scrollbar-size) !important;
+}
+
+html::-webkit-scrollbar-track,
+body::-webkit-scrollbar-track,
+*::-webkit-scrollbar-track {
+  border-radius: var(--site-scrollbar-radius) !important;
+  background: var(--site-scrollbar-track) !important;
+  background-color: var(--site-scrollbar-track) !important;
+}
+
+html::-webkit-scrollbar-thumb,
+body::-webkit-scrollbar-thumb,
+*::-webkit-scrollbar-thumb {
+  min-width: 2.5rem !important;
+  min-height: 2.5rem !important;
+  border: 2px solid var(--site-scrollbar-track) !important;
+  border-radius: var(--site-scrollbar-radius) !important;
+  background: var(--site-scrollbar-thumb) !important;
+  background-color: var(--site-scrollbar-thumb) !important;
+}
+
+html::-webkit-scrollbar-thumb:hover,
+body::-webkit-scrollbar-thumb:hover,
+*::-webkit-scrollbar-thumb:hover {
+  background: var(--site-scrollbar-thumb-hover) !important;
+  background-color: var(--site-scrollbar-thumb-hover) !important;
+}
+
+html::-webkit-scrollbar-thumb:active,
+body::-webkit-scrollbar-thumb:active,
+*::-webkit-scrollbar-thumb:active {
+  background: var(--site-scrollbar-thumb-active) !important;
+  background-color: var(--site-scrollbar-thumb-active) !important;
+}
+
+html::-webkit-scrollbar-corner,
+body::-webkit-scrollbar-corner,
+*::-webkit-scrollbar-corner {
+  background: var(--site-scrollbar-track) !important;
+  background-color: var(--site-scrollbar-track) !important;
+}
+
+.python-checker {
+  --scrollbar-bg: var(--python-scrollbar-track) !important;
+  --scrollbar-thumb-bg: var(--python-scrollbar-thumb) !important;
+  --scrollbar-active-thumb-bg: var(--python-scrollbar-thumb-hover) !important;
+}
+
+.python-checker-editor,
+.python-checker-output {
+  scrollbar-color: var(--python-scrollbar-thumb) var(--python-scrollbar-track) !important;
+}
+
+.python-checker-editor::-webkit-scrollbar-track,
+.python-checker-output::-webkit-scrollbar-track {
+  background: var(--python-scrollbar-track) !important;
+  background-color: var(--python-scrollbar-track) !important;
+}
+
+.python-checker-editor::-webkit-scrollbar-thumb,
+.python-checker-output::-webkit-scrollbar-thumb {
+  border-color: var(--python-scrollbar-track) !important;
+  background: var(--python-scrollbar-thumb) !important;
+  background-color: var(--python-scrollbar-thumb) !important;
+}
+
+.python-checker-editor::-webkit-scrollbar-thumb:hover,
+.python-checker-output::-webkit-scrollbar-thumb:hover {
+  background: var(--python-scrollbar-thumb-hover) !important;
+  background-color: var(--python-scrollbar-thumb-hover) !important;
+}
+
+.katex,
+.katex .katex-html,
+html body[data-slug] .katex-display > .katex,
+html body[data-slug] .katex-display > .katex > .katex-html,
+.katex .mrel,
+.katex .mrel .mord,
+.katex .mrel .inner {
+  font-family: KaTeX_Main, "Times New Roman", serif !important;
+}
+
+.katex {
+  overflow-wrap: normal !important;
+  text-wrap: nowrap !important;
+  word-break: normal !important;
+}
+
+html body[data-slug] .katex-display {
+  display: block !important;
+  overflow-x: auto !important;
+  overflow-y: hidden !important;
+  padding-block: 0.55em !important;
+  scrollbar-width: none !important;
+  -ms-overflow-style: none !important;
+}
+
+html body[data-slug] .katex-display::-webkit-scrollbar {
+  width: 0 !important;
+  height: 0 !important;
+}
+
+html body[data-slug] .search > .search-container.active {
+  background: rgba(250, 246, 215, 0.48) !important;
+  -webkit-backdrop-filter: blur(10px) saturate(1.05) !important;
+  backdrop-filter: blur(10px) saturate(1.05) !important;
+}
+
+html[saved-theme="dark"] body[data-slug] .search > .search-container.active {
+  background: rgba(17, 19, 32, 0.52) !important;
+}
+
+html body[data-slug] .search > .search-container.active > .search-space > input,
+html body[data-slug] .search > .search-container.active > .search-space > .search-layout,
+html body[data-slug] .search > .search-container.active > .search-space > .tag-suggestions {
+  background:
+    linear-gradient(
+      135deg,
+      color-mix(in srgb, var(--site-panel-glass) 82%, var(--secondary)),
+      color-mix(in srgb, var(--light) 68%, transparent) 135%
+    ),
+    color-mix(in srgb, var(--light) 74%, transparent) !important;
+}
+
+html body[data-slug] .callout.is-collapsed > .callout-content {
+  display: none !important;
+}
+
+@supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+  html body[data-slug] .search > .search-container.active {
+    background: rgba(250, 246, 215, 0.68) !important;
+  }
+
+  html[saved-theme="dark"] body[data-slug] .search > .search-container.active {
+    background: rgba(17, 19, 32, 0.72) !important;
+  }
+}
+</style></head><body data-slug="информатика/_разборы-задач/№14-операнды" data-basepath><div id="quartz-root" class="page" data-frame="default"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="/">Hopes and Dreams</a></h2><div class="mobile-only"><div class="spacer"></div></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 0.5rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button" aria-label="Поиск" aria-expanded="false"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>Поиск</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="Найти что-нибудь" placeholder="Найти что-нибудь"/><div class="search-layout" data-preview="true" data-field-priority="[&quot;title&quot;,&quot;content&quot;,&quot;tags&quot;]"></div></div></div></div></div></div><div class="explorer nav-files-container" data-behavior="collapse" data-collapsed="open" data-savestate="false" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a, b) => {\n  const isStudentStats = (node) =>\n    node.slugSegments?.length === 1 &amp;&amp;\n    (node.slugSegment === \&quot;статистика-учеников\&quot; || node.displayName === \&quot;Статистика учеников\&quot;)\n\n  if (a.isFolder &amp;&amp; b.isFolder) {\n    if (isStudentStats(a) &amp;&amp; !isStudentStats(b)) return 1\n    if (!isStudentStats(a) &amp;&amp; isStudentStats(b)) return -1\n  }\n\n  if ((!a.isFolder &amp;&amp; !b.isFolder) || (a.isFolder &amp;&amp; b.isFolder)) {\n    return (a.displayName || \&quot;\&quot;).localeCompare(b.displayName || \&quot;\&quot;, undefined, {\n      numeric: true,\n      sensitivity: \&quot;base\&quot;,\n    })\n  }\n\n  if (!a.isFolder &amp;&amp; b.isFolder) return 1\n  return -1\n}\n&quot;,&quot;filterFn&quot;:&quot;(node) => node.slugSegment !== \&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;(node) => {\n    return node;\n  }&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-8" aria-label="Проводник"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>Проводник</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-8" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#" class="nav-file-title tree-item-self"></a></li></template><template id="template-folder"><li><div class="folder-container nav-folder-title tree-item-self"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon nav-folder-collapse-indicator collapse-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content tree-item-children"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../информатика/">Информатика</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../информатика/_разборы-задач/">_Разборы задач</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>№14 Операнды</a></div></nav><h1 class="article-title">№14 Операнды</h1></div></div><article class="popover-hint"><div class="markdown-preview-view markdown-rendered"><h1 id="14-операнды">№14 Операнды<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#14-операнды" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<p>Перед разбором: <a href="../../информатика/истинный-фундамент/02-минимальный-python/02.1-первая-программа" class="internal internal-link alias" data-slug="информатика/истинный-фундамент/02-минимальный-python/02.1-первая-программа">минимальный Питон</a>.</p>
+<p>Это задание представляет из себя работу с числами и системами счисления. Начнем, как обычно, с простого.</p>
+<p>При БОЛЬШОМ желании можно сделать и ручками, но, пожалуйста, не надо,,,</p>
+<h2 id="разборы">Разборы<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#разборы" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="пример-1">Пример 1)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#пример-1" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><img src="../../_resours/pasted-image-20241031184954.png" alt width="auto" height="auto" decoding="async" loading="eager" fetchpriority="high"/></p>
+<p>Сначала зададим всю эту красоту:</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="python" data-theme="github-light github-dark"><code data-language="python" data-theme="github-light github-dark" style="display:grid;"><span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">n </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="operator">=</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value"> 2</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="operator">*</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value">729</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="operator">**</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value">2014</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="operator"> +</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value"> 2</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="operator">*</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value">81</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="operator">**</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value">2018</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="operator"> +</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value"> 2</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="operator">*</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value">27</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="operator">**</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value">2020</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="operator"> -</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value"> 2</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="operator">*</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value">9</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="operator">**</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value">2022</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="operator"> -</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value"> 2024</span></span></code></pre></figure>
+<p>К сожалению, нельзя просто посчитать методом count, ведь всю вот эту неприятную штуку надо перевести в 27-ричную систему счисления. Дело нехитрое, если помните как это делается. На всякий случай напомню:</p>
+<p>Чтобы перевести число из 10-чной в произвольную систему счисления нужно последовательно делить его на основание новой системы счисления. Ручками это делается в столбик как-то вот так:</p>
+<p><img src="../../_resours/pasted-image-20260828104556.png" alt width="auto" height="auto" decoding="async" loading="lazy"/></p>
+<p>А затем остатки записываются в обратном порядке. Т.е. в этом примере число 2457 в 7-ричной системе счисления будет представляться как 10110.</p>
+<p>Такой же принцип надо применить и в нашей программке.</p>
+<p>Т.е. мы должны последовательно делить наше n до тех пор пока оно не станет равно 0 на 27. Параллельно с этим можно делать две вещи:</p>
+<ol>
+<li>Простым if вносить в некую переменную +1 каждый раз, когда прокает условие</li>
+<li>Создавать список по мере выполнения цикла, а после чекнуть сколько там элементов, которые >9<br/>
+Первое выглядит проще для понимания, будем делать именно так.</li>
+</ol>
+<p>Собираем прогу:</p>
+<div class="python-checker" data-title="Пример 1" data-code="n = 2*729**2014 + 2*81**2018 + 2*27**2020 - 2*9**2022 - 2024
+count = 0 # По сути, count - это просто счетчик
+while n != 0:
+    if n % 27 > 9:
+        count += 1
+    n //= 27
+print(count)"></div>
+<p><strong>Ответ: 2019.</strong></p>
+<h3 id="пример-2">Пример 2)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#пример-2" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><img src="../../_resours/pasted-image-20241101003935.png" alt width="auto" height="auto" decoding="async" loading="lazy"/></p>
+<p>Выглядит страшно, но не стоит пугаться. По реализации этот едва ли страшнее, чем предыдущий, он страшнее по идеи.</p>
+<p>Итак, как же найти этот х? Простым перебором, разумеется. Т.е. мы будем прогонять все значения из возможных в системе счисления, в которой указаны числа, т.е. 15, подставлять их вместо х и смотреть делится ли получившееся на 14 без остатка. Ежели да, принтуем и ломаем цикл.</p>
+<p>Собсна все, описали основную идею, осталось реализовать прогу:</p>
+<div class="python-checker" data-title="Пример 2" data-code="for x in '0123456789abcde': # Все цифры 15-ричной системы
+    x1 = '123' + str(x) + '5' # Первое число (перый операнд)
+    x2 = '1' + str(x) + '233' # Второе число (второй операнд)
+    res = int(x1, 15) + int(x2, 15) # Их сумма
+    if res % 14 == 0: # Условие четности 14-ти
+        res //= 14
+        print(res)
+        break"></div>
+<p><strong>Ответ: 8767.</strong></p>
+<h3 id="пример-3">Пример 3)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#пример-3" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><img src="../../_resours/pasted-image-20241101005301.png" alt width="auto" height="auto" decoding="async" loading="lazy"/></p>
+<p>Решим все три по порядку.</p>
+<h4 id="пример-31">Пример 3.1)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#пример-31" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p>Покажу немного другой способ решения прототипа с х (первое из этих трех). Дело в том, что иногда цифры в различных системах счисления бывают довольно большими, например 19-ричная система. Это типа вот такие вот цифры:</p>
+<p><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">[</span><span class="mord">0</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">1</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">2</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">3</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">4</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">5</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">6</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">7</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">8</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">9</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal">A</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.0502em;">B</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.0715em;">C</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.0278em;">D</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.0576em;">E</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.1389em;">F</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal">G</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.0813em;">H</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.0785em;">I</span><span class="mclose">]</span></span></span></span></p>
+<p>Соответственно, чем больше система счисления, тем больше этих цифр и писать их бывает довольно запарно. Можно сократить себе путь импортом букв из библиотеки string:</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="python" data-theme="github-light github-dark"><code data-language="python" data-theme="github-light github-dark" style="display:grid;"><span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="keyword">from</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> string </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="keyword">import</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> ascii_lowercase </span><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D;" data-token-type="comment">#Буквально импортирует все буквы латинского алфавита нижнего регистра с a до z</span></span></code></pre></figure>
+<p>Только потом надо будет к этому всему набору прибавить еще и числа:</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="python" data-theme="github-light github-dark"><code data-language="python" data-theme="github-light github-dark" style="display:grid;"><span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">alp </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="operator">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;" data-token-type="string"> '0123456789'</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="operator"> +</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> ascii_lowercase</span></span></code></pre></figure>
+<p>Правда, в таком случае, питон будет ругаться на вас. Ему не понравится, что вы попытайтесь преобразовать неприятный для него символ через int. Это нормально. Программа все равно сработает как надо.</p>
+<p>Далее производим стандартные для этого задания действия: задаем числа, делаем их сумму через int, чекаем на if и если да, то принтуем:</p>
+<div class="python-checker" data-title="Пример 3.1" data-code="from string import ascii_lowercase
+alp = '0123456789' + ascii_lowercase
+for x in alp:
+    r = int('98897' + x + '21', 19) + int('2' + x + '923', 19)
+    if r % 18 == 0:
+        print(r // 18)"></div>
+<p>Первое выданное число программой будет являться ответом.</p>
+<p><strong>Ответ: 469034148.</strong></p>
+<h4 id="пример-32">Пример 3.2)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#пример-32" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p>Покажу два способа решить такое задание.</p>
+<div class="python-checker" data-title="Пример 3.2" data-code="def f(n,d): # Определяем функцию, куда будут кидаться результаты преобразования в 25-ричную систему
+    res = []
+    while n != 0: #Цикл преобразования
+        res.append(n % d)
+        n //= d
+    return res[::-1] # Не забываем вернуть в обратном порядке, хоть в этом задании это не так важно
+  
+n = 3*3125**8 + 2*625**7 - 4*625**6 + 3*125**5 - 2*25**4 - 2024
+print(f(n,25).count(0)) # Тупо считаем все нолики"></div>
+<p>Второй способ: без определения функции, простой счетчик.</p>
+<div class="python-checker" data-title="Пример 3.2" data-code="n = 3*3125**8 + 2*625**7 - 4*625**6 + 3*125**5 - 2*25**4 - 2024
+c = 0
+while n != 0:
+    if n % 25 == 0:
+        c +=1
+    n //= 25
+print(c)"></div>
+<h4 id="пример-33">Пример 3.3)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#пример-33" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p>Прикольное, необычное задание. Сделаем тупо. Поставим обычный счетчик мол когда прокает деление с остатком равно нулю счетчик докидывает единичку в себя и если таких единичек 71 (т.е. в числе 71 нуль), то запринтуем его. Единственный нюанс - мы, таким образом, запринтуем минимальное, а не максимальное. Это не проблема, цикл можно прогнать в обратном порядке.</p>
+<div class="python-checker" data-title="Пример 3.3" data-code="for x in range (2030, 1, -1): # Третий аргумент цикла специально выбран -1. Обычно он отвечает за шаг, по умолчанию равен 1, мы поставили -1, чтобы прогонялся в обратном порядке. Пределы, соответственно, тоже поенялись местами.
+    t = 7**170 + 7**100 - x # Само число из условия
+    c = 0 # Обнуляем счетчик для каждого нового числа
+    while t != 0: # Цикл перевода в 7-ную
+        if t % 7 == 0: # Если число кратно 7 без остатка, тогда в итоговой записи будет нолик т.е. мы должны повысить счетчик на 1
+            c += 1
+        t //= 7
+    if c == 71: # По условию, если 71 нулик, то принтуем
+        print(x)
+        exit() # Нам нужно первое вылетевшее, дальше цикл гнать бесполезно"></div>
+<p><strong>Ответ: 2029.</strong></p>
+<hr/>
+<h3 id="пример-4">Пример 4)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#пример-4" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><img src="../../_resours/pasted-image-20250205095811.png" alt width="auto" height="auto" decoding="async" loading="lazy"/></p>
+<p><strong>ЕГКР 2024</strong></p>
+<p>Аналогично предыдущим:</p>
+<blockquote class="callout note" data-callout="note">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>Пояснение </p></div>
+                  
+                </div>
+<div class="callout-content">
+<p>Обратный порядок нужен потому, что хотим найти “наибольшее значение х”. С конца проще идти еще и потому, что дальше стоит <code>break</code>.</p>
+</div>
+</blockquote>
+<div class="python-checker" data-title="Пример 4" data-code="for x in reversed('0123456789ABCDEFGHIJKLMNO'):  # Цифры 25-ричной системы в убывающем порядке
+    x1 = '11353' + str(x) + '12'  # Первое число (первый операнд)
+    x2 = '135' + str(x) + '21'  # Второе число (второй операнд)
+    res = int(x1, 25) + int(x2, 25)  # Их сумма
+    if res % 24 == 0:  # Условие кратности 24
+        res //= 24
+        print(res)
+        break  # Берем первое найденное максимальное x"></div>
+<p><strong>Ответ: 266249847</strong></p>
+<h3 id="пример-5">Пример 5)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#пример-5" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><img src="../../_resours/pasted-image-20260828103956.png" alt width="auto" height="auto" decoding="async" loading="lazy"/></p>
+<p>Тут у нас вот какая сложность: система счисления больше, чем число букв в английском алфавите (их там 26) + десятичные цифры (36 в сумме). Поэтому мы применим другой подход. Вообще не будем использовать ничего, что связано с алфавитом.</p>
+<div class="python-checker" data-title="Пример 5" data-code="for x in range(39):
+    t1 = 6*39**5 + 5*39**4 + 3*39**3 + x*39**2 + 7*39**1 + 1*39**0
+    t2 = 4*39**4 + 2*39**3 + x*39**2 + 3*39**1 + 7*39**0
+    t = t1 + t2
+    if t % 14 == 0:
+        print(t//14)
+        break"></div>
+<p>Вот эти строки:</p>
+<ul>
+<li><code>t1 = 6*39**5 + 5*39**4 + 3*39**3 + x*39**2 + 7*39**1 + 1*39**0</code></li>
+<li><code>t2 = 4*39**4 + 2*39**3 + x*39**2 + 3*39**1 + 7*39**0</code></li>
+</ul>
+<p>Это контекстные аналоги вот эти строк из предыдущих примеров:</p>
+<ul>
+<li><code>x1 = '123' + str(x) + '5'</code></li>
+<li><code>x2 = '1' + str(x) + '233'</code></li>
+</ul>
+<p>Только переводим мы числа в другую систему счисления “школьным” методом. Но мы все еще переводим число в другую систему счисления.</p>
+<p>В каком-то смысле это более универсальный вариант кода, который мы разбирали до этого. Здесь нет привязки к алфавиту вообще, следовательно, нет на 1 серьезную точку отказа меньше.</p>
+<blockquote class="callout tip" data-callout="tip">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>Совет </p></div>
+                  
+                </div>
+<div class="callout-content">
+<p>Можно брать себе такой метод как второй для решения подобных задач.</p>
+</div>
+</blockquote>
+<h4 id="решение-предыдущих-примеров-без-алфавита">Решение предыдущих примеров без алфавита<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#решение-предыдущих-примеров-без-алфавита" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p><a href="#%D0%BF%D1%80%D0%B8%D0%BC%D0%B5%D1%80-2" class="internal internal-link alias">Ссылка на пример 2</a></p>
+<div class="python-checker" data-title="Решение предыдущих примеров без алфавита" data-code="# №47218
+
+for x in range(15):
+    t1 = 1*15**4 + 2*15**3 + 3*15**2 + x*15 + 5
+    t2 = 1*15**4 + x*15**3 + 2*15**2 + 3*15 + 3
+    res = t1 + t2
+
+    if res % 14 == 0:
+        print(res // 14)
+        break"></div>
+<p><a href="#%D0%BF%D1%80%D0%B8%D0%BC%D0%B5%D1%80-4" class="internal internal-link alias">Ссылка на пример 4</a></p>
+<div class="python-checker" data-title="Решение предыдущих примеров без алфавита" data-code="# №19246
+
+for x in range(25):
+    t1 = 1*25**7 + 1*25**6 + 3*25**5 + 5*25**4 + 3*25**3 + x*25**2 + 1*25 + 2
+    t2 = 1*25**5 + 3*25**4 + 5*25**3 + x*25**2 + 2*25 + 1
+    res = t1 + t2
+
+    if res % 24 == 0:
+        print(res // 24)"></div>
+<p><a href="#%D0%BF%D1%80%D0%B8%D0%BC%D0%B5%D1%80-31" class="internal internal-link alias">Ссылка на пример 3.1</a></p>
+<blockquote class="callout note" data-callout="note">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>Пояснение </p></div>
+                  
+                </div>
+<div class="callout-content">
+<p>Обратный порядок нужен потому, что хотим найти “наибольшее значение х”. С конца проще идти еще и потому, что дальше стоит <code>break</code>.</p>
+</div>
+</blockquote>
+<div class="python-checker" data-title="Решение предыдущих примеров без алфавита" data-code="# №70541
+
+for x in range(18, -1, -1):
+    t1 = 9*19**7 + 8*19**6 + 8*19**5 + 9*19**4 + 7*19**3 + x*19**2 + 2*19 + 1
+    t2 = 2*19**4 + x*19**3 + 9*19**2 + 2*19 + 3
+    res = t1 + t2
+
+    if res % 18 == 0:
+        print(res // 18)
+        break"></div>
+<h3 id="пример-6">Пример 6)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#пример-6" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><img src="../../_resours/pasted-image-20260828110824.png" alt width="auto" height="auto" decoding="async" loading="lazy"/></p>
+<div class="python-checker" data-title="Пример 6" data-code="# №31360
+
+for x in range(21, -1, -1):
+    t1 = 2*22**7 + 7*22**6 + x*22**5 + 9*22**4 + 8*22**3 + 9*22**2 + 6*22 + 6
+    t2 = 2*22**4 + 6*22**3 + x*22**2 + 3*22 + 3
+    t3 = 5*22**4 + 2*22**3 + 2*22**2 + x*22 + 5
+
+    res = t1 + t2 + t3
+
+    if res % 21 == 0:
+        print(res // 21)
+        break"></div>
+<h3 id="пример-7">Пример 7)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#пример-7" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><img src="../../_resours/pasted-image-20260828110853.png" alt width="auto" height="auto" decoding="async" loading="lazy"/></p>
+<div class="python-checker" data-title="Пример 7" data-code="# №27626
+
+mn = 10**10
+
+for x in range(1, 2031):
+    n = 6**203 + 6**100 - x
+    c = 0
+
+    while n != 0:
+        if n % 6 == 0:
+            c += 1
+        n //= 6
+
+    mn = min(mn, c)
+
+print(mn)"></div>
+<h3 id="пример-8">Пример 8)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#пример-8" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><img src="../../_resours/pasted-image-20260828110945.png" alt width="auto" height="auto" decoding="async" loading="lazy"/></p>
+<div class="python-checker" data-title="Пример 8" data-code="# №29346
+
+n = 5 * 1296**2021 - 4 * 216**2022 + 3 * 36**2023 - 2 * 6**2024 - 2025
+c = 0
+
+while n != 0:
+    if n % 36 % 2 == 0:
+        c += 1
+    n //= 36
+
+print(c)"></div>
+<h3 id="пример-9">Пример 9)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#пример-9" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><img src="../../_resours/pasted-image-20260828111048.png" alt width="auto" height="auto" decoding="async" loading="lazy"/></p>
+<div class="python-checker" data-title="Пример 9" data-code="# №28760
+
+n = 2 * 2187**567 + 729**566 - 2 * 243**565 + 81**564 - 2 * 27**563 - 6561
+c = 0
+
+while n != 0:
+    if n % 27 > 9 and n % 27 % 2 == 0:
+        c += 1
+    n //= 27
+
+print(c)"></div></div></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><aside class="study-player" data-study-player="true"><div class="study-player-compact"><div class="study-player-heading"><div class="study-player-signal" aria-hidden="true"><span></span><span></span><span></span></div><span class="study-player-label">STUDY PLAYER</span><button type="button" class="study-player-expand" data-player-action="expand" aria-label="Expand player" aria-haspopup="dialog" aria-expanded="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 4H4v4M16 4h4v4M20 16v4h-4M4 16v4h4"></path></svg></button></div><div class="study-player-trackline"><strong data-player-title="true">Rain-2</strong><span data-player-subtitle="true">Ambient sound</span></div><div class="study-player-compact-row"><div class="study-player-transport"><button type="button" class="study-player-control" data-player-action="previous" aria-label="Previous track"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.5 5.5v13M18 6.75 9.5 12l8.5 5.25z"></path></svg></button><button type="button" class="study-player-play" data-player-action="toggle" aria-label="Play"><svg class="study-player-icon-play" viewBox="0 0 24 24" aria-hidden="true"><path d="m8 5.75 10 6.25-10 6.25z"></path></svg><svg class="study-player-icon-pause" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 6.5h3v11H8zM13 6.5h3v11h-3z"></path></svg></button><button type="button" class="study-player-control" data-player-action="next" aria-label="Next track"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.5 5.5v13M6 6.75 14.5 12 6 17.25z"></path></svg></button></div><div class="study-player-progress-compact" data-player-progress="true" role="progressbar" aria-label="Track progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><span></span></div></div></div><section class="study-player-popover" data-player-popover="true" popover="manual" role="dialog" aria-modal="false" aria-labelledby="study-player-dialog-title" hidden><header class="study-player-popover-header"><div><span class="study-player-label">STUDY PLAYER</span><h2 id="study-player-dialog-title">Focus audio</h2></div><button type="button" class="study-player-close" data-player-action="close" aria-label="Close player"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"></path></svg></button></header><div class="study-player-now"><span>NOW PLAYING</span><strong data-player-title="true">Rain-2</strong><small data-player-subtitle="true">Ambient sound</small></div><div class="study-player-main-controls"><div class="study-player-transport expanded"><button type="button" class="study-player-control" data-player-action="previous" aria-label="Previous track"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.5 5.5v13M18 6.75 9.5 12l8.5 5.25z"></path></svg></button><button type="button" class="study-player-play" data-player-action="toggle" aria-label="Play"><svg class="study-player-icon-play" viewBox="0 0 24 24" aria-hidden="true"><path d="m8 5.75 10 6.25-10 6.25z"></path></svg><svg class="study-player-icon-pause" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 6.5h3v11H8zM13 6.5h3v11h-3z"></path></svg></button><button type="button" class="study-player-control" data-player-action="next" aria-label="Next track"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.5 5.5v13M6 6.75 14.5 12 6 17.25z"></path></svg></button></div><button type="button" class="study-player-repeat" data-player-action="repeat" aria-label="Repeat track" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m17 3 3 3-3 3M4 11V9a3 3 0 0 1 3-3h13M7 21l-3-3 3-3m13-2v2a3 3 0 0 1-3 3H4"></path><path d="M12 9.5v5M10.5 11l1.5-1.5 1.5 1.5"></path></svg><span>Repeat</span></button></div><div class="study-player-timeline"><input type="range" min="0" max="1" step="0.1" value="0" data-player-seek="true" aria-label="Seek" disabled/><div class="study-player-time"><span data-player-elapsed="true">00:00</span><span data-player-duration="true">--:--</span></div></div><div class="study-player-queue-wrap"><span class="study-player-section-label">QUEUE</span><ol class="study-player-queue"><li><button type="button" data-player-track="rain-2" aria-label="Select Rain-2" aria-current="true"><span class="study-player-queue-index">01</span><span class="study-player-queue-copy"><strong>Rain-2</strong><small>Ambient sound</small></span><span class="study-player-queue-source">LOCAL</span></button></li><li><button type="button" data-player-track="cyberpunk" aria-label="Select Cyberpunk"><span class="study-player-queue-index">02</span><span class="study-player-queue-copy"><strong>Cyberpunk</strong><small>Study ambience</small></span><span class="study-player-queue-source">LOCAL</span></button></li><li><button type="button" data-player-track="quite-stars" aria-label="Select Quite-Stars"><span class="study-player-queue-index">03</span><span class="study-player-queue-copy"><strong>Quite-Stars</strong><small>Study ambience</small></span><span class="study-player-queue-source">LOCAL</span></button></li></ol></div><label class="study-player-volume"><span>Volume</span><input type="range" min="0" max="1" step="0.01" value="0.72" data-player-volume="true" aria-label="Volume"/><output data-player-volume-value="true">72%</output></label><p class="study-player-status" data-player-status="true" aria-live="polite"></p></section></aside><aside class="note-cheatsheet" aria-labelledby="note-cheatsheet-title"><h3 id="note-cheatsheet-title">Шпора</h3><p>Здесь скоро появится короткая шпора по этой заметке.</p></aside><div class="toc"><button type="button" class="toc-header" aria-controls="toc-5" aria-expanded="true"><h3>Оглавление</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-0" class="toc-content overflow"><li class="depth-0"><a href="#14-операнды" data-for="14-операнды">№14 Операнды</a></li><li class="depth-1"><a href="#разборы" data-for="разборы">Разборы</a></li><li class="depth-2"><a href="#пример-1" data-for="пример-1">Пример 1)</a></li><li class="depth-2"><a href="#пример-2" data-for="пример-2">Пример 2)</a></li><li class="depth-2"><a href="#пример-3" data-for="пример-3">Пример 3)</a></li><li class="depth-2"><a href="#пример-4" data-for="пример-4">Пример 4)</a></li><li class="depth-2"><a href="#пример-5" data-for="пример-5">Пример 5)</a></li><li class="depth-2"><a href="#пример-6" data-for="пример-6">Пример 6)</a></li><li class="depth-2"><a href="#пример-7" data-for="пример-7">Пример 7)</a></li><li class="depth-2"><a href="#пример-8" data-for="пример-8">Пример 8)</a></li><li class="depth-2"><a href="#пример-9" data-for="пример-9">Пример 9)</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Создано с помощью <a href="https://quartz.jzhao.xyz/">Quartz v5.0.0</a> © 2026</p><ul><li><a href="https://t.me/Skifcha">Telegram</a></li></ul></footer></div></div></body><script src="../../static/resource-after-e13fffa1.js" type="application/javascript" data-persist="true"></script><script src="../../static/resource-after-8b336f9a.js" type="application/javascript" data-persist="true"></script><script src="../../static/resource-after-baba652b.js" type="application/javascript" data-persist="true"></script><script src="../../static/resource-after-5eb75950.js" type="module" data-persist="true"></script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript" data-persist="true"></script><script src="../../postscript-911c8fe1.js" type="module" data-persist="true"></script></html>

@@ -1,0 +1,9 @@
+origin: created-for-hnd
+purpose: "Показать хаотическое движение крупной частицы из-за ударов молекул среды"
+author: "Hopes and Dreams"
+source_url: null
+license: "HnD original"
+adaptations:
+  - "Анимация выполняется локально на Canvas без GeoGebra и внешних библиотек"
+  - "Относительная температура T управляет скоростью хаотического движения"
+  - "SVG-постер используется как резервное отображение без JavaScript"

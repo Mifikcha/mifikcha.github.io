@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr"><head><title>№1 Граф</title><meta charset="utf-8"/><link rel="preload" href="../../index-30a4b807.css" as="style"/><link rel="preload" href="../../prescript-2083b193.js" as="script"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libertinus Serif:wght@400;700&amp;family=Libertinus Serif:ital,wght@0,400;0,600;1,400;1,600&amp;family=JetBrains Mono:wght@400;600&amp;display=swap"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libertinus Serif:wght@400;700&amp;text=Hopes%20and%20Dreams&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="Hopes and Dreams"/><meta property="og:title" content="№1 Граф"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="№1 Граф"/><meta name="twitter:description" content="Задание представляет из себя анализ таблицы с графом. Т.е."/><meta property="og:description" content="Задание представляет из себя анализ таблицы с графом. Т.е."/><meta property="og:image:alt" content="Задание представляет из себя анализ таблицы с графом. Т.е."/><meta property="twitter:domain" content="mifikcha.github.io"/><meta property="og:url" content="https://mifikcha.github.io/информатика/_разборы-задач/№1-граф"/><meta property="twitter:url" content="https://mifikcha.github.io/информатика/_разборы-задач/№1-граф"/><link rel="icon" href="../../static/icon.png"/><meta name="description" content="Задание представляет из себя анализ таблицы с графом. Т.е."/><meta name="generator" content="Quartz"/><link href="../../index-30a4b807.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../component-735924e0.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../component-589c1cea.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../component-bbc3f7c0.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../component-e427079e.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../component-34bdfded.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../component-53b25b2b.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../component-c93c6a44.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../component-8a06014f.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../component-1ea6ad18.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../component-7989faaa.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../component-788c9ca3.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../component-4abc06bd.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../component-274a3dfe.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../component-94cb6c84.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../component-58d5ff56.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../component-4f0286a0.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../component-7262b5a7.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../static/resource-style-11d41004.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../static/resource-style-fe38486b.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../static/resource-style-a5c806d2.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../static/resource-style-6bd36952.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../static/resource-style-6bc9bf1e.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../static/resource-style-7945cb86.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" data-persist="true"/><script src="../../prescript-2083b193.js" type="application/javascript" data-persist="true"></script><script type="application/javascript" data-persist="true">const fetchData = fetch("../../static/contentIndex.json").then(data => data.json())</script><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libertinus%20Serif%3Aital%2Cwght%400%2C400%3B0%2C600%3B0%2C700%3B1%2C400%3B1%2C600%3B1%2C700&amp;family=JetBrains%20Mono%3Awght%40400%3B600&amp;display=swap"/><meta property="og:image:width" content="1200"/><meta property="og:image:height" content="630"/><meta property="og:image" content="https://mifikcha.github.io/информатика/_разборы-задач/№1-граф-og-image.webp"/><meta property="og:image:url" content="https://mifikcha.github.io/информатика/_разборы-задач/№1-граф-og-image.webp"/><meta name="twitter:image" content="https://mifikcha.github.io/информатика/_разборы-задач/№1-граф-og-image.webp"/><meta property="og:image:type" content="image/webp"/><style data-hopes-layout-fix="true">
+@media (min-width: 1200px) {
+  html body[data-slug] #quartz-root.page:not([data-frame="canvas"]):not([data-frame="excalidraw"]) {
+    width: 100vw !important;
+    max-width: none !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    transform: none !important;
+  }
+
+  html body[data-slug] #quartz-root.page > #quartz-body {
+    width: 100vw !important;
+    max-width: none !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    grid-template-columns: 320px minmax(0, 1fr) 320px !important;
+    column-gap: 0.5rem !important;
+  }
+
+  html body[data-slug] #quartz-root.page > #quartz-body > .left.sidebar {
+    margin-left: 0 !important;
+    transform: none !important;
+  }
+}
+
+html body[data-slug] #quartz-root.page[data-frame="excalidraw"] {
+  position: fixed !important;
+  inset: 0 !important;
+  width: 100vw !important;
+  max-width: none !important;
+  height: 100dvh !important;
+  min-height: 100dvh !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+  background: var(--excalidraw-bg, var(--light)) !important;
+}
+
+html body[data-slug] #quartz-root.page[data-frame="coding-lesson"] {
+  width: 100vw !important;
+  max-width: none !important;
+  min-height: 100dvh !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+html body[data-slug] #quartz-root.page[data-frame="coding-lesson"] > #quartz-body {
+  display: block !important;
+  width: 100% !important;
+  max-width: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+html body[data-slug] #quartz-root.page[data-frame="excalidraw"] > #quartz-body {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) !important;
+  grid-template-rows: minmax(0, 1fr) !important;
+  grid-template-areas: "grid-center" !important;
+  width: 100vw !important;
+  height: 100dvh !important;
+  min-height: 100dvh !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+}
+
+html body[data-slug] #quartz-root.page[data-frame="excalidraw"] .center.excalidraw-frame,
+html body[data-slug] #quartz-root.page[data-frame="excalidraw"] .excalidraw-stage,
+html body[data-slug] #quartz-root.page[data-frame="excalidraw"] .excalidraw-page,
+html body[data-slug] #quartz-root.page[data-frame="excalidraw"] .excalidraw-container {
+  box-sizing: border-box !important;
+  width: 100vw !important;
+  max-width: none !important;
+  height: 100dvh !important;
+  min-height: 100dvh !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+}
+
+html body[data-slug] #quartz-root.page[data-frame="excalidraw"] .excalidraw-container {
+  background-color: var(--excalidraw-bg, #121212) !important;
+}
+
+html body[data-slug] #quartz-root.page[data-frame="excalidraw"] .excalidraw-container svg {
+  width: 100vw !important;
+  height: 100dvh !important;
+  max-width: none !important;
+  max-height: none !important;
+}
+
+html body[data-slug] #quartz-root.page[data-frame="excalidraw"] .excalidraw-controls {
+  right: 1rem !important;
+  bottom: 1rem !important;
+}
+
+html {
+  --scrollbar-bg: var(--site-scrollbar-track) !important;
+  --scrollbar-thumb-bg: var(--site-scrollbar-thumb) !important;
+  --scrollbar-active-thumb-bg: var(--site-scrollbar-thumb-hover) !important;
+  --scrollbar-width: var(--site-scrollbar-size) !important;
+  --scrollbar-height: var(--site-scrollbar-size) !important;
+  --scrollbar-border-width: 2px !important;
+  --scrollbar-radius: var(--site-scrollbar-radius) !important;
+  scrollbar-color: var(--site-scrollbar-thumb) var(--site-scrollbar-track) !important;
+  scrollbar-width: thin !important;
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar,
+*::-webkit-scrollbar {
+  width: var(--site-scrollbar-size) !important;
+  height: var(--site-scrollbar-size) !important;
+}
+
+html::-webkit-scrollbar-track,
+body::-webkit-scrollbar-track,
+*::-webkit-scrollbar-track {
+  border-radius: var(--site-scrollbar-radius) !important;
+  background: var(--site-scrollbar-track) !important;
+  background-color: var(--site-scrollbar-track) !important;
+}
+
+html::-webkit-scrollbar-thumb,
+body::-webkit-scrollbar-thumb,
+*::-webkit-scrollbar-thumb {
+  min-width: 2.5rem !important;
+  min-height: 2.5rem !important;
+  border: 2px solid var(--site-scrollbar-track) !important;
+  border-radius: var(--site-scrollbar-radius) !important;
+  background: var(--site-scrollbar-thumb) !important;
+  background-color: var(--site-scrollbar-thumb) !important;
+}
+
+html::-webkit-scrollbar-thumb:hover,
+body::-webkit-scrollbar-thumb:hover,
+*::-webkit-scrollbar-thumb:hover {
+  background: var(--site-scrollbar-thumb-hover) !important;
+  background-color: var(--site-scrollbar-thumb-hover) !important;
+}
+
+html::-webkit-scrollbar-thumb:active,
+body::-webkit-scrollbar-thumb:active,
+*::-webkit-scrollbar-thumb:active {
+  background: var(--site-scrollbar-thumb-active) !important;
+  background-color: var(--site-scrollbar-thumb-active) !important;
+}
+
+html::-webkit-scrollbar-corner,
+body::-webkit-scrollbar-corner,
+*::-webkit-scrollbar-corner {
+  background: var(--site-scrollbar-track) !important;
+  background-color: var(--site-scrollbar-track) !important;
+}
+
+.python-checker {
+  --scrollbar-bg: var(--python-scrollbar-track) !important;
+  --scrollbar-thumb-bg: var(--python-scrollbar-thumb) !important;
+  --scrollbar-active-thumb-bg: var(--python-scrollbar-thumb-hover) !important;
+}
+
+.python-checker-editor,
+.python-checker-output {
+  scrollbar-color: var(--python-scrollbar-thumb) var(--python-scrollbar-track) !important;
+}
+
+.python-checker-editor::-webkit-scrollbar-track,
+.python-checker-output::-webkit-scrollbar-track {
+  background: var(--python-scrollbar-track) !important;
+  background-color: var(--python-scrollbar-track) !important;
+}
+
+.python-checker-editor::-webkit-scrollbar-thumb,
+.python-checker-output::-webkit-scrollbar-thumb {
+  border-color: var(--python-scrollbar-track) !important;
+  background: var(--python-scrollbar-thumb) !important;
+  background-color: var(--python-scrollbar-thumb) !important;
+}
+
+.python-checker-editor::-webkit-scrollbar-thumb:hover,
+.python-checker-output::-webkit-scrollbar-thumb:hover {
+  background: var(--python-scrollbar-thumb-hover) !important;
+  background-color: var(--python-scrollbar-thumb-hover) !important;
+}
+
+.katex,
+.katex .katex-html,
+html body[data-slug] .katex-display > .katex,
+html body[data-slug] .katex-display > .katex > .katex-html,
+.katex .mrel,
+.katex .mrel .mord,
+.katex .mrel .inner {
+  font-family: KaTeX_Main, "Times New Roman", serif !important;
+}
+
+.katex {
+  overflow-wrap: normal !important;
+  text-wrap: nowrap !important;
+  word-break: normal !important;
+}
+
+html body[data-slug] .katex-display {
+  display: block !important;
+  overflow-x: auto !important;
+  overflow-y: hidden !important;
+  padding-block: 0.55em !important;
+  scrollbar-width: none !important;
+  -ms-overflow-style: none !important;
+}
+
+html body[data-slug] .katex-display::-webkit-scrollbar {
+  width: 0 !important;
+  height: 0 !important;
+}
+
+html body[data-slug] .search > .search-container.active {
+  background: rgba(250, 246, 215, 0.48) !important;
+  -webkit-backdrop-filter: blur(10px) saturate(1.05) !important;
+  backdrop-filter: blur(10px) saturate(1.05) !important;
+}
+
+html[saved-theme="dark"] body[data-slug] .search > .search-container.active {
+  background: rgba(17, 19, 32, 0.52) !important;
+}
+
+html body[data-slug] .search > .search-container.active > .search-space > input,
+html body[data-slug] .search > .search-container.active > .search-space > .search-layout,
+html body[data-slug] .search > .search-container.active > .search-space > .tag-suggestions {
+  background:
+    linear-gradient(
+      135deg,
+      color-mix(in srgb, var(--site-panel-glass) 82%, var(--secondary)),
+      color-mix(in srgb, var(--light) 68%, transparent) 135%
+    ),
+    color-mix(in srgb, var(--light) 74%, transparent) !important;
+}
+
+html body[data-slug] .callout.is-collapsed > .callout-content {
+  display: none !important;
+}
+
+@supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+  html body[data-slug] .search > .search-container.active {
+    background: rgba(250, 246, 215, 0.68) !important;
+  }
+
+  html[saved-theme="dark"] body[data-slug] .search > .search-container.active {
+    background: rgba(17, 19, 32, 0.72) !important;
+  }
+}
+</style></head><body data-slug="информатика/_разборы-задач/№1-граф" data-basepath><div id="quartz-root" class="page" data-frame="default"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="/">Hopes and Dreams</a></h2><div class="mobile-only"><div class="spacer"></div></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 0.5rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button" aria-label="Поиск" aria-expanded="false"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>Поиск</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="Найти что-нибудь" placeholder="Найти что-нибудь"/><div class="search-layout" data-preview="true" data-field-priority="[&quot;title&quot;,&quot;content&quot;,&quot;tags&quot;]"></div></div></div></div></div></div><div class="explorer nav-files-container" data-behavior="collapse" data-collapsed="open" data-savestate="false" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a, b) => {\n  const isStudentStats = (node) =>\n    node.slugSegments?.length === 1 &amp;&amp;\n    (node.slugSegment === \&quot;статистика-учеников\&quot; || node.displayName === \&quot;Статистика учеников\&quot;)\n\n  if (a.isFolder &amp;&amp; b.isFolder) {\n    if (isStudentStats(a) &amp;&amp; !isStudentStats(b)) return 1\n    if (!isStudentStats(a) &amp;&amp; isStudentStats(b)) return -1\n  }\n\n  if ((!a.isFolder &amp;&amp; !b.isFolder) || (a.isFolder &amp;&amp; b.isFolder)) {\n    return (a.displayName || \&quot;\&quot;).localeCompare(b.displayName || \&quot;\&quot;, undefined, {\n      numeric: true,\n      sensitivity: \&quot;base\&quot;,\n    })\n  }\n\n  if (!a.isFolder &amp;&amp; b.isFolder) return 1\n  return -1\n}\n&quot;,&quot;filterFn&quot;:&quot;(node) => node.slugSegment !== \&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;(node) => {\n    return node;\n  }&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-3" aria-label="Проводник"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>Проводник</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-3" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#" class="nav-file-title tree-item-self"></a></li></template><template id="template-folder"><li><div class="folder-container nav-folder-title tree-item-self"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon nav-folder-collapse-indicator collapse-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content tree-item-children"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../информатика/">Информатика</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../информатика/_разборы-задач/">_Разборы задач</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>№1 Граф</a></div></nav><h1 class="article-title">№1 Граф</h1><details class="note-properties metadata-container" open data-collapsed="false"><summary class="note-properties-header"><span class="note-properties-title">Properties</span><span class="note-properties-count">1</span></summary><table class="note-properties-table"><tbody><tr class="note-properties-row metadata-property"><td class="note-properties-key metadata-property-key">tags</td><td class="note-properties-value metadata-property-value"><span class="note-properties-tags"><a href="../../tags/предмет/информатика" class="internal internal-link tag-link">предмет/информатика</a><span class="note-properties-separator">, </span><a href="../../tags/публичный-сайт" class="internal internal-link tag-link">публичный-сайт</a><span class="note-properties-separator">, </span><a href="../../tags/тип/разбор-задач" class="internal internal-link tag-link">тип/разбор-задач</a><span class="note-properties-separator">, </span><a href="../../tags/экзамен/егэ" class="internal internal-link tag-link">экзамен/егэ</a></span></td></tr></tbody></table></details></div></div><article class="popover-hint"><div class="markdown-preview-view markdown-rendered"><p>Задание представляет из себя анализ таблицы с графом. Т.е. по таблице и графу надо определить где какие пункты, согласно графу, находятся в таблице и определить то, что требуется по заданию. Однако таблицы бывают двух видов - условно: со звездочками (неизвестными длинами путей) и без них. Сначала разберемся с теми заданиями, где указана длина пути (без звездочек в ячейках таблицы). В дальнейшем будет видно, что задания “со звездочками” даже, в каком-то смысле, проще.</p>
+<h1 id="пример-1">Пример 1)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#пример-1" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<p><img src="../../_resours/pasted-image-20240906134127.png" alt width="auto" height="auto" decoding="async" loading="eager" fetchpriority="high"/></p>
+<p>Для начала, нужно отметить степени вершин графа т.е. то, сколько путей выходит из каждой вершины. В данном случае:</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th style="text-align:left;">Название вершины</th><th style="text-align:left;">Степень</th></tr></thead><tbody><tr><td style="text-align:left;">А</td><td style="text-align:left;">3</td></tr><tr><td style="text-align:left;">Б</td><td style="text-align:left;">1</td></tr><tr><td style="text-align:left;">В</td><td style="text-align:left;">4</td></tr><tr><td style="text-align:left;">Г</td><td style="text-align:left;">4</td></tr><tr><td style="text-align:left;">Д</td><td style="text-align:left;">2</td></tr><tr><td style="text-align:left;">Е</td><td style="text-align:left;">1</td></tr><tr><td style="text-align:left;">К</td><td style="text-align:left;">1</td></tr></tbody></table></div>
+<p>Логика такая:</p>
+<p>У вершины А и Д единственная степень, встречающаяся в таблице т.е. 3 и 2 соответственно (проще говоря, если из пункта ведет, например, 2 пути и он такой один, то соотнести его с таблицей из задания не сложно). Таким образом, сходу обнаруживаем, что П3 соответствует пункту А, а П4 соответствует пункту Д.</p>
+<p>Далее, замечаем, что из пункта А выходит сразу 2 пути, ведущие в пункты, у которых, в свою очередь, по 4 пути. Один из них - пункт Г, это либо П2, либо П5. Предположим, что П5 (в случае, если предположение окажется неудачным, то мы просто возьмем второй вариант т.е. П2). Проверим: если П5 действительно пункт Г, то из него должен выходить только 1 путь, ведущий на пункт, у которого степень равна 1 (т.е. пункт К). Так и есть. А значит наше предположение верно.</p>
+<p>Т.е. еще раз: мы выбираем П5, а не П2 потому, что из П5 есть путь ведущий в П7, а П7 - это степень вершины графа равная 1 (т.е. из П7 только 1 путь - в П5), причем такой путь, со степенью вершины равной 1 только 1, а не 2, как в П2. Значит П5 - это пункт Г, а П2 - это пункт В.</p>
+<p>Возвращаемся к вопросу: нам нужно найти длину пути из А в Г. Т.е., судя по таблице, ответ 6.</p>
+<p><strong><em>Ответ:</em></strong> 6.</p>
+<h1 id="пример-2">Пример 2)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#пример-2" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<p><img src="../../_resours/pasted-image-20240906140402.png" alt width="auto" height="auto" decoding="async" loading="lazy"/></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th style="text-align:left;">Название вершины</th><th style="text-align:left;">Степень</th></tr></thead><tbody><tr><td style="text-align:left;">А</td><td style="text-align:left;">3</td></tr><tr><td style="text-align:left;">B</td><td style="text-align:left;">2</td></tr><tr><td style="text-align:left;">C</td><td style="text-align:left;">3</td></tr><tr><td style="text-align:left;">D</td><td style="text-align:left;">2</td></tr><tr><td style="text-align:left;">E</td><td style="text-align:left;">3</td></tr><tr><td style="text-align:left;">F</td><td style="text-align:left;">3</td></tr><tr><td style="text-align:left;">G</td><td style="text-align:left;">3</td></tr><tr><td style="text-align:left;">H</td><td style="text-align:left;">3</td></tr></tbody></table></div>
+<p>Это более сложный случай т.к. сразу нельзя однозначно выделить какие-то пункты. Подметим, что вершины G и E - единственные вершины степени 3, не имеющие общих дорог с вершинами степени 2. Т.е. либо П1 - это G, а П2 - это E, либо наоборот. Причем вершина С имеет дорогу и с G и с E т.е. вершина С - это такой пункт, который касается и П1 и П2 одновременно. Единственный такой пункт - это П4 => П4 - это вершина С. Значит, вершина D - это пункт П6 т.к. имеет общую дорогу с С, при этом имея степень 2. Стало быть, вершина F - это пункт П7 т.к. из П6 выходит всего 2 пути и один из них - пункт П4 т.е. вершина С.</p>
+<p>Т.е. сейчас мы знаем следующее:<br/>
+П4 - С<br/>
+П6 - D<br/>
+П7 - F<br/>
+П1 и П2 - G и Е</p>
+<p>Из того, что П7 - это F, заключаем, что П3 - это H по тому же самому принципу, что и с вершиной D и пунктом П6 => G - это П1, а Е - это П2. Тогда В - это П5, а П8 - это вершина А.</p>
+<p>Ура, мы нашли все вершины. Осталось посчитать ответ. 30 + 8 = 38.</p>
+<p><strong><em>Ответ:</em></strong> 38.</p>
+<h1 id="пример-3">Пример 3)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#пример-3" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<p><img src="../../_resours/pasted-image-20240906144101.png" alt width="auto" height="auto" decoding="async" loading="lazy"/></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th style="text-align:left;">Название вершины</th><th style="text-align:left;">Степень</th></tr></thead><tbody><tr><td style="text-align:left;">А</td><td style="text-align:left;">3</td></tr><tr><td style="text-align:left;">B</td><td style="text-align:left;">2</td></tr><tr><td style="text-align:left;">C</td><td style="text-align:left;">2</td></tr><tr><td style="text-align:left;">D</td><td style="text-align:left;">3</td></tr><tr><td style="text-align:left;">E</td><td style="text-align:left;">3</td></tr><tr><td style="text-align:left;">F</td><td style="text-align:left;">3</td></tr><tr><td style="text-align:left;">G</td><td style="text-align:left;">2</td></tr><tr><td style="text-align:left;">Решается приблизительно также, как и пример 2. B - единственная вершина, не связанная с другими степени 2. Значит вершина В - это П4. Вершина F - это единственная вершина степени 3, связанная с двумя вершинами степени 2 => F - это П2. Т.к. вершина В связана с F и D, то D - это П7. Вершина A  - единственная вершина степени  3, связанная и с вершиной D, и с вершиной F. Следовательно, вершина A соответствует П5.</td><td style="text-align:left;"></td></tr></tbody></table></div>
+<p>Отсюда, <strong><em>Ответ:</em></strong> 58.</p>
+<p>Теперь рассмотрим другой тип заданий - когда не указана длина между дорогами, указан лишь факт наличия дороги между пунктами т.е. в таблице присутствуют звездочки.</p>
+<h1 id="пример-4">Пример 4)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#пример-4" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<p><img src="../../_resours/pasted-image-20240906150430.png" alt width="auto" height="auto" decoding="async" loading="lazy"/></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th style="text-align:left;">Название вершины</th><th style="text-align:left;">Степень</th></tr></thead><tbody><tr><td style="text-align:left;">А</td><td style="text-align:left;">2</td></tr><tr><td style="text-align:left;">B</td><td style="text-align:left;">2</td></tr><tr><td style="text-align:left;">C</td><td style="text-align:left;">6</td></tr><tr><td style="text-align:left;">D</td><td style="text-align:left;">3</td></tr><tr><td style="text-align:left;">E</td><td style="text-align:left;">3</td></tr><tr><td style="text-align:left;">F</td><td style="text-align:left;">3</td></tr><tr><td style="text-align:left;">G</td><td style="text-align:left;">3</td></tr></tbody></table></div>
+<p>В общем-то мало что поменялось, учитывая вопрос задачи. Т.е. в таких заданиях алгоритм решения тот же.</p>
+<p>Пункт C является единственным пунктом, из которого выходит 6 дорог, значит, П1  - это C. П2 и П6  - единственные пункты, содержащие две дороги, значит, П2  - это либо A, либо B, П6  — тоже либо A, либо B. Заметим, что схема симметричная, поэтому неважно, какой пункт мы примем за A, а какой  - за B. Пусть П2  - <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal">A</span></span></span></span>, тогда П7  - G и П3  - <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.1389em;">F</span></span></span></span>. Значит, П6  - B, П4  - D и П5  - E. Таким образом, получим, что пунктам E и F соответствуют номера 5, 3 или 3, 5.</p>
+<h1 id="пример-5">Пример 5)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#пример-5" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<p><img src="../../_resours/pasted-image-20240906151129.png" alt width="auto" height="auto" decoding="async" loading="lazy"/></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th style="text-align:left;">Название вершины</th><th style="text-align:left;">Степень</th></tr></thead><tbody><tr><td style="text-align:left;">А</td><td style="text-align:left;">3</td></tr><tr><td style="text-align:left;">B</td><td style="text-align:left;">2</td></tr><tr><td style="text-align:left;">C</td><td style="text-align:left;">2</td></tr><tr><td style="text-align:left;">D</td><td style="text-align:left;">5</td></tr><tr><td style="text-align:left;">E</td><td style="text-align:left;">2</td></tr><tr><td style="text-align:left;">F</td><td style="text-align:left;">2</td></tr><tr><td style="text-align:left;">G</td><td style="text-align:left;">2</td></tr></tbody></table></div>
+<p>На схеме имеется один населенный пункт <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.0278em;">D</span></span></span></span> степени 5, ему соответствует населенный пункт <em>П7</em>. Также есть только один населенный пункт степени 3, это пункт <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal">A</span></span></span></span>, и ему соответствует пункт <em>П3</em>. С населенным пунктом <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal">A</span></span></span></span> имеют общие дороги пункты степени 2, это <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.0715em;">C</span></span></span></span> и <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal">G</span></span></span></span>, им могут соответствовать пункты <em>П4</em> или <em>П1</em> (мы не знаем, какой пункт какому соответствует, но для решения это и не нужно). Пункт <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.1389em;">F</span></span></span></span>  — единственный оставшийся населенный пункт степени 2, не имеющий общих дорог с пунктом <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.0278em;">D</span></span></span></span> (пункт _П7), ему соответствует пункт <em>П5</em>. Тогда населенным пунктам <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.0502em;">B</span></span></span></span> и <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.0576em;">E</span></span></span></span> могут соответствовать только пункты <em>П2</em> и <em>П6</em>. Это и есть ответ. Записываем ответ в порядке возрастания без разделителей.</p>
+<hr/>
+<h1 id="решение-кодом">Решение кодом<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#решение-кодом" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<p><img src="../../_resours/pasted-image-20260105192246.png" alt width="auto" height="auto" decoding="async" loading="lazy"/></p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="python" data-theme="github-light github-dark"><code data-language="python" data-theme="github-light github-dark" style="display:grid;"><span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="keyword">from</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> itertools </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="keyword">import</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="operator"> *</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">tab </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="operator">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;" data-token-type="string"> '457 46 567 12 136 235 13'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">.split()</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">pic </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="operator">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;" data-token-type="string"> 'ef ec fg cg fd dg db ab ac'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">.split()</span></span>
+<span data-line><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="function">print</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">(</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="operator">*</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="function">range</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">(</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value">1</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">,</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value">8</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">))</span></span>
+<span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="keyword">for</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> var </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="keyword">in</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="function"> permutations(</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;" data-token-type="string">'abcdefg'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">):</span></span>
+<span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="keyword">    if</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="function"> all</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">(</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="property">str</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">(var.index(x) </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="operator">+</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value"> 1</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">) </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="keyword">in</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="function"> tab[var.index(y)] </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="keyword">for</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="function"> x,y </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="keyword">in</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="function"> pic):</span></span>
+<span data-line><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="function">        print</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">(</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="operator">*</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="function">var)</span></span></code></pre></figure></div></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><aside class="study-player" data-study-player="true"><div class="study-player-compact"><div class="study-player-heading"><div class="study-player-signal" aria-hidden="true"><span></span><span></span><span></span></div><span class="study-player-label">STUDY PLAYER</span><button type="button" class="study-player-expand" data-player-action="expand" aria-label="Expand player" aria-haspopup="dialog" aria-expanded="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 4H4v4M16 4h4v4M20 16v4h-4M4 16v4h4"></path></svg></button></div><div class="study-player-trackline"><strong data-player-title="true">Rain-2</strong><span data-player-subtitle="true">Ambient sound</span></div><div class="study-player-compact-row"><div class="study-player-transport"><button type="button" class="study-player-control" data-player-action="previous" aria-label="Previous track"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.5 5.5v13M18 6.75 9.5 12l8.5 5.25z"></path></svg></button><button type="button" class="study-player-play" data-player-action="toggle" aria-label="Play"><svg class="study-player-icon-play" viewBox="0 0 24 24" aria-hidden="true"><path d="m8 5.75 10 6.25-10 6.25z"></path></svg><svg class="study-player-icon-pause" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 6.5h3v11H8zM13 6.5h3v11h-3z"></path></svg></button><button type="button" class="study-player-control" data-player-action="next" aria-label="Next track"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.5 5.5v13M6 6.75 14.5 12 6 17.25z"></path></svg></button></div><div class="study-player-progress-compact" data-player-progress="true" role="progressbar" aria-label="Track progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><span></span></div></div></div><section class="study-player-popover" data-player-popover="true" popover="manual" role="dialog" aria-modal="false" aria-labelledby="study-player-dialog-title" hidden><header class="study-player-popover-header"><div><span class="study-player-label">STUDY PLAYER</span><h2 id="study-player-dialog-title">Focus audio</h2></div><button type="button" class="study-player-close" data-player-action="close" aria-label="Close player"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"></path></svg></button></header><div class="study-player-now"><span>NOW PLAYING</span><strong data-player-title="true">Rain-2</strong><small data-player-subtitle="true">Ambient sound</small></div><div class="study-player-main-controls"><div class="study-player-transport expanded"><button type="button" class="study-player-control" data-player-action="previous" aria-label="Previous track"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.5 5.5v13M18 6.75 9.5 12l8.5 5.25z"></path></svg></button><button type="button" class="study-player-play" data-player-action="toggle" aria-label="Play"><svg class="study-player-icon-play" viewBox="0 0 24 24" aria-hidden="true"><path d="m8 5.75 10 6.25-10 6.25z"></path></svg><svg class="study-player-icon-pause" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 6.5h3v11H8zM13 6.5h3v11h-3z"></path></svg></button><button type="button" class="study-player-control" data-player-action="next" aria-label="Next track"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.5 5.5v13M6 6.75 14.5 12 6 17.25z"></path></svg></button></div><button type="button" class="study-player-repeat" data-player-action="repeat" aria-label="Repeat track" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m17 3 3 3-3 3M4 11V9a3 3 0 0 1 3-3h13M7 21l-3-3 3-3m13-2v2a3 3 0 0 1-3 3H4"></path><path d="M12 9.5v5M10.5 11l1.5-1.5 1.5 1.5"></path></svg><span>Repeat</span></button></div><div class="study-player-timeline"><input type="range" min="0" max="1" step="0.1" value="0" data-player-seek="true" aria-label="Seek" disabled/><div class="study-player-time"><span data-player-elapsed="true">00:00</span><span data-player-duration="true">--:--</span></div></div><div class="study-player-queue-wrap"><span class="study-player-section-label">QUEUE</span><ol class="study-player-queue"><li><button type="button" data-player-track="rain-2" aria-label="Select Rain-2" aria-current="true"><span class="study-player-queue-index">01</span><span class="study-player-queue-copy"><strong>Rain-2</strong><small>Ambient sound</small></span><span class="study-player-queue-source">LOCAL</span></button></li><li><button type="button" data-player-track="cyberpunk" aria-label="Select Cyberpunk"><span class="study-player-queue-index">02</span><span class="study-player-queue-copy"><strong>Cyberpunk</strong><small>Study ambience</small></span><span class="study-player-queue-source">LOCAL</span></button></li><li><button type="button" data-player-track="quite-stars" aria-label="Select Quite-Stars"><span class="study-player-queue-index">03</span><span class="study-player-queue-copy"><strong>Quite-Stars</strong><small>Study ambience</small></span><span class="study-player-queue-source">LOCAL</span></button></li></ol></div><label class="study-player-volume"><span>Volume</span><input type="range" min="0" max="1" step="0.01" value="0.72" data-player-volume="true" aria-label="Volume"/><output data-player-volume-value="true">72%</output></label><p class="study-player-status" data-player-status="true" aria-live="polite"></p></section></aside><aside class="note-cheatsheet" aria-labelledby="note-cheatsheet-title"><h3 id="note-cheatsheet-title">Шпора</h3><p>Здесь скоро появится короткая шпора по этой заметке.</p></aside><div class="toc"><button type="button" class="toc-header" aria-controls="toc-0" aria-expanded="true"><h3>Оглавление</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-0" class="toc-content overflow"><li class="depth-0"><a href="#пример-1" data-for="пример-1">Пример 1)</a></li><li class="depth-0"><a href="#пример-2" data-for="пример-2">Пример 2)</a></li><li class="depth-0"><a href="#пример-3" data-for="пример-3">Пример 3)</a></li><li class="depth-0"><a href="#пример-4" data-for="пример-4">Пример 4)</a></li><li class="depth-0"><a href="#пример-5" data-for="пример-5">Пример 5)</a></li><li class="depth-0"><a href="#решение-кодом" data-for="решение-кодом">Решение кодом</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Создано с помощью <a href="https://quartz.jzhao.xyz/">Quartz v5.0.0</a> © 2026</p><ul><li><a href="https://t.me/Skifcha">Telegram</a></li></ul></footer></div></div></body><script src="../../static/resource-after-e13fffa1.js" type="application/javascript" data-persist="true"></script><script src="../../static/resource-after-8b336f9a.js" type="application/javascript" data-persist="true"></script><script src="../../static/resource-after-baba652b.js" type="application/javascript" data-persist="true"></script><script src="../../static/resource-after-5eb75950.js" type="module" data-persist="true"></script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript" data-persist="true"></script><script src="../../postscript-911c8fe1.js" type="module" data-persist="true"></script></html>

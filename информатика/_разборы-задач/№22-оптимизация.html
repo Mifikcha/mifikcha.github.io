@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr"><head><title>№22 Оптимизация</title><meta charset="utf-8"/><link rel="preload" href="../../index-30a4b807.css" as="style"/><link rel="preload" href="../../prescript-2083b193.js" as="script"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libertinus Serif:wght@400;700&amp;family=Libertinus Serif:ital,wght@0,400;0,600;1,400;1,600&amp;family=JetBrains Mono:wght@400;600&amp;display=swap"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libertinus Serif:wght@400;700&amp;text=Hopes%20and%20Dreams&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="Hopes and Dreams"/><meta property="og:title" content="№22 Оптимизация"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="№22 Оптимизация"/><meta name="twitter:description" content="Решение этого задания может показаться довольно странным, его решают кто во что горазд, вы можете встретить на просторах интернета совершенно разные решения."/><meta property="og:description" content="Решение этого задания может показаться довольно странным, его решают кто во что горазд, вы можете встретить на просторах интернета совершенно разные решения."/><meta property="og:image:alt" content="Решение этого задания может показаться довольно странным, его решают кто во что горазд, вы можете встретить на просторах интернета совершенно разные решения."/><meta property="twitter:domain" content="mifikcha.github.io"/><meta property="og:url" content="https://mifikcha.github.io/информатика/_разборы-задач/№22-оптимизация"/><meta property="twitter:url" content="https://mifikcha.github.io/информатика/_разборы-задач/№22-оптимизация"/><link rel="icon" href="../../static/icon.png"/><meta name="description" content="Решение этого задания может показаться довольно странным, его решают кто во что горазд, вы можете встретить на просторах интернета совершенно разные решения."/><meta name="generator" content="Quartz"/><link href="../../index-30a4b807.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../component-735924e0.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../component-589c1cea.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../component-bbc3f7c0.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../component-e427079e.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../component-34bdfded.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../component-53b25b2b.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../component-c93c6a44.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../component-8a06014f.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../component-1ea6ad18.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../component-7989faaa.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../component-788c9ca3.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../component-4abc06bd.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../component-274a3dfe.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../component-94cb6c84.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../component-58d5ff56.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../component-4f0286a0.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../component-7262b5a7.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../static/resource-style-11d41004.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../static/resource-style-fe38486b.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../static/resource-style-a5c806d2.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../static/resource-style-6bd36952.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../static/resource-style-6bc9bf1e.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../static/resource-style-7945cb86.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" data-persist="true"/><script src="../../prescript-2083b193.js" type="application/javascript" data-persist="true"></script><script type="application/javascript" data-persist="true">const fetchData = fetch("../../static/contentIndex.json").then(data => data.json())</script><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libertinus%20Serif%3Aital%2Cwght%400%2C400%3B0%2C600%3B0%2C700%3B1%2C400%3B1%2C600%3B1%2C700&amp;family=JetBrains%20Mono%3Awght%40400%3B600&amp;display=swap"/><meta property="og:image:width" content="1200"/><meta property="og:image:height" content="630"/><meta property="og:image" content="https://mifikcha.github.io/информатика/_разборы-задач/№22-оптимизация-og-image.webp"/><meta property="og:image:url" content="https://mifikcha.github.io/информатика/_разборы-задач/№22-оптимизация-og-image.webp"/><meta name="twitter:image" content="https://mifikcha.github.io/информатика/_разборы-задач/№22-оптимизация-og-image.webp"/><meta property="og:image:type" content="image/webp"/><style data-hopes-layout-fix="true">
+@media (min-width: 1200px) {
+  html body[data-slug] #quartz-root.page:not([data-frame="canvas"]):not([data-frame="excalidraw"]) {
+    width: 100vw !important;
+    max-width: none !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    transform: none !important;
+  }
+
+  html body[data-slug] #quartz-root.page > #quartz-body {
+    width: 100vw !important;
+    max-width: none !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    grid-template-columns: 320px minmax(0, 1fr) 320px !important;
+    column-gap: 0.5rem !important;
+  }
+
+  html body[data-slug] #quartz-root.page > #quartz-body > .left.sidebar {
+    margin-left: 0 !important;
+    transform: none !important;
+  }
+}
+
+html body[data-slug] #quartz-root.page[data-frame="excalidraw"] {
+  position: fixed !important;
+  inset: 0 !important;
+  width: 100vw !important;
+  max-width: none !important;
+  height: 100dvh !important;
+  min-height: 100dvh !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+  background: var(--excalidraw-bg, var(--light)) !important;
+}
+
+html body[data-slug] #quartz-root.page[data-frame="coding-lesson"] {
+  width: 100vw !important;
+  max-width: none !important;
+  min-height: 100dvh !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+html body[data-slug] #quartz-root.page[data-frame="coding-lesson"] > #quartz-body {
+  display: block !important;
+  width: 100% !important;
+  max-width: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+html body[data-slug] #quartz-root.page[data-frame="excalidraw"] > #quartz-body {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) !important;
+  grid-template-rows: minmax(0, 1fr) !important;
+  grid-template-areas: "grid-center" !important;
+  width: 100vw !important;
+  height: 100dvh !important;
+  min-height: 100dvh !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+}
+
+html body[data-slug] #quartz-root.page[data-frame="excalidraw"] .center.excalidraw-frame,
+html body[data-slug] #quartz-root.page[data-frame="excalidraw"] .excalidraw-stage,
+html body[data-slug] #quartz-root.page[data-frame="excalidraw"] .excalidraw-page,
+html body[data-slug] #quartz-root.page[data-frame="excalidraw"] .excalidraw-container {
+  box-sizing: border-box !important;
+  width: 100vw !important;
+  max-width: none !important;
+  height: 100dvh !important;
+  min-height: 100dvh !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+}
+
+html body[data-slug] #quartz-root.page[data-frame="excalidraw"] .excalidraw-container {
+  background-color: var(--excalidraw-bg, #121212) !important;
+}
+
+html body[data-slug] #quartz-root.page[data-frame="excalidraw"] .excalidraw-container svg {
+  width: 100vw !important;
+  height: 100dvh !important;
+  max-width: none !important;
+  max-height: none !important;
+}
+
+html body[data-slug] #quartz-root.page[data-frame="excalidraw"] .excalidraw-controls {
+  right: 1rem !important;
+  bottom: 1rem !important;
+}
+
+html {
+  --scrollbar-bg: var(--site-scrollbar-track) !important;
+  --scrollbar-thumb-bg: var(--site-scrollbar-thumb) !important;
+  --scrollbar-active-thumb-bg: var(--site-scrollbar-thumb-hover) !important;
+  --scrollbar-width: var(--site-scrollbar-size) !important;
+  --scrollbar-height: var(--site-scrollbar-size) !important;
+  --scrollbar-border-width: 2px !important;
+  --scrollbar-radius: var(--site-scrollbar-radius) !important;
+  scrollbar-color: var(--site-scrollbar-thumb) var(--site-scrollbar-track) !important;
+  scrollbar-width: thin !important;
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar,
+*::-webkit-scrollbar {
+  width: var(--site-scrollbar-size) !important;
+  height: var(--site-scrollbar-size) !important;
+}
+
+html::-webkit-scrollbar-track,
+body::-webkit-scrollbar-track,
+*::-webkit-scrollbar-track {
+  border-radius: var(--site-scrollbar-radius) !important;
+  background: var(--site-scrollbar-track) !important;
+  background-color: var(--site-scrollbar-track) !important;
+}
+
+html::-webkit-scrollbar-thumb,
+body::-webkit-scrollbar-thumb,
+*::-webkit-scrollbar-thumb {
+  min-width: 2.5rem !important;
+  min-height: 2.5rem !important;
+  border: 2px solid var(--site-scrollbar-track) !important;
+  border-radius: var(--site-scrollbar-radius) !important;
+  background: var(--site-scrollbar-thumb) !important;
+  background-color: var(--site-scrollbar-thumb) !important;
+}
+
+html::-webkit-scrollbar-thumb:hover,
+body::-webkit-scrollbar-thumb:hover,
+*::-webkit-scrollbar-thumb:hover {
+  background: var(--site-scrollbar-thumb-hover) !important;
+  background-color: var(--site-scrollbar-thumb-hover) !important;
+}
+
+html::-webkit-scrollbar-thumb:active,
+body::-webkit-scrollbar-thumb:active,
+*::-webkit-scrollbar-thumb:active {
+  background: var(--site-scrollbar-thumb-active) !important;
+  background-color: var(--site-scrollbar-thumb-active) !important;
+}
+
+html::-webkit-scrollbar-corner,
+body::-webkit-scrollbar-corner,
+*::-webkit-scrollbar-corner {
+  background: var(--site-scrollbar-track) !important;
+  background-color: var(--site-scrollbar-track) !important;
+}
+
+.python-checker {
+  --scrollbar-bg: var(--python-scrollbar-track) !important;
+  --scrollbar-thumb-bg: var(--python-scrollbar-thumb) !important;
+  --scrollbar-active-thumb-bg: var(--python-scrollbar-thumb-hover) !important;
+}
+
+.python-checker-editor,
+.python-checker-output {
+  scrollbar-color: var(--python-scrollbar-thumb) var(--python-scrollbar-track) !important;
+}
+
+.python-checker-editor::-webkit-scrollbar-track,
+.python-checker-output::-webkit-scrollbar-track {
+  background: var(--python-scrollbar-track) !important;
+  background-color: var(--python-scrollbar-track) !important;
+}
+
+.python-checker-editor::-webkit-scrollbar-thumb,
+.python-checker-output::-webkit-scrollbar-thumb {
+  border-color: var(--python-scrollbar-track) !important;
+  background: var(--python-scrollbar-thumb) !important;
+  background-color: var(--python-scrollbar-thumb) !important;
+}
+
+.python-checker-editor::-webkit-scrollbar-thumb:hover,
+.python-checker-output::-webkit-scrollbar-thumb:hover {
+  background: var(--python-scrollbar-thumb-hover) !important;
+  background-color: var(--python-scrollbar-thumb-hover) !important;
+}
+
+.katex,
+.katex .katex-html,
+html body[data-slug] .katex-display > .katex,
+html body[data-slug] .katex-display > .katex > .katex-html,
+.katex .mrel,
+.katex .mrel .mord,
+.katex .mrel .inner {
+  font-family: KaTeX_Main, "Times New Roman", serif !important;
+}
+
+.katex {
+  overflow-wrap: normal !important;
+  text-wrap: nowrap !important;
+  word-break: normal !important;
+}
+
+html body[data-slug] .katex-display {
+  display: block !important;
+  overflow-x: auto !important;
+  overflow-y: hidden !important;
+  padding-block: 0.55em !important;
+  scrollbar-width: none !important;
+  -ms-overflow-style: none !important;
+}
+
+html body[data-slug] .katex-display::-webkit-scrollbar {
+  width: 0 !important;
+  height: 0 !important;
+}
+
+html body[data-slug] .search > .search-container.active {
+  background: rgba(250, 246, 215, 0.48) !important;
+  -webkit-backdrop-filter: blur(10px) saturate(1.05) !important;
+  backdrop-filter: blur(10px) saturate(1.05) !important;
+}
+
+html[saved-theme="dark"] body[data-slug] .search > .search-container.active {
+  background: rgba(17, 19, 32, 0.52) !important;
+}
+
+html body[data-slug] .search > .search-container.active > .search-space > input,
+html body[data-slug] .search > .search-container.active > .search-space > .search-layout,
+html body[data-slug] .search > .search-container.active > .search-space > .tag-suggestions {
+  background:
+    linear-gradient(
+      135deg,
+      color-mix(in srgb, var(--site-panel-glass) 82%, var(--secondary)),
+      color-mix(in srgb, var(--light) 68%, transparent) 135%
+    ),
+    color-mix(in srgb, var(--light) 74%, transparent) !important;
+}
+
+html body[data-slug] .callout.is-collapsed > .callout-content {
+  display: none !important;
+}
+
+@supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+  html body[data-slug] .search > .search-container.active {
+    background: rgba(250, 246, 215, 0.68) !important;
+  }
+
+  html[saved-theme="dark"] body[data-slug] .search > .search-container.active {
+    background: rgba(17, 19, 32, 0.72) !important;
+  }
+}
+</style></head><body data-slug="информатика/_разборы-задач/№22-оптимизация" data-basepath><div id="quartz-root" class="page" data-frame="default"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="/">Hopes and Dreams</a></h2><div class="mobile-only"><div class="spacer"></div></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 0.5rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button" aria-label="Поиск" aria-expanded="false"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>Поиск</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="Найти что-нибудь" placeholder="Найти что-нибудь"/><div class="search-layout" data-preview="true" data-field-priority="[&quot;title&quot;,&quot;content&quot;,&quot;tags&quot;]"></div></div></div></div></div></div><div class="explorer nav-files-container" data-behavior="collapse" data-collapsed="open" data-savestate="false" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a, b) => {\n  const isStudentStats = (node) =>\n    node.slugSegments?.length === 1 &amp;&amp;\n    (node.slugSegment === \&quot;статистика-учеников\&quot; || node.displayName === \&quot;Статистика учеников\&quot;)\n\n  if (a.isFolder &amp;&amp; b.isFolder) {\n    if (isStudentStats(a) &amp;&amp; !isStudentStats(b)) return 1\n    if (!isStudentStats(a) &amp;&amp; isStudentStats(b)) return -1\n  }\n\n  if ((!a.isFolder &amp;&amp; !b.isFolder) || (a.isFolder &amp;&amp; b.isFolder)) {\n    return (a.displayName || \&quot;\&quot;).localeCompare(b.displayName || \&quot;\&quot;, undefined, {\n      numeric: true,\n      sensitivity: \&quot;base\&quot;,\n    })\n  }\n\n  if (!a.isFolder &amp;&amp; b.isFolder) return 1\n  return -1\n}\n&quot;,&quot;filterFn&quot;:&quot;(node) => node.slugSegment !== \&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;(node) => {\n    return node;\n  }&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-15" aria-label="Проводник"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>Проводник</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-15" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#" class="nav-file-title tree-item-self"></a></li></template><template id="template-folder"><li><div class="folder-container nav-folder-title tree-item-self"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon nav-folder-collapse-indicator collapse-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content tree-item-children"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../информатика/">Информатика</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../информатика/_разборы-задач/">_Разборы задач</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>№22 Оптимизация</a></div></nav><h1 class="article-title">№22 Оптимизация</h1></div></div><article class="popover-hint"><div class="markdown-preview-view markdown-rendered"><p>Решение этого задания может показаться довольно странным, его решают кто во что горазд, вы можете встретить на просторах интернета совершенно разные решения. Само задание довольно легкое, особенно для условной второй части экзамена, не требует ровным счетом никаких знаний (кроме экселя или либры подобного и то, не сильно), кроме банальной внимательности и кропотливости в выполнении. Я покажу, на мой взгляд, самые наглядные и простые способы решения (хоть и, порой, долгие).</p>
+<p>В 2026 оно, вроде, еще проще стало.</p>
+<h1 id="пример-1-демо-2024">Пример 1) Демо 2024<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#пример-1-демо-2024" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<p><img src="../../_resours/pasted-image-20250201090911.png" alt width="auto" height="auto" decoding="async" loading="eager" fetchpriority="high"/></p>
+<p>Зайдя в файл и открыв его с помощью экселя видим следующее:</p>
+<p><img src="../../_resours/pasted-image-20250201090942.png" alt width="auto" height="auto" decoding="async" loading="lazy"/></p>
+<p>Ента ровно то, о чем говорилось в условии - процессы, их время выполнения и зависимости. Обратите внимание: некоторые процессы, согласно условию, независимы (где 0 написано), некоторые зависимы от других (например, процесс 7 зависим от 4 и 6; Это значит, что процесс 7 не может начаться раньше выполнения процессов 4 и 6).</p>
+<p>Мы будем поступать наиболее наглядно: мы изобразим “схему” этих процессов так, чтобы нам было понятно каким образом их перемещать между собой, чтобы достичь желаемого.</p>
+<p>Шаг 1) Сузить 30-40-50 ячеек и сделать “таймфрейм” (в зависимости от самого задания).</p>
+<p>Делается это так: выделяете столбцы желаемого диапазона и сверху прямо вот сужаете их. У вас автоматически сузятся все.</p>
+<p><img src="../../_resours/aboba-13.gif" alt width="auto" height="auto" decoding="async" loading="lazy"/></p>
+<p>Таймфрейм - это просто временная шкала снизу каждой из наших сжатых ячеек. Я выберу вот такой:</p>
+<p><img src="../../_resours/pasted-image-20250201101704.png" alt width="auto" height="auto" decoding="async" loading="lazy"/></p>
+<p>Шаг 2) Рисуем длительности процессов.</p>
+<p>Тыкаем “Вставка” -> “Иллюстрации” -> “Фигуры” -> “Прямоугольник”. Наша задача сделать что-то вот такое:</p>
+<p><img src="../../_resours/pasted-image-20250201092224.png" alt width="auto" height="auto" decoding="async" loading="lazy"/></p>
+<p>Здесь каждый синий прямоугольник отображает длительность соответствующего процесса в миллисекундах. Обратите внимание: левый край каждого из прямоугольника чуть-чуть не дотягивает до единицы, а правый край - ровно столько, сколько нужно. Это важно, делайте также.</p>
+<p>Шаг 3) Прописать названия прямоугольников.</p>
+<p>Тыкайте на прямоугольник и вот прям на нем пишите его название. Названия - это ID процесса В. Должно получится что-то вот такое:</p>
+<p><img src="../../_resours/pasted-image-20250201092725.png" alt width="auto" height="auto" decoding="async" loading="lazy"/></p>
+<p>Шаг 4) Прописать зависимости процессов.</p>
+<p>Тыкаем Тыкаем “Вставка” -> “Иллюстрации” -> “Фигуры” -> “Линия”. Где “Контур” делаем ее позаметнее и пожирнее. С зажатой клавишой ctrl вы можете ее копировать:</p>
+<p><img src="../../_resours/aboba-14.gif" alt width="auto" height="auto" decoding="async" loading="lazy"/></p>
+<p>А далее буквально тянем ее до интересующего процесса и связываем как хотим.</p>
+<p><img src="../../_resours/aboba-15.gif" alt width="auto" height="auto" decoding="async" loading="lazy"/></p>
+<p>В итоге должно получится что-то вот такое:</p>
+<p><img src="../../_resours/pasted-image-20250201094550.png" alt width="auto" height="auto" decoding="async" loading="lazy"/></p>
+<p>Логика такая: независимые процессы никак не могут идти в зависимости от какого-либо другого процесса, поэтому они стоят как бы вначале цепочки. А остальные ставятся в зависимости от каких-либо других (как на рисунке крч). Также, старайтесь выравнивать полученные процессы по правой границе ячеек.</p>
+<p>Шаг 5) Пытаемся ответить на вопрос:</p>
+<blockquote>
+<p>Определите максимальную продолжительность процессов (в мс) в течении которых возможно одновременное выполнение четырех процессов, при условии, что все независимые друг от друга процессы могут выполняться параллельно.</p>
+</blockquote>
+<p>По сути, тут говориться о том, что нам надо как-то подвигать эти прямоугольники между собой так, чтобы выполнялось 4 процесса параллельно и при этом длительность их выполнения была максимальной.</p>
+<p>Дело нехитрое, подвигаем. Есть только одно правило, которое нам нужно соблюдать. Зависимые процессы не должны начинаться раньше, чем их зависимости. Т.е., например, процесс 7 не может начаться раньше процессов 4 и 6. У нас есть два “маркера”, которые позволяют определить начался ли зависимый процесс раньше или позже, чем тот, от которого он зависит. Первое - это само расположение прямоугольников (всегда сверяйтесь с изначальной таблицей). Второе - линии, которые мы нарисовали. Они, условно, не должны пересекаться. Т.е. не должно быть вот такого, например:</p>
+<p><img src="../../_resours/pasted-image-20250201102321.png" alt width="auto" height="auto" decoding="async" loading="lazy"/></p>
+<p>Как понять, как и что двигать? Все просто: нужно смотреть на наш таймфрейм и следить как бы в вертикальной плоскости, что процессы выполняются (т.е. если в столбце F, к примеру, находятся части 4 прямоугольников - это значит, что 4 процесса выполняются параллельно). Кстати, прямоугольники могут (и должны) располагаться почти вплотную, чтобы было четко понятно, что наш таймфрейм непрерывен (т.е. сразу же, как заканчивается один процесс, начинается другой). В целом, действуем методом научного тыка.</p>
+<p>Я натыкал вот такое расположение прямоугольников:</p>
+<p><img src="../../_resours/pasted-image-20250201102736.png" alt width="auto" height="auto" decoding="async" loading="lazy"/></p>
+<p>Между прямоугольниками есть зазоры, но это не значит, что процессы прерываются. Как я и говорил, один идет за одним, один сменяет другой (например, процесс 6 тут же сменяет собой процесс 5, как только 5ый завершится, таким образом, сохраняя общую непрерывность), поэтому все согласно условию.</p>
+<p>Отвечая на вопрос задания: максимальная продолжительность 4 параллельно идущих процессов равна 7 мс.</p>
+<p><strong><em>Ответ:</em></strong> 7 мс.</p>
+<p>Радуемся ли мы, если встретим такое на экзамене? Определенно, да. К сожалению, вопросы в этом задании могут отличаться друг от друга. Для примера, покажу как это задание выглядело в 2023 году. Вы увидите, что в 2023 году и само задание было другое и его решение сильно отличалось от того, что видели в 2024 году.</p>
+<h1 id="пример-2">Пример 2)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#пример-2" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<p><img src="../../_resours/pasted-image-20250201104401.png" alt width="auto" height="auto" decoding="async" loading="lazy"/></p>
+<p>Открываем, видим вот такое:</p>
+<p><img src="../../_resours/pasted-image-20250201105133.png" alt width="auto" height="auto" decoding="async" loading="lazy"/></p>
+<p>Отсортируем таблицу так, чтобы независимые процессы шли сверху таблицы. Можно применить просто по возрастанию:</p>
+<p><img src="../../_resours/pasted-image-20250201105603.png" alt width="auto" height="auto" decoding="async" loading="lazy"/></p>
+<p>Давайте введем маленький термин - время окончания процессов. Это минимальное время, когда процесс может быть закончен, при выполнении всех необходимых для его работы условий. Получается, что нам надо найти как раз максимальное время окончания всех процессов. Время выполнения независимых процессов - и есть время, когда они оканчиваются, ведь они могут идти параллельно, независимо ни от чего. А теперь посчитаем время окончания всех остальных процессов прям вот в том порядке, в котором они расположены.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>ID Процесса</th><th>Время окончания</th></tr></thead><tbody><tr><td>8</td><td><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7651em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">t</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">8</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.7651em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">t</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">1</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">32</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">20</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">52</span></span></span></span></td></tr><tr><td>5</td><td><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7651em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">t</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">5</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.7651em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">t</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">2</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">29</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">26</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">55</span></span></span></span></td></tr><tr><td>7</td><td><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7651em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">t</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">7</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.7651em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">t</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">5</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">31</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">55</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">86</span></span></span></span></td></tr><tr><td>10</td><td><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7651em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">t</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">10</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.7651em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">t</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">7</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">34</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">86</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">120</span></span></span></span></td></tr><tr><td>11</td><td><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7651em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">t</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">11</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.7651em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">t</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">9</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">30</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">202</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">232</span></span></span></span></td></tr><tr><td>15</td><td><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7651em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">t</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">15</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.7651em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">t</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">9</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">39</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">202</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">241</span></span></span></span></td></tr><tr><td>3</td><td><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7651em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">t</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">3</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.7651em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">t</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">13</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">22</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">152</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">174</span></span></span></span></td></tr><tr><td>17</td><td><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7651em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">t</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">17</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.7651em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">t</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">13</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">36</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">152</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">188</span></span></span></span></td></tr><tr><td>13</td><td><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7651em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">t</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">13</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">ma</span><span class="mord mathnormal">x</span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal">t</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">10</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">;</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal">t</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">12</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">32</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">120</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">152</span></span></span></span></td></tr><tr><td>14</td><td><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7651em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">t</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">14</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">ma</span><span class="mord mathnormal">x</span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal">t</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">11</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">;</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal">t</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">15</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">33</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">241</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">274</span></span></span></span></td></tr><tr><td>16</td><td><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7651em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">t</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">16</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">ma</span><span class="mord mathnormal">x</span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal">t</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">14</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">;</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal">t</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">15</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">33</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">274</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">307</span></span></span></span></td></tr><tr><td>9</td><td><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7651em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">t</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">9</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">ma</span><span class="mord mathnormal">x</span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal">t</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">3</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">;</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal">t</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">4</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">28</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">174</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">202</span></span></span></span></td></tr><tr><td>6</td><td><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7651em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">t</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">6</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">ma</span><span class="mord mathnormal">x</span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal">t</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">5</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">;</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal">t</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">7</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">;</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal">t</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">8</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">;</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal">t</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">15</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">25</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">241</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">266</span></span></span></span></td></tr><tr><td>Естественно, все это можно посчитать в экселе.</td><td></td></tr></tbody></table></div>
+<p><img src="../../_resours/pasted-image-20250201122637.png" alt width="auto" height="auto" decoding="async" loading="lazy"/></p>
+<p><strong><em>Ответ:</em></strong> 307.</p>
+<h1 id="пример-3">Пример 3)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#пример-3" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<p><img src="../../_resours/pasted-image-20250201122722.png" alt width="auto" height="auto" decoding="async" loading="lazy"/></p>
+<p>Здесь условие отличается оп сравнение с первым. Не фиксированное число процессов, а просто максимальное (это кол-во заранее не известно).</p>
+<p>Делаем также, как первое, по точно таким же шагам.</p>
+<p><img src="../../_resours/pasted-image-20250201131933.png" alt width="auto" height="auto" decoding="async" loading="lazy"/></p>
+<p>Здесь реализованы первые 3 шага.</p>
+<p>Немного потыкавшись, выстраиваем вот такую схему, реализуя 4 и 5 шаги:</p>
+<p><img src="../../_resours/pasted-image-20250201144458.png" alt width="auto" height="auto" decoding="async" loading="lazy"/></p>
+<p>В процессе выполнения я понял, что здесь схема как в первом примере будет неудобной из-за кучи связей, поэтому я сделал вот как выше. Так тоже можно, главное - следить за тем где какие процессы заканчиваются.</p>
+<p>Максимальное число процессов, которые могут выполняться одновременно - 7, а максимальное время, которое и требуется найти, когда все эти процессы активны - 2 мс.</p>
+<p><strong><em>Ответ:</em></strong> 2 мс.</p>
+<p>Если вдруг составители ЕГЭ окажутся очень вредными (а они могут), то подкинут следующий прототип.</p>
+<h1 id="пример-4">Пример 4)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#пример-4" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<p><img src="../../_resours/pasted-image-20250202132240.png" alt width="auto" height="auto" decoding="async" loading="lazy"/></p>
+<p><strong>ЕГЭ-2024, Основная волна, Дальний восток</strong></p>
+<p>Это задание, мягко говоря, не подарок. Дело в том, что таблица выглядит вот так:</p>
+<p><img src="../../_resours/pasted-image-20250202132353.png" alt width="auto" height="auto" decoding="async" loading="lazy"/></p>
+<p>И там 101 строка,,,</p>
+<p><em><strong>Лица тех, кто это задание встретил на ЕГЭ 2024, представили?</strong></em></p>
+<p>Любой из предыдущих методов решения этого задания здесь просто не сработает (схемы рисовать - устанете, зависимостей здесь слишком много, чтобы можно было посчитать напрямую, как во втором примере). Более того, в самом екселе считать все это довольно-таки проблематично. Была идея мол надо применить ПРОСМОТРХ (он же XLOOKUP, или, если вы любитель боли, то ВПР), однако я так и не разобрался как здесь по-человечески его применять из-за очень странных и рандомных рекурсий.</p>
+<p>Ну что, пришло время применить <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8697em;vertical-align:-0.0556em;"></span><span class="mord">1</span><span class="mord"><span class="mord">0</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">−</span><span class="mord mtight">500</span></span></span></span></span></span></span></span></span><span class="mspace"> </span><span class="mord">%</span></span></span></span> от того, чему нас научила жизнь,,,</p>
+<div class="python-checker" data-title="Пример 4" data-code="import pandas as pd
+import openpyxl
+
+# Читаем Excel-файл
+file_path = &quot;22(2).xlsx&quot;
+df = pd.read_excel(file_path)
+
+# Создаем словарь {ID процесса: (время выполнения, [ID зависимых процессов])}
+processes = {}
+for _, row in df.iterrows():
+    process_id = row[0]  # ID процесса
+    duration = row[1]  # Время выполнения
+    dependencies = str(row[2]).split(&quot;;&quot;) if row[2] != 0 else []  # Зависимости
+    dependencies = [int(dep) for dep in dependencies if dep.isdigit()]  # Преобразуем в числа
+    processes[process_id] = (duration, dependencies)
+
+completion_times = {}
+
+def get_completion_time(pid):
+    &quot;&quot;&quot;Рекурсивно вычисляет время завершения процесса.&quot;&quot;&quot;
+    duration, dependencies = processes[pid]
+    if not dependencies:
+        completion_time = duration
+    else:
+        completion_time = max(get_completion_time(dep) for dep in dependencies) + duration
+    
+    completion_times[pid] = completion_time
+    return completion_time
+
+# Вычисляем время завершения для всех процессов
+for process in processes:
+    get_completion_time(process)
+
+# Находим максимальное время завершения всех процессов
+min_total_time = max(completion_times.values())
+
+print(f&quot;Минимальное время завершения всех процессов: {min_total_time} мс&quot;)"></div>
+<p>Пока что людям везет. Вначале 2025 года Крылов, составитель ЕГЭ по информатике отметил, что 22ое будет легкое, на устный счет. Именно поэтому к рассмотрению этого прототипа рекомендую приступать в последнюю очередь.</p>
+<p>Очень сомнительно, что (на данный момент времени) хоть кому-то из тех, которым я все это пишу нужно такое решение задания. Гораздо эффективнее с точки зрения подготовки к экзамену потратить время не на разбирательство с библиотеками и рекурсивными функциями, а на отработку тех заданий, которые уже знайте.</p>
+<p>Допускаю, что, когда-нибудь, мне придется кому-то объяснять все это. Этому челу, видимо, не останется ничего, кроме как ботать такой способ решения 22ого задания.</p>
+<p>Однако, на мой взгляд, это самый эффективный способ решения чего-то подобного.</p></div></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><aside class="study-player" data-study-player="true"><div class="study-player-compact"><div class="study-player-heading"><div class="study-player-signal" aria-hidden="true"><span></span><span></span><span></span></div><span class="study-player-label">STUDY PLAYER</span><button type="button" class="study-player-expand" data-player-action="expand" aria-label="Expand player" aria-haspopup="dialog" aria-expanded="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 4H4v4M16 4h4v4M20 16v4h-4M4 16v4h4"></path></svg></button></div><div class="study-player-trackline"><strong data-player-title="true">Rain-2</strong><span data-player-subtitle="true">Ambient sound</span></div><div class="study-player-compact-row"><div class="study-player-transport"><button type="button" class="study-player-control" data-player-action="previous" aria-label="Previous track"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.5 5.5v13M18 6.75 9.5 12l8.5 5.25z"></path></svg></button><button type="button" class="study-player-play" data-player-action="toggle" aria-label="Play"><svg class="study-player-icon-play" viewBox="0 0 24 24" aria-hidden="true"><path d="m8 5.75 10 6.25-10 6.25z"></path></svg><svg class="study-player-icon-pause" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 6.5h3v11H8zM13 6.5h3v11h-3z"></path></svg></button><button type="button" class="study-player-control" data-player-action="next" aria-label="Next track"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.5 5.5v13M6 6.75 14.5 12 6 17.25z"></path></svg></button></div><div class="study-player-progress-compact" data-player-progress="true" role="progressbar" aria-label="Track progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><span></span></div></div></div><section class="study-player-popover" data-player-popover="true" popover="manual" role="dialog" aria-modal="false" aria-labelledby="study-player-dialog-title" hidden><header class="study-player-popover-header"><div><span class="study-player-label">STUDY PLAYER</span><h2 id="study-player-dialog-title">Focus audio</h2></div><button type="button" class="study-player-close" data-player-action="close" aria-label="Close player"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"></path></svg></button></header><div class="study-player-now"><span>NOW PLAYING</span><strong data-player-title="true">Rain-2</strong><small data-player-subtitle="true">Ambient sound</small></div><div class="study-player-main-controls"><div class="study-player-transport expanded"><button type="button" class="study-player-control" data-player-action="previous" aria-label="Previous track"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.5 5.5v13M18 6.75 9.5 12l8.5 5.25z"></path></svg></button><button type="button" class="study-player-play" data-player-action="toggle" aria-label="Play"><svg class="study-player-icon-play" viewBox="0 0 24 24" aria-hidden="true"><path d="m8 5.75 10 6.25-10 6.25z"></path></svg><svg class="study-player-icon-pause" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 6.5h3v11H8zM13 6.5h3v11h-3z"></path></svg></button><button type="button" class="study-player-control" data-player-action="next" aria-label="Next track"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.5 5.5v13M6 6.75 14.5 12 6 17.25z"></path></svg></button></div><button type="button" class="study-player-repeat" data-player-action="repeat" aria-label="Repeat track" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m17 3 3 3-3 3M4 11V9a3 3 0 0 1 3-3h13M7 21l-3-3 3-3m13-2v2a3 3 0 0 1-3 3H4"></path><path d="M12 9.5v5M10.5 11l1.5-1.5 1.5 1.5"></path></svg><span>Repeat</span></button></div><div class="study-player-timeline"><input type="range" min="0" max="1" step="0.1" value="0" data-player-seek="true" aria-label="Seek" disabled/><div class="study-player-time"><span data-player-elapsed="true">00:00</span><span data-player-duration="true">--:--</span></div></div><div class="study-player-queue-wrap"><span class="study-player-section-label">QUEUE</span><ol class="study-player-queue"><li><button type="button" data-player-track="rain-2" aria-label="Select Rain-2" aria-current="true"><span class="study-player-queue-index">01</span><span class="study-player-queue-copy"><strong>Rain-2</strong><small>Ambient sound</small></span><span class="study-player-queue-source">LOCAL</span></button></li><li><button type="button" data-player-track="cyberpunk" aria-label="Select Cyberpunk"><span class="study-player-queue-index">02</span><span class="study-player-queue-copy"><strong>Cyberpunk</strong><small>Study ambience</small></span><span class="study-player-queue-source">LOCAL</span></button></li><li><button type="button" data-player-track="quite-stars" aria-label="Select Quite-Stars"><span class="study-player-queue-index">03</span><span class="study-player-queue-copy"><strong>Quite-Stars</strong><small>Study ambience</small></span><span class="study-player-queue-source">LOCAL</span></button></li></ol></div><label class="study-player-volume"><span>Volume</span><input type="range" min="0" max="1" step="0.01" value="0.72" data-player-volume="true" aria-label="Volume"/><output data-player-volume-value="true">72%</output></label><p class="study-player-status" data-player-status="true" aria-live="polite"></p></section></aside><aside class="note-cheatsheet" aria-labelledby="note-cheatsheet-title"><h3 id="note-cheatsheet-title">Шпора</h3><p>Здесь скоро появится короткая шпора по этой заметке.</p></aside><div class="toc"><button type="button" class="toc-header" aria-controls="toc-12" aria-expanded="true"><h3>Оглавление</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-0" class="toc-content overflow"><li class="depth-0"><a href="#пример-1-демо-2024" data-for="пример-1-демо-2024">Пример 1) Демо 2024</a></li><li class="depth-0"><a href="#пример-2" data-for="пример-2">Пример 2)</a></li><li class="depth-0"><a href="#пример-3" data-for="пример-3">Пример 3)</a></li><li class="depth-0"><a href="#пример-4" data-for="пример-4">Пример 4)</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Создано с помощью <a href="https://quartz.jzhao.xyz/">Quartz v5.0.0</a> © 2026</p><ul><li><a href="https://t.me/Skifcha">Telegram</a></li></ul></footer></div></div></body><script src="../../static/resource-after-e13fffa1.js" type="application/javascript" data-persist="true"></script><script src="../../static/resource-after-8b336f9a.js" type="application/javascript" data-persist="true"></script><script src="../../static/resource-after-baba652b.js" type="application/javascript" data-persist="true"></script><script src="../../static/resource-after-5eb75950.js" type="module" data-persist="true"></script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript" data-persist="true"></script><script src="../../postscript-911c8fe1.js" type="module" data-persist="true"></script></html>

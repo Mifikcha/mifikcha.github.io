@@ -1,0 +1,7 @@
+student_id,full_name,short_name,subject,grade,format,group_id,program_id,parent_name,parent_telegram_id,student_telegram_id,obsidian_file,start_date,target,exam,target_score,status,access_student,access_parent,updated_at,sync_status
+ST-LEGACY-411ED9F2,Вита,Вита,physics,,,,,,,,"Репетиторство/Физика/Статистика учеников/Вита, физика ЕГЭ",,физика ЕГЭ,ЕГЭ,,Активный,FALSE,FALSE,2025-03-18T21:45:00,legacy_inferred_from_folder
+ST-LEGACY-947637BA,Дима,Дима,physics,,,,,,,,"Репетиторство/Физика/Статистика учеников/Дима, физика ЕГЭ",,физика ЕГЭ,ЕГЭ,,Активный,FALSE,FALSE,2025-02-17T20:54:36,legacy_inferred_from_folder
+ST-LEGACY-E12C4183,Полина,Полина,physics,,,,,,,,"Репетиторство/Физика/Статистика учеников/Полина, физика ЕГЭ",,физика ЕГЭ,ЕГЭ,,Активный,FALSE,FALSE,2025-02-17T20:54:36,legacy_inferred_from_folder
+ST-LEGACY-85144A01,Саша,Саша,,,,,,,,,"Репетиторство/Физика/Статистика учеников/Саша, ОГЭ",,ОГЭ,ОГЭ,,Активный,FALSE,FALSE,2025-02-18T20:12:07,legacy_inferred_from_folder
+ST-LEGACY-EF15C5DD,Саша,Саша,physics,,,,,,,,"Репетиторство/Физика/Статистика учеников/Саша, физика ЕГЭ",,физика ЕГЭ,ЕГЭ,,Активный,FALSE,FALSE,2025-03-01T13:30:27,legacy_inferred_from_folder
+ST-LEGACY-C1FE60DD,Степа,Степа,physics,,,,,,,,"Репетиторство/Физика/Статистика учеников/Степа, физика ЕГЭ",,физика ЕГЭ,ЕГЭ,,Активный,FALSE,FALSE,2024-09-06T19:55:12,legacy_inferred_from_folder

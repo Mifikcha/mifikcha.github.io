@@ -1,0 +1,33 @@
+topic_id,program_id,subject,section,topic_name,order_index,estimated_lessons,prerequisites,mandatory,materials_ready,student_visible,parent_visible,obsidian_file,public_link,updated_at
+PHYS-REF-001,,physics,reference,Пояснения к размерностям,1,1,,TRUE,partial,TRUE,TRUE,Репетиторство/Физика/Теория/Пояснения к размерностям.md,,2026-07-12T19:56:42
+PHYS-MECH-001,"CURR-PHYS-GRADE-11, CURR-PHYS-GRADE-9",physics,mechanics,Равномерное и равноускоренное движение,101,3,,TRUE,partial,TRUE,TRUE,Репетиторство/Физика/Теория/Механика/Равномерное и равноускоренное движение.md,,2026-07-12T21:33:49
+PHYS-MECH-002,"CURR-PHYS-GRADE-11, CURR-PHYS-GRADE-9",physics,mechanics,Законы Ньютона,102,2,,TRUE,partial,TRUE,TRUE,Репетиторство/Физика/Теория/Механика/Законы Ньютона.md,,2026-07-12T19:40:47
+PHYS-MECH-003,"CURR-PHYS-GRADE-11, CURR-PHYS-GRADE-9",physics,mechanics,Силы,103,2,,TRUE,partial,TRUE,TRUE,Репетиторство/Физика/Теория/Механика/Силы.md,,2026-07-12T19:44:10
+PHYS-MECH-004,"CURR-PHYS-GRADE-11, CURR-PHYS-GRADE-9",physics,mechanics,Импульс,104,2,,TRUE,partial,TRUE,TRUE,Репетиторство/Физика/Теория/Механика/Импульс.md,,2026-07-12T19:40:47
+PHYS-MECH-005,"CURR-PHYS-GRADE-11, CURR-PHYS-GRADE-9",physics,mechanics,Энергия,105,2,,TRUE,partial,TRUE,TRUE,Репетиторство/Физика/Теория/Механика/Энергия.md,,2026-07-12T19:40:47
+PHYS-MECH-006,"CURR-PHYS-GRADE-11, CURR-PHYS-GRADE-9",physics,mechanics,Работа,106,2,,TRUE,partial,TRUE,TRUE,Репетиторство/Физика/Теория/Механика/Работа.md,,2026-07-12T19:40:47
+PHYS-MECH-007,"CURR-PHYS-GRADE-11, CURR-PHYS-GRADE-9",physics,mechanics,Движение по окружности,107,2,,TRUE,partial,TRUE,TRUE,Репетиторство/Физика/Теория/Механика/Движение по окружности.md,,2026-07-12T19:40:47
+PHYS-MECH-008,"CURR-PHYS-GRADE-11, CURR-PHYS-GRADE-9",physics,mechanics,Гравитация,108,2,,TRUE,partial,TRUE,TRUE,Репетиторство/Физика/Теория/Механика/Гравитация.md,,2026-07-12T19:40:47
+PHYS-MECH-009,"CURR-PHYS-GRADE-11, CURR-PHYS-GRADE-9",physics,mechanics,Движение под углом к горизонту,109,2,,TRUE,partial,TRUE,TRUE,Репетиторство/Физика/Теория/Механика/Движение под углом к горизонту.md,,2026-07-13T11:22:41
+PHYS-MECH-010,"CURR-PHYS-GRADE-11, CURR-PHYS-GRADE-9",physics,mechanics,Статика,110,2,,TRUE,partial,TRUE,TRUE,Репетиторство/Физика/Теория/Механика/Статика.md,,2026-07-12T19:40:47
+PHYS-MECH-011,"CURR-PHYS-GRADE-11, CURR-PHYS-GRADE-9",physics,mechanics,Механические волны и колебания,111,3,,TRUE,partial,TRUE,TRUE,Репетиторство/Физика/Теория/Механика/Механические волны и колебания.md,,2026-07-13T11:23:40
+PHYS-MKT-001,"CURR-PHYS-GRADE-11, CURR-PHYS-GRADE-9",physics,molecular_physics,Теория МКТ,201,2,,TRUE,partial,TRUE,TRUE,Репетиторство/Физика/Теория/МКТ/Теория МКТ.md,,2026-07-12T19:40:47
+PHYS-MKT-002,"CURR-PHYS-GRADE-11, CURR-PHYS-GRADE-9",physics,molecular_physics,Газовые процессы,202,3,,TRUE,partial,TRUE,TRUE,Репетиторство/Физика/Теория/МКТ/Газовые процессы.md,,2026-07-12T19:40:47
+PHYS-MKT-003,CURR-PHYS-GRADE-11,physics,molecular_physics,Газовые циклы,203,2,,TRUE,partial,TRUE,TRUE,Репетиторство/Физика/Теория/МКТ/Газовые циклы.md,,2026-07-12T19:40:47
+PHYS-MKT-004,"CURR-PHYS-GRADE-11, CURR-PHYS-GRADE-9",physics,molecular_physics,Фазовые переходы,204,2,,TRUE,partial,TRUE,TRUE,Репетиторство/Физика/Теория/МКТ/Фазовые переходы.md,,2026-07-12T19:40:47
+PHYS-MKT-005,"CURR-PHYS-GRADE-11, CURR-PHYS-GRADE-9",physics,molecular_physics,Пары,205,2,,TRUE,partial,TRUE,TRUE,Репетиторство/Физика/Теория/МКТ/Пары.md,,2026-07-12T19:40:47
+PHYS-EM-001,"CURR-PHYS-GRADE-11, CURR-PHYS-GRADE-9",physics,electrodynamics,Электростатика,301,3,,TRUE,partial,TRUE,TRUE,Репетиторство/Физика/Теория/Электродинамика/Электростатика.md,,2026-07-12T21:23:41
+PHYS-EM-002,"CURR-PHYS-GRADE-11, CURR-PHYS-GRADE-9",physics,electrodynamics,Вещество в электрическом поле,302,2,,TRUE,partial,TRUE,TRUE,Репетиторство/Физика/Теория/Электродинамика/Вещество в электрическом поле.md,,2026-07-12T19:40:47
+PHYS-EM-003,"CURR-PHYS-GRADE-11, CURR-PHYS-GRADE-9",physics,electrodynamics,Электрический ток,303,2,,TRUE,partial,TRUE,TRUE,Репетиторство/Физика/Теория/Электродинамика/Электрический ток.md,,2026-07-12T19:40:47
+PHYS-EM-004,"CURR-PHYS-GRADE-11, CURR-PHYS-GRADE-9",physics,electrodynamics,Конденсатор,304,2,,TRUE,partial,TRUE,TRUE,Репетиторство/Физика/Теория/Электродинамика/Конденсатор.md,,2026-07-12T19:40:47
+PHYS-EM-005,"CURR-PHYS-GRADE-11, CURR-PHYS-GRADE-9",physics,electrodynamics,Цепи,305,3,,TRUE,partial,TRUE,TRUE,Репетиторство/Физика/Теория/Электродинамика/Цепи.md,,2026-07-12T19:40:47
+PHYS-EM-006,CURR-PHYS-GRADE-11,physics,electrodynamics,Магнитное поле,306,3,,TRUE,partial,TRUE,TRUE,Репетиторство/Физика/Теория/Электродинамика/Магнитное поле.md,,2026-07-12T19:40:47
+PHYS-EM-007,CURR-PHYS-GRADE-11,physics,electrodynamics,Индукция и движение проводников,307,3,,TRUE,partial,TRUE,TRUE,Репетиторство/Физика/Теория/Электродинамика/Индукция и движение проводников.md,,2026-07-12T19:40:47
+PHYS-EM-008,CURR-PHYS-GRADE-11,physics,electrodynamics,Самоиндукция,308,2,,TRUE,partial,TRUE,TRUE,Репетиторство/Физика/Теория/Электродинамика/Самоиндукция.md,,2026-07-12T19:40:47
+PHYS-EM-009,CURR-PHYS-GRADE-11,physics,electrodynamics,Колебательный контур,309,2,,TRUE,partial,TRUE,TRUE,Репетиторство/Физика/Теория/Электродинамика/Колебательный контур.md,,2026-07-12T19:40:47
+PHYS-EM-010,"CURR-PHYS-GRADE-11, CURR-PHYS-GRADE-9",physics,electrodynamics,Геометрическая оптика,310,3,,TRUE,partial,TRUE,TRUE,Репетиторство/Физика/Теория/Электродинамика/Геометрическая оптика.md,,2026-07-12T19:40:47
+PHYS-EM-011,"CURR-PHYS-GRADE-11, CURR-PHYS-GRADE-9",physics,electrodynamics,Линзы,311,2,,TRUE,partial,TRUE,TRUE,Репетиторство/Физика/Теория/Электродинамика/Линзы.md,,2026-07-12T19:40:47
+PHYS-EM-012,"CURR-PHYS-GRADE-11, CURR-PHYS-GRADE-9",physics,electrodynamics,Волновая оптика,312,2,,TRUE,partial,TRUE,TRUE,Репетиторство/Физика/Теория/Электродинамика/Волновая оптика.md,,2026-07-12T19:40:47
+PHYS-QUANT-001,CURR-PHYS-GRADE-11,physics,quantum_physics,Квантовая механика,401,2,,TRUE,partial,TRUE,TRUE,Репетиторство/Физика/Теория/Кванты/Квантовая механика.md,,2026-07-12T19:40:47
+PHYS-QUANT-002,CURR-PHYS-GRADE-11,physics,quantum_physics,Фотоэффект,402,2,,TRUE,partial,TRUE,TRUE,Репетиторство/Физика/Теория/Кванты/Фотоэффект.md,,2026-07-12T19:40:47
+PHYS-QUANT-003,"CURR-PHYS-GRADE-11, CURR-PHYS-GRADE-9",physics,quantum_physics,Ядерные реакции,403,2,,TRUE,partial,TRUE,TRUE,Репетиторство/Физика/Теория/Кванты/Ядерные реакции.md,,2026-07-12T19:40:47

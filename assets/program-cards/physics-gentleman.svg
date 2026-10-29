@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 140" width="320" height="140"
+     fill="none" stroke="#000" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+  <title>block on an inclined plane</title>
+  <defs>
+    <radialGradient id="vg" cx="50%" cy="52%" r="85%">
+      <stop offset="0.60" stop-color="#fff"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="tl" x1="0" y1="0" x2="0.46" y2="0.56">
+      <stop offset="0" stop-color="#fff" stop-opacity="0.5"/>
+      <stop offset="1" stop-color="#fff"/>
+    </linearGradient>
+    <mask id="vignette" maskContentUnits="userSpaceOnUse">
+      <rect width="320" height="140" fill="url(#vg)"/>
+    </mask>
+    <mask id="corner" maskContentUnits="userSpaceOnUse">
+      <rect width="320" height="140" fill="url(#tl)"/>
+    </mask>
+    <marker id="ah" viewBox="0 0 10 10" refX="8.4" refY="5" markerWidth="5.2" markerHeight="5.2"
+            orient="auto-start-reverse" markerUnits="strokeWidth">
+      <path d="M0.8 1.1 L9 5 L0.8 8.9" fill="none" stroke="#000" stroke-width="1.7"
+            stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+  <g mask="url(#corner)"><g mask="url(#vignette)">
+    <path d="M58 132 L292 132 L292 42 Z" stroke-width="2.2" opacity="0.55"/>
+    <line x1="70" y1="132" x2="63.98" y2="138.69" stroke-width="1.5" opacity="0.4"/>
+    <line x1="93.78" y1="132" x2="87.76" y2="138.69" stroke-width="1.5" opacity="0.4"/>
+    <line x1="117.56" y1="132" x2="111.53" y2="138.69" stroke-width="1.5" opacity="0.4"/>
+    <line x1="141.33" y1="132" x2="135.31" y2="138.69" stroke-width="1.5" opacity="0.4"/>
+    <line x1="165.11" y1="132" x2="159.09" y2="138.69" stroke-width="1.5" opacity="0.4"/>
+    <line x1="188.89" y1="132" x2="182.87" y2="138.69" stroke-width="1.5" opacity="0.4"/>
+    <line x1="212.67" y1="132" x2="206.64" y2="138.69" stroke-width="1.5" opacity="0.4"/>
+    <line x1="236.44" y1="132" x2="230.42" y2="138.69" stroke-width="1.5" opacity="0.4"/>
+    <line x1="260.22" y1="132" x2="254.2" y2="138.69" stroke-width="1.5" opacity="0.4"/>
+    <line x1="284" y1="132" x2="277.98" y2="138.69" stroke-width="1.5" opacity="0.4"/>
+    <g transform="translate(165.64 90.6) rotate(-21.04)"><rect x="-28.0" y="-32" width="56" height="32" rx="2" stroke-width="2.7"/></g>
+    <line x1="159.9" y1="75.67" x2="159.9" y2="119.67" stroke-width="2.7" opacity="1.0" marker-end="url(#ah)"/>
+    <line x1="159.9" y1="75.67" x2="145.54" y2="38.33" stroke-width="2.7" opacity="1.0" marker-end="url(#ah)"/>
+    <line x1="159.9" y1="75.67" x2="204.7" y2="58.44" stroke-width="2.7" opacity="1.0" marker-end="url(#ah)"/>
+    <path d="M90 132 A32 32 0 0 0 87.87 120.51" stroke-width="1.6" opacity="0.5"/>
+    <circle cx="159.9" cy="75.67" r="2.4" fill="#000" stroke="none" opacity="0.7"/>
+    <g fill="#000" stroke="none" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-weight="400">
+      <text x="168.9" y="115.67" font-size="15">mg</text>
+      <text x="127.54" y="35.33" font-size="15">N</text>
+      <text x="208.7" y="53.44" font-size="15">F<tspan font-size="9.9" dy="4.2">тр</tspan></text>
+      <text x="92" y="123" font-size="15">&#945;</text>
+    </g>
+  </g></g>
+</svg>

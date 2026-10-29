@@ -1,0 +1,1 @@
+(function(){let e="dark";try{e=localStorage.getItem("hopes-color-theme")??localStorage.getItem("theme")??"dark"}catch{}e!=="light"&&(e="dark"),document.documentElement.setAttribute("saved-theme",e),document.documentElement.style.colorScheme=e})();

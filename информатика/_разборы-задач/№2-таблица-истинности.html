@@ -1,0 +1,1264 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr"><head><title>№2 Таблица истинности</title><meta charset="utf-8"/><link rel="preload" href="../../index-30a4b807.css" as="style"/><link rel="preload" href="../../prescript-2083b193.js" as="script"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libertinus Serif:wght@400;700&amp;family=Libertinus Serif:ital,wght@0,400;0,600;1,400;1,600&amp;family=JetBrains Mono:wght@400;600&amp;display=swap"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libertinus Serif:wght@400;700&amp;text=Hopes%20and%20Dreams&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="Hopes and Dreams"/><meta property="og:title" content="№2 Таблица истинности"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="№2 Таблица истинности"/><meta name="twitter:description" content="Перед разбором: минимальный Питон, логика и циклы. Это задание на определение логических переменных по таблицам истинности."/><meta property="og:description" content="Перед разбором: минимальный Питон, логика и циклы. Это задание на определение логических переменных по таблицам истинности."/><meta property="og:image:alt" content="Перед разбором: минимальный Питон, логика и циклы. Это задание на определение логических переменных по таблицам истинности."/><meta property="twitter:domain" content="mifikcha.github.io"/><meta property="og:url" content="https://mifikcha.github.io/информатика/_разборы-задач/№2-таблица-истинности"/><meta property="twitter:url" content="https://mifikcha.github.io/информатика/_разборы-задач/№2-таблица-истинности"/><link rel="icon" href="../../static/icon.png"/><meta name="description" content="Перед разбором: минимальный Питон, логика и циклы. Это задание на определение логических переменных по таблицам истинности."/><meta name="generator" content="Quartz"/><link href="../../index-30a4b807.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../component-735924e0.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../component-589c1cea.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../component-bbc3f7c0.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../component-e427079e.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../component-34bdfded.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../component-53b25b2b.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../component-c93c6a44.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../component-8a06014f.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../component-1ea6ad18.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../component-7989faaa.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../component-788c9ca3.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../component-4abc06bd.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../component-274a3dfe.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../component-94cb6c84.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../component-58d5ff56.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../component-4f0286a0.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../component-7262b5a7.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../static/resource-style-11d41004.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../static/resource-style-fe38486b.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../static/resource-style-a5c806d2.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../static/resource-style-6bd36952.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../static/resource-style-6bc9bf1e.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../static/resource-style-7945cb86.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" data-persist="true"/><script src="../../prescript-2083b193.js" type="application/javascript" data-persist="true"></script><script type="application/javascript" data-persist="true">const fetchData = fetch("../../static/contentIndex.json").then(data => data.json())</script><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libertinus%20Serif%3Aital%2Cwght%400%2C400%3B0%2C600%3B0%2C700%3B1%2C400%3B1%2C600%3B1%2C700&amp;family=JetBrains%20Mono%3Awght%40400%3B600&amp;display=swap"/><meta property="og:image:width" content="1200"/><meta property="og:image:height" content="630"/><meta property="og:image" content="https://mifikcha.github.io/информатика/_разборы-задач/№2-таблица-истинности-og-image.webp"/><meta property="og:image:url" content="https://mifikcha.github.io/информатика/_разборы-задач/№2-таблица-истинности-og-image.webp"/><meta name="twitter:image" content="https://mifikcha.github.io/информатика/_разборы-задач/№2-таблица-истинности-og-image.webp"/><meta property="og:image:type" content="image/webp"/><style data-hopes-layout-fix="true">
+@media (min-width: 1200px) {
+  html body[data-slug] #quartz-root.page:not([data-frame="canvas"]):not([data-frame="excalidraw"]) {
+    width: 100vw !important;
+    max-width: none !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    transform: none !important;
+  }
+
+  html body[data-slug] #quartz-root.page > #quartz-body {
+    width: 100vw !important;
+    max-width: none !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    grid-template-columns: 320px minmax(0, 1fr) 320px !important;
+    column-gap: 0.5rem !important;
+  }
+
+  html body[data-slug] #quartz-root.page > #quartz-body > .left.sidebar {
+    margin-left: 0 !important;
+    transform: none !important;
+  }
+}
+
+html body[data-slug] #quartz-root.page[data-frame="excalidraw"] {
+  position: fixed !important;
+  inset: 0 !important;
+  width: 100vw !important;
+  max-width: none !important;
+  height: 100dvh !important;
+  min-height: 100dvh !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+  background: var(--excalidraw-bg, var(--light)) !important;
+}
+
+html body[data-slug] #quartz-root.page[data-frame="coding-lesson"] {
+  width: 100vw !important;
+  max-width: none !important;
+  min-height: 100dvh !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+html body[data-slug] #quartz-root.page[data-frame="coding-lesson"] > #quartz-body {
+  display: block !important;
+  width: 100% !important;
+  max-width: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+html body[data-slug] #quartz-root.page[data-frame="excalidraw"] > #quartz-body {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) !important;
+  grid-template-rows: minmax(0, 1fr) !important;
+  grid-template-areas: "grid-center" !important;
+  width: 100vw !important;
+  height: 100dvh !important;
+  min-height: 100dvh !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+}
+
+html body[data-slug] #quartz-root.page[data-frame="excalidraw"] .center.excalidraw-frame,
+html body[data-slug] #quartz-root.page[data-frame="excalidraw"] .excalidraw-stage,
+html body[data-slug] #quartz-root.page[data-frame="excalidraw"] .excalidraw-page,
+html body[data-slug] #quartz-root.page[data-frame="excalidraw"] .excalidraw-container {
+  box-sizing: border-box !important;
+  width: 100vw !important;
+  max-width: none !important;
+  height: 100dvh !important;
+  min-height: 100dvh !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+}
+
+html body[data-slug] #quartz-root.page[data-frame="excalidraw"] .excalidraw-container {
+  background-color: var(--excalidraw-bg, #121212) !important;
+}
+
+html body[data-slug] #quartz-root.page[data-frame="excalidraw"] .excalidraw-container svg {
+  width: 100vw !important;
+  height: 100dvh !important;
+  max-width: none !important;
+  max-height: none !important;
+}
+
+html body[data-slug] #quartz-root.page[data-frame="excalidraw"] .excalidraw-controls {
+  right: 1rem !important;
+  bottom: 1rem !important;
+}
+
+html {
+  --scrollbar-bg: var(--site-scrollbar-track) !important;
+  --scrollbar-thumb-bg: var(--site-scrollbar-thumb) !important;
+  --scrollbar-active-thumb-bg: var(--site-scrollbar-thumb-hover) !important;
+  --scrollbar-width: var(--site-scrollbar-size) !important;
+  --scrollbar-height: var(--site-scrollbar-size) !important;
+  --scrollbar-border-width: 2px !important;
+  --scrollbar-radius: var(--site-scrollbar-radius) !important;
+  scrollbar-color: var(--site-scrollbar-thumb) var(--site-scrollbar-track) !important;
+  scrollbar-width: thin !important;
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar,
+*::-webkit-scrollbar {
+  width: var(--site-scrollbar-size) !important;
+  height: var(--site-scrollbar-size) !important;
+}
+
+html::-webkit-scrollbar-track,
+body::-webkit-scrollbar-track,
+*::-webkit-scrollbar-track {
+  border-radius: var(--site-scrollbar-radius) !important;
+  background: var(--site-scrollbar-track) !important;
+  background-color: var(--site-scrollbar-track) !important;
+}
+
+html::-webkit-scrollbar-thumb,
+body::-webkit-scrollbar-thumb,
+*::-webkit-scrollbar-thumb {
+  min-width: 2.5rem !important;
+  min-height: 2.5rem !important;
+  border: 2px solid var(--site-scrollbar-track) !important;
+  border-radius: var(--site-scrollbar-radius) !important;
+  background: var(--site-scrollbar-thumb) !important;
+  background-color: var(--site-scrollbar-thumb) !important;
+}
+
+html::-webkit-scrollbar-thumb:hover,
+body::-webkit-scrollbar-thumb:hover,
+*::-webkit-scrollbar-thumb:hover {
+  background: var(--site-scrollbar-thumb-hover) !important;
+  background-color: var(--site-scrollbar-thumb-hover) !important;
+}
+
+html::-webkit-scrollbar-thumb:active,
+body::-webkit-scrollbar-thumb:active,
+*::-webkit-scrollbar-thumb:active {
+  background: var(--site-scrollbar-thumb-active) !important;
+  background-color: var(--site-scrollbar-thumb-active) !important;
+}
+
+html::-webkit-scrollbar-corner,
+body::-webkit-scrollbar-corner,
+*::-webkit-scrollbar-corner {
+  background: var(--site-scrollbar-track) !important;
+  background-color: var(--site-scrollbar-track) !important;
+}
+
+.python-checker {
+  --scrollbar-bg: var(--python-scrollbar-track) !important;
+  --scrollbar-thumb-bg: var(--python-scrollbar-thumb) !important;
+  --scrollbar-active-thumb-bg: var(--python-scrollbar-thumb-hover) !important;
+}
+
+.python-checker-editor,
+.python-checker-output {
+  scrollbar-color: var(--python-scrollbar-thumb) var(--python-scrollbar-track) !important;
+}
+
+.python-checker-editor::-webkit-scrollbar-track,
+.python-checker-output::-webkit-scrollbar-track {
+  background: var(--python-scrollbar-track) !important;
+  background-color: var(--python-scrollbar-track) !important;
+}
+
+.python-checker-editor::-webkit-scrollbar-thumb,
+.python-checker-output::-webkit-scrollbar-thumb {
+  border-color: var(--python-scrollbar-track) !important;
+  background: var(--python-scrollbar-thumb) !important;
+  background-color: var(--python-scrollbar-thumb) !important;
+}
+
+.python-checker-editor::-webkit-scrollbar-thumb:hover,
+.python-checker-output::-webkit-scrollbar-thumb:hover {
+  background: var(--python-scrollbar-thumb-hover) !important;
+  background-color: var(--python-scrollbar-thumb-hover) !important;
+}
+
+.katex,
+.katex .katex-html,
+html body[data-slug] .katex-display > .katex,
+html body[data-slug] .katex-display > .katex > .katex-html,
+.katex .mrel,
+.katex .mrel .mord,
+.katex .mrel .inner {
+  font-family: KaTeX_Main, "Times New Roman", serif !important;
+}
+
+.katex {
+  overflow-wrap: normal !important;
+  text-wrap: nowrap !important;
+  word-break: normal !important;
+}
+
+html body[data-slug] .katex-display {
+  display: block !important;
+  overflow-x: auto !important;
+  overflow-y: hidden !important;
+  padding-block: 0.55em !important;
+  scrollbar-width: none !important;
+  -ms-overflow-style: none !important;
+}
+
+html body[data-slug] .katex-display::-webkit-scrollbar {
+  width: 0 !important;
+  height: 0 !important;
+}
+
+html body[data-slug] .search > .search-container.active {
+  background: rgba(250, 246, 215, 0.48) !important;
+  -webkit-backdrop-filter: blur(10px) saturate(1.05) !important;
+  backdrop-filter: blur(10px) saturate(1.05) !important;
+}
+
+html[saved-theme="dark"] body[data-slug] .search > .search-container.active {
+  background: rgba(17, 19, 32, 0.52) !important;
+}
+
+html body[data-slug] .search > .search-container.active > .search-space > input,
+html body[data-slug] .search > .search-container.active > .search-space > .search-layout,
+html body[data-slug] .search > .search-container.active > .search-space > .tag-suggestions {
+  background:
+    linear-gradient(
+      135deg,
+      color-mix(in srgb, var(--site-panel-glass) 82%, var(--secondary)),
+      color-mix(in srgb, var(--light) 68%, transparent) 135%
+    ),
+    color-mix(in srgb, var(--light) 74%, transparent) !important;
+}
+
+html body[data-slug] .callout.is-collapsed > .callout-content {
+  display: none !important;
+}
+
+@supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+  html body[data-slug] .search > .search-container.active {
+    background: rgba(250, 246, 215, 0.68) !important;
+  }
+
+  html[saved-theme="dark"] body[data-slug] .search > .search-container.active {
+    background: rgba(17, 19, 32, 0.72) !important;
+  }
+}
+</style></head><body data-slug="информатика/_разборы-задач/№2-таблица-истинности" data-basepath><div id="quartz-root" class="page" data-frame="default"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="/">Hopes and Dreams</a></h2><div class="mobile-only"><div class="spacer"></div></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 0.5rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button" aria-label="Поиск" aria-expanded="false"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>Поиск</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="Найти что-нибудь" placeholder="Найти что-нибудь"/><div class="search-layout" data-preview="true" data-field-priority="[&quot;title&quot;,&quot;content&quot;,&quot;tags&quot;]"></div></div></div></div></div></div><div class="explorer nav-files-container" data-behavior="collapse" data-collapsed="open" data-savestate="false" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a, b) => {\n  const isStudentStats = (node) =>\n    node.slugSegments?.length === 1 &amp;&amp;\n    (node.slugSegment === \&quot;статистика-учеников\&quot; || node.displayName === \&quot;Статистика учеников\&quot;)\n\n  if (a.isFolder &amp;&amp; b.isFolder) {\n    if (isStudentStats(a) &amp;&amp; !isStudentStats(b)) return 1\n    if (!isStudentStats(a) &amp;&amp; isStudentStats(b)) return -1\n  }\n\n  if ((!a.isFolder &amp;&amp; !b.isFolder) || (a.isFolder &amp;&amp; b.isFolder)) {\n    return (a.displayName || \&quot;\&quot;).localeCompare(b.displayName || \&quot;\&quot;, undefined, {\n      numeric: true,\n      sensitivity: \&quot;base\&quot;,\n    })\n  }\n\n  if (!a.isFolder &amp;&amp; b.isFolder) return 1\n  return -1\n}\n&quot;,&quot;filterFn&quot;:&quot;(node) => node.slugSegment !== \&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;(node) => {\n    return node;\n  }&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-14" aria-label="Проводник"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>Проводник</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-14" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#" class="nav-file-title tree-item-self"></a></li></template><template id="template-folder"><li><div class="folder-container nav-folder-title tree-item-self"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon nav-folder-collapse-indicator collapse-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content tree-item-children"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../информатика/">Информатика</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../информатика/_разборы-задач/">_Разборы задач</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>№2 Таблица истинности</a></div></nav><h1 class="article-title">№2 Таблица истинности</h1><details class="note-properties metadata-container" open data-collapsed="false"><summary class="note-properties-header"><span class="note-properties-title">Properties</span><span class="note-properties-count">1</span></summary><table class="note-properties-table"><tbody><tr class="note-properties-row metadata-property"><td class="note-properties-key metadata-property-key">tags</td><td class="note-properties-value metadata-property-value"><span class="note-properties-tags"><a href="../../tags/предмет/информатика" class="internal internal-link tag-link">предмет/информатика</a><span class="note-properties-separator">, </span><a href="../../tags/публичный-сайт" class="internal internal-link tag-link">публичный-сайт</a><span class="note-properties-separator">, </span><a href="../../tags/тип/разбор-задач" class="internal internal-link tag-link">тип/разбор-задач</a><span class="note-properties-separator">, </span><a href="../../tags/экзамен/егэ" class="internal internal-link tag-link">экзамен/егэ</a></span></td></tr></tbody></table></details></div></div><article class="popover-hint"><div class="markdown-preview-view markdown-rendered"><p>Перед разбором: <a href="../../информатика/истинный-фундамент/02-минимальный-python/02.1-первая-программа" class="internal internal-link alias" data-slug="информатика/истинный-фундамент/02-минимальный-python/02.1-первая-программа">минимальный Питон</a>, <a href="../../информатика/истинный-фундамент/05-логика/" class="internal internal-link alias" data-slug="информатика/истинный-фундамент/05-логика/index">логика</a> и <a href="../../информатика/истинный-фундамент/06-циклы/" class="internal internal-link alias" data-slug="информатика/истинный-фундамент/06-циклы/index">циклы</a>.</p>
+<p>Это задание на определение логических переменных по таблицам истинности. Нужно хорошо знать <a href="../../информатика/истинный-фундамент/05-логика/" class="internal internal-link alias" data-slug="информатика/истинный-фундамент/05-логика/index">логические операторы</a>, а также уметь строить <a href="../../информатика/_разборы-задач/№2-таблица-истинности" class="internal internal-link alias" data-slug="информатика/_разборы-задач/№2-таблица-истинности">таблицы истинности</a>.</p>
+<pre><code>V - дизъюнкция (or, или, +)
+∧ - конъюнкция (and, и, *)
+—> импликация (&lt;=)
+¬ или палочка сверху - отрицание (not)
+≡ - тождество (==)
+</code></pre>
+<h1 id="пример-1">Пример 1)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#пример-1" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<p><img src="../../_resours/pasted-image-20240906181550.png" alt width="auto" height="auto" decoding="async" loading="eager" fetchpriority="high"/></p>
+<p>В общем-то задание можно решать либо ручками (ЧТО ДЕЛАТЬ КРАЙНЕ НЕ РЕКОМЕНДУЕТСЯ НА САМОМ ЭКЗАМЕНЕ В СВЯЗИ С НЕХВАТКОЙ ВРЕМЕНИ) либо прогать. Для примеров будем решать и так и так.</p>
+<p>Ручками:<br/>
+Перво-наперво, посмотрим что за функция написана в условии<br/>
+<span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathnormal">x</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">¬</span><span class="mord mathnormal" style="margin-right:0.0359em;">y</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.0359em;">y</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">≡</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.044em;">z</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord">¬</span><span class="mord mathnormal" style="margin-right:0.0269em;">w</span><span class="mclose">)</span></span></span></span><br/>
+Пояснять <a href="../../информатика/истинный-фундамент/05-логика/" class="internal internal-link alias" data-slug="информатика/истинный-фундамент/05-логика/index">операторы</a> не буду, разберетесь, не маленькие.</p>
+<p>Функция принимает значение 1 тогда и только тогда, когда верно одно или несколько из трех условий: первая скобка истина, вторая скобка истина, w = 0. Первая скобка будет истина тогда, когда x=1, а y=0 (иных вариантов быть не может). Вторая скобка истина тогда, когда y=z. Т.е. из всей таблицы истинности для этой функции и ее 4 переменных нас интересует только определенный набор циферок.</p>
+<p>Далее идет развилка путей, если решаете ручками. Можно полностью нарисовать таблицу истинности и тогда, с большой вероятностью, не ошибетесь в задании, но потратите много времени, либо можно “подобрать” значения переменных исходя из вышесказанного. Для большей наглядности приведем полную таблицу истинности для заданной функции.<br/>
+<span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.109em;">N</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.8247em;"></span><span class="mord"><span class="mord">2</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8247em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span></span></span></span></span></span></span></span></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th style="text-align:left;">x</th><th style="text-align:left;">y</th><th style="text-align:left;">z</th><th style="text-align:left;">w</th><th style="text-align:left;">F</th></tr></thead><tbody><tr><td style="text-align:left;">0</td><td style="text-align:left;">0</td><td style="text-align:left;">0</td><td style="text-align:left;">0</td><td style="text-align:left;">1</td></tr><tr><td style="text-align:left;">0</td><td style="text-align:left;">0</td><td style="text-align:left;">0</td><td style="text-align:left;">1</td><td style="text-align:left;">1</td></tr><tr><td style="text-align:left;">0</td><td style="text-align:left;">0</td><td style="text-align:left;">1</td><td style="text-align:left;">0</td><td style="text-align:left;">1</td></tr><tr><td style="text-align:left;"><span class="text-highlight">0</span></td><td style="text-align:left;"><span class="text-highlight">0</span></td><td style="text-align:left;"><span class="text-highlight">1</span></td><td style="text-align:left;"><span class="text-highlight">1</span></td><td style="text-align:left;"><span class="text-highlight">0</span></td></tr><tr><td style="text-align:left;">0</td><td style="text-align:left;">1</td><td style="text-align:left;">0</td><td style="text-align:left;">0</td><td style="text-align:left;">1</td></tr><tr><td style="text-align:left;"><span class="text-highlight">0</span></td><td style="text-align:left;"><span class="text-highlight">1</span></td><td style="text-align:left;"><span class="text-highlight">0</span></td><td style="text-align:left;"><span class="text-highlight">1</span></td><td style="text-align:left;"><span class="text-highlight">0</span></td></tr><tr><td style="text-align:left;">0</td><td style="text-align:left;">1</td><td style="text-align:left;">1</td><td style="text-align:left;">0</td><td style="text-align:left;">1</td></tr><tr><td style="text-align:left;">0</td><td style="text-align:left;">1</td><td style="text-align:left;">1</td><td style="text-align:left;">1</td><td style="text-align:left;">1</td></tr><tr><td style="text-align:left;">1</td><td style="text-align:left;">0</td><td style="text-align:left;">0</td><td style="text-align:left;">0</td><td style="text-align:left;">1</td></tr><tr><td style="text-align:left;">1</td><td style="text-align:left;">0</td><td style="text-align:left;">0</td><td style="text-align:left;">1</td><td style="text-align:left;">1</td></tr><tr><td style="text-align:left;">1</td><td style="text-align:left;">0</td><td style="text-align:left;">1</td><td style="text-align:left;">0</td><td style="text-align:left;">1</td></tr><tr><td style="text-align:left;">1</td><td style="text-align:left;">0</td><td style="text-align:left;">1</td><td style="text-align:left;">1</td><td style="text-align:left;">1</td></tr><tr><td style="text-align:left;">1</td><td style="text-align:left;">1</td><td style="text-align:left;">0</td><td style="text-align:left;">0</td><td style="text-align:left;">1</td></tr><tr><td style="text-align:left;"><span class="text-highlight">1</span></td><td style="text-align:left;"><span class="text-highlight">1</span></td><td style="text-align:left;"><span class="text-highlight">0</span></td><td style="text-align:left;"><span class="text-highlight">1</span></td><td style="text-align:left;"><span class="text-highlight">0</span></td></tr><tr><td style="text-align:left;">1</td><td style="text-align:left;">1</td><td style="text-align:left;">1</td><td style="text-align:left;">0</td><td style="text-align:left;">1</td></tr><tr><td style="text-align:left;">1</td><td style="text-align:left;">1</td><td style="text-align:left;">1</td><td style="text-align:left;">1</td><td style="text-align:left;">1</td></tr></tbody></table></div>
+<p>Как видим из таблицы, функция ложна в 3 местах. Именно такие значения переменных нас и интересуют. Осталось сопоставить наши найденные значения с таблицей, которая дана в условии. Еще раз выпишем то, что получили и таблицу из условия для удобства.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th style="text-align:left;">x</th><th style="text-align:left;">y</th><th style="text-align:left;">z</th><th style="text-align:left;">w</th><th style="text-align:left;">F</th></tr></thead><tbody><tr><td style="text-align:left;">0</td><td style="text-align:left;">0</td><td style="text-align:left;">1</td><td style="text-align:left;">1</td><td style="text-align:left;">0</td></tr><tr><td style="text-align:left;">0</td><td style="text-align:left;">1</td><td style="text-align:left;">0</td><td style="text-align:left;">1</td><td style="text-align:left;">0</td></tr><tr><td style="text-align:left;">1</td><td style="text-align:left;">1</td><td style="text-align:left;">0</td><td style="text-align:left;">1</td><td style="text-align:left;">0</td></tr></tbody></table></div>
+<p><img src="../../_resours/pasted-image-20240906183419.png" alt width="auto" height="auto" decoding="async" loading="lazy"/></p>
+<p>Видим, что переменная w должна быть истинна всегда, поэтому ей соответствует столбец номер 1. Третья строка таблицы соответствует набору переменных (1, 1, 0, 1), т.к. это единственная строка, где задан один 0 и две 1 => z соответствует второму столбцу. Первые две строки соответствуют набору переменных 0011 и 0101. Обратимся ко второй строке. Т.к. первый столбец - это w, а второй - z, при том, что на 4 месте во второй строке стоит 0, то на третьей позиции должен быть y со значением 1. Последнее место отдается оставшейся переменной.</p>
+<p><strong><em>Ответ:</em></strong> wzyx.</p>
+<p>Код для этой задачи выглядит так:</p>
+<div class="python-checker" data-title="Пример 1" data-code="print(&quot;x y z w&quot;)
+for x in range(0, 2):
+    for y in range(0, 2):
+        for z in range(0, 2):
+            for w in range(0, 2):
+                if not((x and not(y)) or (y == z)  or not(w)):
+                    print(x, y, z, w)"></div>
+<p>Понятно, (а теперь еще и видно), что прогать эту задачу гораздо быстрее и проще, нежели решать ручками. При других вариациях этой задачи просто меняйте функцию под оператором if на нужную.</p>
+<h1 id="пример-2">Пример 2)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#пример-2" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<p><img src="../../_resours/pasted-image-20240906185554.png" alt width="auto" height="auto" decoding="async" loading="lazy"/></p>
+<p>Хыхыхы</p>
+<div class="python-checker" data-title="Пример 2" data-code="print(&quot;x y z w&quot;)
+for x in range(0, 2):
+    for y in range(0, 2):
+        for z in range(0, 2):
+            for w in range(0, 2):
+                if not (not (y &lt;= x) or (z &lt;= w) or not z):
+                    print(x, y, z, w)"></div>
+<pre><code>x y z w
+0 0 1 0
+1 0 1 0
+1 1 1 0
+</code></pre>
+<p>Заметим, что переменная z может принимать только значение  1, значит, переменная z соответствует третьему столбцу таблицы истинности. Переменная w может принимать только значение  0, значит, переменная w соответствует четвёртому столбцу таблицы истинности.</p>
+<p>Тогда вторая строка может соответствовать только набору (1, 0, 1, 0). Следовательно, переменная x соответствует второму столбцу таблицы истинности, а переменная <em>y</em> соответствует первому столбцу таблицы истинности.</p>
+<p>Т.е. <strong><em>Ответ:</em></strong> yxzw</p>
+<p>А теперь ручками:</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th style="text-align:left;">x</th><th style="text-align:left;">y</th><th style="text-align:left;">z</th><th style="text-align:left;">w</th><th style="text-align:left;">F</th></tr></thead><tbody><tr><td style="text-align:left;">0</td><td style="text-align:left;">0</td><td style="text-align:left;">0</td><td style="text-align:left;">0</td><td style="text-align:left;">1</td></tr><tr><td style="text-align:left;">0</td><td style="text-align:left;">0</td><td style="text-align:left;">0</td><td style="text-align:left;">1</td><td style="text-align:left;">1</td></tr><tr><td style="text-align:left;"><span class="text-highlight">0</span></td><td style="text-align:left;"><span class="text-highlight">0</span></td><td style="text-align:left;"><span class="text-highlight">1</span></td><td style="text-align:left;"><span class="text-highlight">0</span></td><td style="text-align:left;"><span class="text-highlight">0</span></td></tr><tr><td style="text-align:left;">0</td><td style="text-align:left;">0</td><td style="text-align:left;">1</td><td style="text-align:left;">1</td><td style="text-align:left;">1</td></tr><tr><td style="text-align:left;">0</td><td style="text-align:left;">1</td><td style="text-align:left;">0</td><td style="text-align:left;">0</td><td style="text-align:left;">1</td></tr><tr><td style="text-align:left;">0</td><td style="text-align:left;">1</td><td style="text-align:left;">0</td><td style="text-align:left;">1</td><td style="text-align:left;">1</td></tr><tr><td style="text-align:left;">0</td><td style="text-align:left;">1</td><td style="text-align:left;">1</td><td style="text-align:left;">0</td><td style="text-align:left;">1</td></tr><tr><td style="text-align:left;">0</td><td style="text-align:left;">1</td><td style="text-align:left;">1</td><td style="text-align:left;">1</td><td style="text-align:left;">1</td></tr><tr><td style="text-align:left;">1</td><td style="text-align:left;">0</td><td style="text-align:left;">0</td><td style="text-align:left;">0</td><td style="text-align:left;">1</td></tr><tr><td style="text-align:left;">1</td><td style="text-align:left;">0</td><td style="text-align:left;">0</td><td style="text-align:left;">1</td><td style="text-align:left;">1</td></tr><tr><td style="text-align:left;"><span class="text-highlight">1</span></td><td style="text-align:left;"><span class="text-highlight">0</span></td><td style="text-align:left;"><span class="text-highlight">1</span></td><td style="text-align:left;"><span class="text-highlight">0</span></td><td style="text-align:left;"><span class="text-highlight">0</span></td></tr><tr><td style="text-align:left;">1</td><td style="text-align:left;">0</td><td style="text-align:left;">1</td><td style="text-align:left;">1</td><td style="text-align:left;">1</td></tr><tr><td style="text-align:left;">1</td><td style="text-align:left;">1</td><td style="text-align:left;">0</td><td style="text-align:left;">0</td><td style="text-align:left;">1</td></tr><tr><td style="text-align:left;">1</td><td style="text-align:left;">1</td><td style="text-align:left;">0</td><td style="text-align:left;">1</td><td style="text-align:left;">1</td></tr><tr><td style="text-align:left;"><span class="text-highlight">1</span></td><td style="text-align:left;"><span class="text-highlight">1</span></td><td style="text-align:left;"><span class="text-highlight">1</span></td><td style="text-align:left;"><span class="text-highlight">0</span></td><td style="text-align:left;"><span class="text-highlight">0</span></td></tr><tr><td style="text-align:left;">1</td><td style="text-align:left;">1</td><td style="text-align:left;">1</td><td style="text-align:left;">1</td><td style="text-align:left;">1</td></tr></tbody></table></div>
+<p>Ну и дальше аналогичные рассуждения, которые приведены в <a href="../../информатика/_разборы-задач/№2-таблица-истинности#пример-1" class="internal internal-link alias" data-slug="информатика/_разборы-задач/№2-таблица-истинности">предыдущим примерам</a>.</p>
+<p>В дальнейших примерах будем скипать способ ручками.</p>
+<h1 id="пример-3">Пример 3)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#пример-3" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<p><img src="../../_resours/pasted-image-20240906192145.png" alt width="auto" height="auto" decoding="async" loading="lazy"/></p>
+<div class="python-checker" data-title="Пример 3" data-code="print(&quot;x y z w&quot;)
+for x in range(0, 2):
+    for y in range(0, 2):
+        for z in range(0, 2):
+            for w in range(0, 2):
+                if not((not(x &lt;= z)) or (y == w) or y):
+                    print(x, y, z, w)"></div>
+<pre><code>x y z w
+0 0 0 1
+0 0 1 1
+1 0 1 1
+</code></pre>
+<p>Заметим, что только в четвертом столбце таблице истинности нет нулей. Следовательно, четвертый столбец может быть только переменной w. Третий столбец может быть только переменной <em>y</em>, так как в остальных столбцах есть единица. Рассмотрим третью строку таблицы. Эта строка может соответствовать только набору (0, 0, 0, 1). Следовательно, второй столбец может соответствовать только переменной x, так как в этом столбце два нуля и одна единица. Тогда первый столбец соответствует переменной z.</p>
+<p><strong><em>Ответ:</em></strong> zxyw.</p>
+<h1 id="иной-метод-решения">Иной метод решения<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#иной-метод-решения" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<p>Этот метод представляет из себя полный перебор всех возможных вариантов построения таблицы. Здесь представлен абстрактный пример, никак не относится к предыдущим.</p>
+<ul>
+<li>Из плюсов: он еще более шаблонный, чем предыдущий метод + здесь за вас дают готовый ответ, не надо ничего сопоставлять самостоятельно.</li>
+<li>Из минусов: код может показаться непонятным и сложным. Он использует сторонние методы такие как библиотека <code>itertools</code> и ее команды, связанные с перебором и множествами. Поэтому я постараюсь объяснить что происходит, чтобы вы не писали код вслепую (опционально).</li>
+</ul>
+<p>Документация <code>itertools</code>: <a href="https://docs.python.org/3/library/itertools.html" class="external external-link">docs.python.org/3/library/itertools.html<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+<blockquote class="callout tip" data-callout="tip">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>Абоба </p></div>
+                  
+                </div>
+<div class="callout-content">
+<p>Для этого метода критически важно понимать коллекции. Если не проходили <a href="../../информатика/истинный-фундамент/07-коллекции/" class="internal internal-link alias" data-slug="информатика/истинный-фундамент/07-коллекции/index">коллекции в Истинном фундаменте</a> - самое время.</p>
+</div>
+</blockquote>
+<p>Итак, код:</p>
+<div class="python-checker" data-title="Шаблон перебора" data-code="from itertools import *
+
+def f(x,y,w,z):
+	return (not(((not (x)) or y) and (not(w)))) or (not(z and (not(y and w))))
+
+for a1,a2,a3,a4,a5,a6,a7 in product([0,1],repeat=7):
+	t=[(0,a1,a2,1),(a3,1,a4,a5),(1,0,a6,a7)]
+	if len(t)==len(set(t)):
+		for p in permutations('xywz'):
+			if [f(**dict(zip(p,r))) for r in t]==[0,0,0]:
+				print(p)"></div>
+<blockquote class="callout note is-collapsible is-collapsed" data-callout="note" data-callout-fold>
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>Долгий и подробный разбор (ненадо) </p></div>
+                  <div class="fold-callout-icon callout-fold"></div>
+                </div>
+<div class="callout-content">
+<h3 id="библиотека-itertools">Библиотека <code>itertools</code><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#библиотека-itertools" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Вот эта строка</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="python" data-theme="github-light github-dark"><code data-language="python" data-theme="github-light github-dark" style="display:grid;"><span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="keyword">from</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> itertools </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="keyword">import</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="operator"> *</span></span></code></pre></figure>
+<p>Объявляет, что мы хотим здесь видеть библиотеку <code>itertools</code> и все ее элементы т.е. <code>*</code>. Это набор готовых инструментов для ситуаций типа:</p>
+<ul>
+<li>перебрать все пары</li>
+<li>перебрать все тройки</li>
+<li>перебрать все комбинации</li>
+<li>перебрать все перестановки</li>
+<li>перебрать все варианты нулей и единиц</li>
+</ul>
+<h3 id="определяем-функцию">Определяем функцию<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#определяем-функцию" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="python" data-theme="github-light github-dark"><code data-language="python" data-theme="github-light github-dark" style="display:grid;"><span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="keyword">def</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;" data-token-type="function"> f</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">(x,y,w,z):</span></span>
+<span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="keyword">	return</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation"> (</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="operator">not</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">(((</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="operator">not</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation"> (x)) </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="operator">or</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation"> y) </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="operator">and</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation"> (</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="operator">not</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">(w)))) </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="operator">or</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation"> (</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="operator">not</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">(z </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="operator">and</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation"> (</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="operator">not</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">(y </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="operator">and</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation"> w))))</span></span></code></pre></figure>
+<p>Это объявляет функцию из условия. Если забыли или не знали что это такое - <a href="../../информатика/истинный-фундамент/04-функции/04.1-вызов-функции" class="internal internal-link alias" data-slug="информатика/истинный-фундамент/04-функции/04.1-вызов-функции">вам сюда</a>. Тут пояснять нечего, это делается аналогично предыдущим примерам.</p>
+<h3 id="зачем-вообще-нужен-цикл">Зачем вообще нужен цикл<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#зачем-вообще-нужен-цикл" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>В задаче есть таблица, где часть клеток пустая. Например, условно:</p>
+<pre><code>?  1  ?  ?
+0  ?  1  ?
+?  ?  0  1
+</code></pre>
+<p>Мы не знаем что находится в пустых клетках. Но мы знаем, что в каждой клетке может быть либо <code>0</code> либо <code>1</code>. Значит, можно сделать так: <strong>А давай попробуем все возможные варианты заполнения пустых клеток</strong>.</p>
+<p>Например, если пустая клетка одна, то вариантов всего 2:</p>
+<pre><code>0
+1
+</code></pre>
+<p>Если пустых клеток 2:</p>
+<pre><code>? ?
+</code></pre>
+<p>То вариантов уже 4:</p>
+<pre><code>0 0
+0 1
+1 0
+1 1
+</code></pre>
+<p>Если пустых клеток три:</p>
+<pre><code>? ? ?
+</code></pre>
+<p>то вариантов восемь:</p>
+<pre><code>0 0 0
+0 0 1
+0 1 0
+0 1 1
+1 0 0
+1 0 1
+1 1 0
+1 1 1
+</code></pre>
+<p>То есть чем больше пустых клеток, тем больше вариантов. Так вот, <strong><a href="../../информатика/истинный-фундамент/06-циклы/" class="internal internal-link alias" data-slug="информатика/истинный-фундамент/06-циклы/index">циклы</a> нужны, чтобы перебрать все эти варианты автоматически.</strong></p>
+<h3 id="почему-там-7-переменных-a1-a2--a7">Почему там 7 переменных <code>a1, a2, ..., a7</code><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#почему-там-7-переменных-a1-a2--a7" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Вот эта строка:</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="python" data-theme="github-light github-dark"><code data-language="python" data-theme="github-light github-dark" style="display:grid;"><span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="keyword">for</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation"> a1,a2,a3,a4,a5,a6,a7 </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="keyword">in</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="function"> product([</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value">0</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">,</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value">1</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">], </span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70;" data-token-type="important">repeat</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="operator">=</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value">7</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">):</span></span></code></pre></figure>
+<p>Семь переменных там потому, что в таблице из условия было 7 пустых клеток. Например, код дальше собирает такую таблицу:</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="python" data-theme="github-light github-dark"><code data-language="python" data-theme="github-light github-dark" style="display:grid;"><span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">t </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="operator">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation"> [(</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value">0</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">,a1,a2,</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value">1</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">), (a3,</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value">1</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">,a4,a5), (</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value">1</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">,</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value">0</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">,a6,a7)]</span></span></code></pre></figure>
+<p>Это фактически вот такая штука:</p>
+<pre><code>1 строка: 0   a1  a2  1
+2 строка: a3  1   a4  a5
+3 строка: 1   0   a6  a7
+</code></pre>
+<p>Т.е. мы буквально воспроизводим условие. Известные значения в этой схеме уже стоят, а неизвестные названы как раз <code>a1, a2, ..., a7</code>. Их ровно 7 и поэтому в коде стоит <code>repeat = 7</code> т.е. потому что нужно подобрать значения для семи пустых клеток.</p>
+<h3 id="что-такое-product-01-repeat--7">Что такое <code>product ([0,1], repeat = 7)</code><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#что-такое-product-01-repeat--7" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Вот это вот:</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="python" data-theme="github-light github-dark"><code data-language="python" data-theme="github-light github-dark" style="display:grid;"><span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="function">product([</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value">0</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">,</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value">1</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">], </span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70;" data-token-type="important">repeat</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="operator">=</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value">7</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">)</span></span></code></pre></figure>
+<p>Читается примерно так:</p>
+<blockquote>
+<p>Дай мне все наборы длины 7, состоящие из нулей и единиц.</p>
+</blockquote>
+<p>То есть он выдаёт:</p>
+<pre><code>(0, 0, 0, 0, 0, 0, 0)
+(0, 0, 0, 0, 0, 0, 1)
+(0, 0, 0, 0, 0, 1, 0)
+(0, 0, 0, 0, 0, 1, 1)
+...
+(1, 1, 1, 1, 1, 1, 1)
+</code></pre>
+<div class="python-checker" data-title="product([0, 1], repeat=7)" data-code="from itertools import product
+
+variants = list(product([0, 1], repeat=7))
+
+print(variants[0])
+print(variants[1])
+print(variants[2])
+print(variants[3])
+print('...')
+print(variants[-1])
+print('Всего вариантов:', len(variants))"></div>
+<p>Всего таких наборов будет:</p>
+<p><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8141em;"></span><span class="mord"><span class="mord">2</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">7</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">128</span></span></span></span></p>
+<p>Почему <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8141em;"></span><span class="mord"><span class="mord">2</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">7</span></span></span></span></span></span></span></span></span></span></span>?</p>
+<p>Потому что есть 7 пустых клеток, и каждая может быть либо <code>0</code>, либо <code>1</code>.</p>
+<pre><code>2 варианта для первой клетки
+2 варианта для второй
+2 варианта для третьей
+...
+2 варианта для седьмой
+</code></pre>
+<p>Итого:</p>
+<p><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">2</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">⋅</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">2</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">⋅</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">2</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">⋅</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">2</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">⋅</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">2</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">⋅</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">2</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">⋅</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">2</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">128</span></span></span></span></p>
+<p>К вопросу о том почему <code>[0,1]</code> в квадратных скобках и что это вообще такое. Это <a href="../../информатика/истинный-фундамент/07-коллекции/07.1-списки" class="internal internal-link alias" data-slug="информатика/истинный-фундамент/07-коллекции/07.1-списки">список</a>, а список - это просто набор значений. В Истинном фундаменте мы это проходили вот тут: <a href="../../информатика/истинный-фундамент/07-коллекции/07.1-списки" class="internal internal-link alias" data-slug="информатика/истинный-фундамент/07-коллекции/07.1-списки">список</a>.</p>
+<p>Мы пишем:</p>
+<pre><code>product([0,1], repeat=7)
+</code></pre>
+<p>потому что говорим Python:</p>
+<blockquote>
+<p>Бери значения только отсюда: либо <code>0</code>, либо <code>1</code>.<br/>
+И составь из них все наборы длины 7.</p>
+</blockquote>
+<p>То есть <code>[0, 1]</code> — это “алфавит”, из которого собираются варианты.</p>
+<p>Пример проще:</p>
+<pre><code>product([0,1], repeat=2)
+</code></pre>
+<p>даст:</p>
+<pre><code>(0, 0)
+(0, 1)
+(1, 0)
+(1, 1)
+</code></pre>
+<div class="python-checker" data-title="product([0, 1], repeat=2)" data-code="from itertools import product
+
+for row in product([0, 1], repeat=2):
+    print(row)"></div>
+<p>А:</p>
+<pre><code>product([0,1], repeat=3)
+</code></pre>
+<p>даст:</p>
+<pre><code>(0, 0, 0)
+(0, 0, 1)
+(0, 1, 0)
+(0, 1, 1)
+(1, 0, 0)
+(1, 0, 1)
+(1, 1, 0)
+(1, 1, 1)
+</code></pre>
+<div class="python-checker" data-title="product([0, 1], repeat=3)" data-code="from itertools import product
+
+for row in product([0, 1], repeat=3):
+    print(row)"></div>
+<h3 id="как-работает-строка-с-for">Как работает строка с <code>for</code><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#как-работает-строка-с-for" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Вот эта строка:</p>
+<pre><code>for a1,a2,a3,a4,a5,a6,a7 in product([0,1], repeat=7):
+</code></pre>
+<p>означает:</p>
+<blockquote>
+<p>Возьми первый набор из семи чисел.<br/>
+Разложи его по переменным <code>a1, a2, ..., a7</code>.<br/>
+Выполни код внутри цикла.<br/>
+Потом возьми следующий набор.<br/>
+И так далее.</p>
+</blockquote>
+<p>Например, первый набор:</p>
+<pre><code>(0, 0, 0, 0, 0, 0, 0)
+</code></pre>
+<p>Тогда Python делает:</p>
+<pre><code>a1 = 0
+a2 = 0
+a3 = 0
+a4 = 0
+a5 = 0
+a6 = 0
+a7 = 0
+</code></pre>
+<p>Следующий набор:</p>
+<pre><code>(0, 0, 0, 0, 0, 0, 1)
+</code></pre>
+<p>Тогда:</p>
+<pre><code>a1 = 0
+a2 = 0
+a3 = 0
+a4 = 0
+a5 = 0
+a6 = 0
+a7 = 1
+</code></pre>
+<p>И так далее, пока не дойдёт до:</p>
+<pre><code>a1 = 1
+a2 = 1
+a3 = 1
+a4 = 1
+a5 = 1
+a6 = 1
+a7 = 1
+</code></pre>
+<h3 id="а-теперь-мы-возвращаемся-в-t">А теперь мы возвращаемся в <code>t</code><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#а-теперь-мы-возвращаемся-в-t" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Вот эта вещь, <a href="../../информатика/_разборы-задач/№2-таблица-истинности#почему-там-7-переменных-a1-a2--a7" class="internal internal-link alias" data-slug="информатика/_разборы-задач/№2-таблица-истинности">как было сказано выше</a>, это переменная, отвечающая за список строк в нашей таблице, буквально ее задает.</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="python" data-theme="github-light github-dark"><code data-language="python" data-theme="github-light github-dark" style="display:grid;"><span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">t </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="operator">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation"> [(</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value">0</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">,a1,a2,</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value">1</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">), (a3,</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value">1</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">,a4,a5), (</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value">1</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">,</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value">0</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">,a6,a7)]</span></span></code></pre></figure>
+<p>Т.е. внутри что-то вот такое:</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="python" data-theme="github-light github-dark"><code data-language="python" data-theme="github-light github-dark" style="display:grid;"><span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">[</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">    (</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value">0</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">, a1, a2, </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value">1</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">),</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">    (a3, </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value">1</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">, a4, a5),</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">    (</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value">1</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">, </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value">0</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">, a6, a7)</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">]</span></span></code></pre></figure>
+<p>И теперь, когда мы понимаем, что перебираем все возможные значения переменных <code>a1, a2, ..., a7</code> - это буквально значит, что мы прокручиваем в цикле <strong>все возможные значения таблицы</strong>.</p>
+<p>Условно, если на текущем шаге цикла у нас:</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="python" data-theme="github-light github-dark"><code data-language="python" data-theme="github-light github-dark" style="display:grid;"><span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">a1 </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="operator">=</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value"> 0</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">a2 </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="operator">=</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value"> 1</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">a3 </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="operator">=</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value"> 1</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">a4 </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="operator">=</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value"> 0</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">a5 </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="operator">=</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value"> 1</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">a6 </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="operator">=</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value"> 0</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">a7 </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="operator">=</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value"> 0</span></span></code></pre></figure>
+<p>То в <code>t</code> хранится следующее:</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="python" data-theme="github-light github-dark"><code data-language="python" data-theme="github-light github-dark" style="display:grid;"><span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">t </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="operator">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation"> [</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">    (</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value">0</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">, </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value">0</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">, </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value">1</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">, </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value">1</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">),</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">    (</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value">1</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">, </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value">1</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">, </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value">0</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">, </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value">1</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">),</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">    (</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value">1</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">, </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value">0</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">, </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value">0</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">, </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value">0</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">)</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">]</span></span></code></pre></figure>
+<p>А это и есть один из возможных вариантов нашей таблицы из условия.</p>
+<h3 id="далее-условие-if-lent--lensett">Далее условие <code>if len(t) == len(set(t)):</code><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#далее-условие-if-lent--lensett" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>По условию задачи обычно сказано, что Миша заполнил фрагмент из <strong>трёх различных строк</strong> таблицы. То есть строки не должны повторяться.</p>
+<p>Например, так можно:</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="python" data-theme="github-light github-dark"><code data-language="python" data-theme="github-light github-dark" style="display:grid;"><span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">[</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">    (</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value">0</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">, </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value">0</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">, </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value">1</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">, </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value">1</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">),</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">    (</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value">1</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">, </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value">1</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">, </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value">0</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">, </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value">1</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">),</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">    (</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value">1</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">, </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value">0</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">, </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value">0</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">, </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value">0</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">)</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">]</span></span></code></pre></figure>
+<p>Все строки разные.</p>
+<p>А так нельзя:</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="python" data-theme="github-light github-dark"><code data-language="python" data-theme="github-light github-dark" style="display:grid;"><span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">[</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">    (</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value">0</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">, </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value">0</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">, </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value">1</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">, </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value">1</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">),</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">    (</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value">0</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">, </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value">0</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">, </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value">1</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">, </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value">1</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">),</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">    (</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value">1</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">, </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value">0</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">, </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value">0</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">, </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value">0</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">)</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">]</span></span></code></pre></figure>
+<p><strong>Первые две строки одинаковые.</strong></p>
+<p>Теперь что делает код: <code>len(t)</code> считает количество строк в <code>t</code>. Там всегда 3 строки. При этом <code>set(t)</code> превращает список строк в <a href="../../информатика/истинный-фундамент/07-коллекции/07.3-множества" class="internal internal-link alias" data-slug="информатика/истинный-фундамент/07-коллекции/07.3-множества">множество</a>.</p>
+<blockquote class="callout tip" data-callout="tip">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>Магия </p></div>
+                  
+                </div>
+<div class="callout-content">
+<p><strong>Особенность множества: оно убирает повторы.</strong></p>
+</div>
+</blockquote>
+<p>Например:</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="python" data-theme="github-light github-dark"><code data-language="python" data-theme="github-light github-dark" style="display:grid;"><span data-line><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="property">set</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">([(</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value">0</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">,</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value">0</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">), (</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value">0</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">,</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value">0</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">), (</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value">1</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">,</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value">1</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">)])</span></span></code></pre></figure>
+<p>получится:</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="python" data-theme="github-light github-dark"><code data-language="python" data-theme="github-light github-dark" style="display:grid;"><span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">{(</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value">0</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">,</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value">0</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">), (</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value">1</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">,</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value">1</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">)}</span></span></code></pre></figure>
+<div class="python-checker" data-title="set убирает повторы" data-code="t = [(0, 0), (0, 0), (1, 1)]
+
+print('Было:', t)
+print('Стало:', set(t))
+print('Длина списка:', len(t))
+print('Длина множества:', len(set(t)))"></div>
+<p>То есть было 3 элемента, а осталось 2, потому что повтор убрался.</p>
+<p>Поэтому:</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="python" data-theme="github-light github-dark"><code data-language="python" data-theme="github-light github-dark" style="display:grid;"><span data-line><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="function">len</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">(t) </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="operator">==</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="function"> len</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">(</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="property">set</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">(t))</span></span></code></pre></figure>
+<p>означает:</p>
+<blockquote>
+<p>После удаления повторов количество строк не изменилось.<br/>
+Значит, все строки разные.</p>
+</blockquote>
+<p>Это вообще гениальная вещь для того, чтобы убирать повторы в списках. Пользуйтесь на здоровье. Возможно, нам это еще пригодится.</p>
+<h3 id="далее-еще-один-цикл-for-p-in-permutationsxywz">Далее еще один цикл <code>for p in permutations('xywz'):</code><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#далее-еще-один-цикл-for-p-in-permutationsxywz" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Это у нас перебор переменных. <code>permutations</code> — это “перестановки”. Он берёт символы: <code>'x', 'y', 'w', 'z'</code> и перебирает все возможные порядки.</p>
+<p>Например:</p>
+<pre><code>('x', 'y', 'w', 'z')
+('x', 'y', 'z', 'w')
+('x', 'w', 'y', 'z')
+('x', 'w', 'z', 'y')
+...
+</code></pre>
+<p>Всего будет:</p>
+<p><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord">4</span><span class="mclose">!</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">24</span></span></span></span></p>
+<p>Почему?</p>
+<p>Потому что у нас 4 переменные, и их можно расставить по 4 столбцам 24 способами.</p>
+<p>Каждая перестановка — это гипотеза:</p>
+<blockquote>
+<p>А вдруг первый столбец — это <code>x</code>, второй — <code>y</code>, третий — <code>w</code>, четвёртый — <code>z</code>?</p>
+</blockquote>
+<p>Или:</p>
+<blockquote>
+<p>А вдруг первый столбец — это <code>w</code>, второй — <code>z</code>, третий — <code>y</code>, четвёртый — <code>x</code>?</p>
+</blockquote>
+<p>Например:</p>
+<pre><code>p = ('w', 'z', 'y', 'x')
+</code></pre>
+<p>означает:</p>
+<pre><code>1 столбец — w
+2 столбец — z
+3 столбец — y
+4 столбец — x
+</code></pre>
+<p>И если именно этот порядок подходит, ответ будет:</p>
+<pre><code>wzyx
+</code></pre>
+<p>Но как программа поймет что подходит, а что нет? По функции из условия, которую мы <a href="../../информатика/_разборы-задач/№2-таблица-истинности#определяем-функцию" class="internal internal-link alias" data-slug="информатика/_разборы-задач/№2-таблица-истинности">задали вот здесь</a>. Но как она “сошьет” возможные значения <code>x y w z</code> с возможными значениями из таблицы? Иначе говоря: как она соединит конкретную букву с конкретными цифрами из таблицы. А вот как.</p>
+<h3 id="что-такое-zip">Что такое <code>zip</code><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#что-такое-zip" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Теперь самая неприятная строка:</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="python" data-theme="github-light github-dark"><code data-language="python" data-theme="github-light github-dark" style="display:grid;"><span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="function">f(</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="operator">**</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="property">dict</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">(</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="function">zip</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">(p,r)))</span></span></code></pre></figure>
+<p>Допустим, есть перестановка:</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="python" data-theme="github-light github-dark"><code data-language="python" data-theme="github-light github-dark" style="display:grid;"><span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">p </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="operator">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation"> (</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;" data-token-type="string">'w'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">, </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;" data-token-type="string">'z'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">, </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;" data-token-type="string">'y'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">, </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;" data-token-type="string">'x'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">)</span></span></code></pre></figure>
+<p>Она означает:</p>
+<pre><code>1 столбец — w
+2 столбец — z
+3 столбец — y
+4 столбец — x
+</code></pre>
+<p>И есть строка таблицы:</p>
+<pre><code>r = (1, 0, 1, 0)
+</code></pre>
+<p>То есть в таблице написано:</p>
+<pre><code>1 0 1 0
+</code></pre>
+<p>Теперь надо понять:</p>
+<pre><code>w = ?
+z = ?
+y = ?
+x = ?
+</code></pre>
+<p>Если порядок столбцов такой:</p>
+<pre><code>w z y x
+</code></pre>
+<p>а строка такая:</p>
+<pre><code>1 0 1 0
+</code></pre>
+<p>то получается:</p>
+<pre><code>w = 1
+z = 0
+y = 1
+x = 0
+</code></pre>
+<p>Вот именно это и делает <code>zip</code>.</p>
+<pre><code>zip(p, r)
+</code></pre>
+<p>соединяет элементы попарно:</p>
+<pre><code>p = ('w', 'z', 'y', 'x')
+r = ( 1,   0,   1,   0 )
+</code></pre>
+<p>Получается:</p>
+<pre><code>('w', 1)
+('z', 0)
+('y', 1)
+('x', 0)
+</code></pre>
+<p>То есть <code>zip</code> буквально “застёгивает молнию”: берёт первый элемент отсюда и первый элемент оттуда, потом второй и второй, потом третий и третий.</p>
+<p>Простой пример:</p>
+<pre><code>names = ['x', 'y', 'z']
+values = [10, 20, 30]
+
+zip(names, values)
+</code></pre>
+<p>даст пары:</p>
+<pre><code>('x', 10)
+('y', 20)
+('z', 30)
+</code></pre>
+<div class="python-checker" data-title="zip и dict" data-code="names = ['x', 'y', 'z']
+values = [10, 20, 30]
+
+pairs = list(zip(names, values))
+print(pairs)
+print(dict(pairs))"></div>
+<h3 id="что-такое-dict">Что такое <code>dict</code><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#что-такое-dict" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><code>dict</code> — это <a href="../../информатика/истинный-фундамент/07-коллекции/07.2-словари" class="internal internal-link alias" data-slug="информатика/истинный-фундамент/07-коллекции/07.2-словари">словарь</a>.</p>
+<p>Словарь хранит пары вида:</p>
+<pre><code>ключ: значение
+</code></pre>
+<p>Например:</p>
+<pre><code>student = {
+    'name': 'Миша',
+    'age': 17
+}
+</code></pre>
+<p>Здесь:</p>
+<pre><code>'name' → 'Миша'
+'age' → 17
+</code></pre>
+<p>В нашем коде:</p>
+<pre><code>dict(zip(p,r))
+</code></pre>
+<p>превращает пары в словарь.</p>
+<p>Было:</p>
+<pre><code>('w', 1)
+('z', 0)
+('y', 1)
+('x', 0)
+</code></pre>
+<p>Стало:</p>
+<pre><code>{
+    'w': 1,
+    'z': 0,
+    'y': 1,
+    'x': 0
+}
+</code></pre>
+<p>То есть словарь говорит:</p>
+<pre><code>w равно 1
+z равно 0
+y равно 1
+x равно 0
+</code></pre>
+<h3 id="что-такое--перед-словарём">Что такое <code>**</code> перед словарём<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#что-такое--перед-словарём" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Вот это:</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="python" data-theme="github-light github-dark"><code data-language="python" data-theme="github-light github-dark" style="display:grid;"><span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="function">f(</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="operator">**</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="property">dict</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">(</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="function">zip</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">(p,r)))</span></span></code></pre></figure>
+<p><code>**</code> распаковывает словарь в аргументы функции.</p>
+<p>Допустим, есть функция:</p>
+<pre><code>def f(x, y, w, z):
+    return ...
+</code></pre>
+<p>И есть словарь:</p>
+<pre><code>{
+    'w': 1,
+    'z': 0,
+    'y': 1,
+    'x': 0
+}
+</code></pre>
+<p>Тогда:</p>
+<pre><code>f(**{
+    'w': 1,
+    'z': 0,
+    'y': 1,
+    'x': 0
+})
+</code></pre>
+<p>то же самое, что написать:</p>
+<pre><code>f(w=1, z=0, y=1, x=0)
+</code></pre>
+<p>А Python уже сам поймёт:</p>
+<pre><code>x = 0
+y = 1
+w = 1
+z = 0
+</code></pre>
+<p>То есть <code>**</code> нужен, чтобы передать значения в функцию <strong>по именам переменных</strong>.</p>
+<p>Это важно, потому что порядок аргументов в функции может быть странный:</p>
+<pre><code>def f(x, y, w, z):
+</code></pre>
+<p>А словарь всё равно правильно сопоставит значения именно по именам.</p>
+<h3 id="что-делает-вот-эта-часть-целиком">Что делает вот эта часть целиком<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#что-делает-вот-эта-часть-целиком" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="python" data-theme="github-light github-dark"><code data-language="python" data-theme="github-light github-dark" style="display:grid;"><span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">[f(</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="operator">**</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="property">dict</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">(</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="function">zip</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">(p,r))) </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="keyword">for</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> r </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="keyword">in</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation"> t]</span></span></code></pre></figure>
+<p>По смыслу это значит:</p>
+<blockquote>
+<p>Для каждой строки <code>r</code> из таблицы <code>t</code> вычисли значение функции <code>f</code>.</p>
+</blockquote>
+<p>То есть если:</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="python" data-theme="github-light github-dark"><code data-language="python" data-theme="github-light github-dark" style="display:grid;"><span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">t </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="operator">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation"> [</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">    (</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value">0</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">, </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value">0</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">, </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value">1</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">, </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value">1</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">),</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">    (</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value">1</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">, </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value">1</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">, </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value">0</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">, </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value">1</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">),</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">    (</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value">1</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">, </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value">0</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">, </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value">0</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">, </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value">0</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">)</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">]</span></span></code></pre></figure>
+<p>то код берёт первую строку, подставляет её в функцию, получает значение <code>F</code>.</p>
+<p>Потом берёт вторую строку, подставляет, получает значение <code>F</code>.</p>
+<p>Потом третью.</p>
+<p>В итоге получается список значений функции:</p>
+<pre><code>[0, 0, 0]
+</code></pre>
+<p>или, например:</p>
+<pre><code>[1, 0, 1]
+</code></pre>
+<p>или:</p>
+<pre><code>[1, 1, 0]
+</code></pre>
+<h3 id="что-значит-проверка--000">Что значит проверка <code>== [0,0,0]</code><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#что-значит-проверка--000" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="python" data-theme="github-light github-dark"><code data-language="python" data-theme="github-light github-dark" style="display:grid;"><span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="keyword">if</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation"> [f(</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="operator">**</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="property">dict</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">(</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="function">zip</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">(p,r))) </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="keyword">for</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> r </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="keyword">in</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation"> t] </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="operator">==</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation"> [</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value">0</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">,</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value">0</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">,</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value">0</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">]:</span></span></code></pre></figure>
+<p>Это означает:</p>
+<blockquote>
+<p>Если на всех трёх строках функция дала <code>0</code>, то этот вариант нам подходит.</p>
+</blockquote>
+<p>Почему именно <code>[0,0,0]</code>? Потому что в этой конкретной задаче в столбце <code>F</code> у всех трёх строк стояли нули.</p>
+<p>То есть условие было примерно:</p>
+<pre><code>? ? ? ? F
+...     0
+...     0
+...     0
+</code></pre>
+<p>Значит, код ищет такие строки и такой порядок переменных, чтобы функция на этих строках дала:</p>
+<pre><code>[0, 0, 0]
+</code></pre>
+<p>Если бы в условии было:</p>
+<pre><code>F
+1
+1
+1
+</code></pre>
+<p>надо было бы писать:</p>
+<pre><code>== [1,1,1]
+</code></pre>
+<p>Если бы было:</p>
+<pre><code>F
+0
+1
+0
+</code></pre>
+<p>надо было бы писать:</p>
+<pre><code>== [0,1,0]
+</code></pre>
+<h3 id="что-делает-printp">Что делает <code>print(p)</code><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#что-делает-printp" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="python" data-theme="github-light github-dark"><code data-language="python" data-theme="github-light github-dark" style="display:grid;"><span data-line><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="function">print</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">(p)</span></span></code></pre></figure>
+<p>Если найден подходящий порядок переменных, Python его печатает.</p>
+<p>Например:</p>
+<pre><code>('w', 'z', 'y', 'x')
+</code></pre>
+<p>В ответе ЕГЭ надо написать без скобок, кавычек и запятых:</p>
+<pre><code>wzyx
+</code></pre>
+<h2 id="итого">Итого<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#итого" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Вот код:</p>
+<div class="python-checker" data-title="Шаблон перебора" data-code="from itertools import *
+
+def f(x,y,w,z):
+    return (not(((not (x)) or y) and (not(w)))) or (not(z and (not(y and w))))
+
+for a1,a2,a3,a4,a5,a6,a7 in product([0,1],repeat=7):
+    t=[(0,a1,a2,1),(a3,1,a4,a5),(1,0,a6,a7)]
+
+    if len(t)==len(set(t)):
+        for p in permutations('xywz'):
+            if [f(**dict(zip(p,r))) for r in t]==[0,0,0]:
+                print(p)"></div>
+<p>А теперь перевод:</p>
+<pre><code>Подключи инструменты для перебора.
+
+Задай логическую функцию из условия.
+
+Перебери все варианты значений для семи пустых клеток.
+
+Для каждого варианта собери три строки таблицы.
+
+Проверь, что эти три строки разные.
+
+Потом перебери все варианты того, какой столбец какой переменной является.
+
+Для каждой версии порядка переменных подставь строки в функцию.
+
+Если функция на этих трёх строках даёт 0, 0, 0,
+значит, порядок переменных найден.
+
+Напечатай его.
+</code></pre>
+</div>
+</blockquote>
+<h1 id="а-теперь-к-хорошим-новостям">А теперь к хорошим новостям<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#а-теперь-к-хорошим-новостям" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<p>На самом деле, вам нужно всего лишь понять где в этом коде что редактировать и когда - остальное является шаблоном. Еще раз код:</p>
+<div class="python-checker" data-title="Шаблон перебора" data-code="from itertools import *
+
+def f(x,y,w,z):
+    return (not(((not (x)) or y) and (not(w)))) or (not(z and (not(y and w))))
+
+for a1,a2,a3,a4,a5,a6,a7 in product([0,1],repeat=7):
+    t=[(0,a1,a2,1),(a3,1,a4,a5),(1,0,a6,a7)]
+
+    if len(t)==len(set(t)):
+        for p in permutations('xywz'):
+            if [f(**dict(zip(p,r))) for r in t]==[0,0,0]:
+                print(p)"></div>
+<ol>
+<li>Строка <code>return (not(((not (x)) or y) and (not(w)))) or (not(z and (not(y and w))))</code> меняется в зависимости от функции в условии</li>
+<li>Строка <code>for a1,a2,a3,a4,a5,a6,a7 in product([0,1],repeat=7):</code> меняется в зависимости от того сколько неизвестных в табличке. Если 7 - переменных тоже 7 и <code>repeat = 7</code>. Если какое-то другое число - кол-во переменных равно этому числу и повторов столько же.</li>
+<li>Строка <code>t=[(0,a1,a2,1),(a3,1,a4,a5),(1,0,a6,a7)]</code> меняется в зависимости от вида таблицы. Просто переписывайте табличку, фактически.</li>
+<li>Само условие и цикл далее НЕ меняется никогда, меняется только <code>==[0,0,0]:</code>. Это зависит от функции <code>F</code> из условия. Если она равна во всех случаях <code>0 0 0</code> значит и тут <code>==[0,0,0]:</code>. Если равна, например, <code>1 0 1</code> тогда у вас будет <code>==[1,0,1]:</code>.</li>
+</ol>
+<p>И это буквально все изменения от условия к условию, которые вам надо знать. Остальное не меняется буквально никогда.</p>
+<p>Попробуем решить этим методом несколько задач. Поскольку метод довольно шаблонный, следующие решения будут без комменатариев.</p>
+<blockquote>
+<p>Также из хороших новостей: в 2026 в задании не было изменений и в 2027 году, видимо, не будет.</p>
+</blockquote>
+<h1 id="пример-4">Пример 4)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#пример-4" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<p><img src="../../_resours/pasted-image-20260826113033.png" alt width="auto" height="auto" decoding="async" loading="lazy"/></p>
+<div class="python-checker" data-title="Решение №25341" data-code="from itertools import product, permutations
+
+# №25341
+def f(w, x, y, z):
+    return (w == z) or (not ((not y) or w)) or (not x)
+
+for a1, a2, a3, a4, a5 in product([0, 1], repeat=5):
+    t = [
+        (a1, 0, 1, 0),
+        (a2, 1, 1, a3),
+        (0, a4, a5, 0)
+    ]
+
+    if len(t) == len(set(t)):
+        for p in permutations('wxyz'):
+            if [f(**dict(zip(p, r))) for r in t] == [0, 0, 0]:
+                print(p)"></div>
+<h1 id="пример-5">Пример 5)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#пример-5" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<p><img src="../../_resours/pasted-image-20260826113137.png" alt width="auto" height="auto" decoding="async" loading="lazy"/></p>
+<div class="python-checker" data-title="Решение №27614" data-code="from itertools import product, permutations
+
+# №27614
+def f(w, x, y, z):
+    return ((not z) and y and x and (not w)) or \
+           ((not z) and y and (not x) and (not w)) or \
+           (z and y and x and (not w))
+
+for a1, a2, a3, a4, a5, a6, a7 in product([0, 1], repeat=7):
+    t = [
+        (a1, 1, a2, a3),
+        (a4, 0, 1, a5),
+        (0, a6, 0, a7)
+    ]
+
+    if len(t) == len(set(t)):
+        for p in permutations('wxyz'):
+            if [f(**dict(zip(p, r))) for r in t] == [1, 1, 1]:
+                print(p)"></div>
+<h1 id="пример-6">Пример 6)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#пример-6" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<p><img src="../../_resours/pasted-image-20260826113300.png" alt width="auto" height="auto" decoding="async" loading="lazy"/></p>
+<div class="python-checker" data-title="Решение №27757" data-code="from itertools import product, permutations
+
+# №27757
+def f(w, x, y, z):
+    return ((not x) and y and z and (not w)) or \
+           ((not x) and y and (not z) and (not w)) or \
+           (x and y and z and (not w))
+
+for a1, a2, a3, a4, a5, a6, a7 in product([0, 1], repeat=7):
+    t = [
+        (1, a1, a2, a3),
+        (0, a4, 1, a5),
+        (a6, 0, 0, a7)
+    ]
+
+    if len(t) == len(set(t)):
+        for p in permutations('wxyz'):
+            if [f(**dict(zip(p, r))) for r in t] == [1, 1, 1]:
+                print(p)"></div></div></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><aside class="study-player" data-study-player="true"><div class="study-player-compact"><div class="study-player-heading"><div class="study-player-signal" aria-hidden="true"><span></span><span></span><span></span></div><span class="study-player-label">STUDY PLAYER</span><button type="button" class="study-player-expand" data-player-action="expand" aria-label="Expand player" aria-haspopup="dialog" aria-expanded="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 4H4v4M16 4h4v4M20 16v4h-4M4 16v4h4"></path></svg></button></div><div class="study-player-trackline"><strong data-player-title="true">Rain-2</strong><span data-player-subtitle="true">Ambient sound</span></div><div class="study-player-compact-row"><div class="study-player-transport"><button type="button" class="study-player-control" data-player-action="previous" aria-label="Previous track"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.5 5.5v13M18 6.75 9.5 12l8.5 5.25z"></path></svg></button><button type="button" class="study-player-play" data-player-action="toggle" aria-label="Play"><svg class="study-player-icon-play" viewBox="0 0 24 24" aria-hidden="true"><path d="m8 5.75 10 6.25-10 6.25z"></path></svg><svg class="study-player-icon-pause" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 6.5h3v11H8zM13 6.5h3v11h-3z"></path></svg></button><button type="button" class="study-player-control" data-player-action="next" aria-label="Next track"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.5 5.5v13M6 6.75 14.5 12 6 17.25z"></path></svg></button></div><div class="study-player-progress-compact" data-player-progress="true" role="progressbar" aria-label="Track progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><span></span></div></div></div><section class="study-player-popover" data-player-popover="true" popover="manual" role="dialog" aria-modal="false" aria-labelledby="study-player-dialog-title" hidden><header class="study-player-popover-header"><div><span class="study-player-label">STUDY PLAYER</span><h2 id="study-player-dialog-title">Focus audio</h2></div><button type="button" class="study-player-close" data-player-action="close" aria-label="Close player"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"></path></svg></button></header><div class="study-player-now"><span>NOW PLAYING</span><strong data-player-title="true">Rain-2</strong><small data-player-subtitle="true">Ambient sound</small></div><div class="study-player-main-controls"><div class="study-player-transport expanded"><button type="button" class="study-player-control" data-player-action="previous" aria-label="Previous track"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.5 5.5v13M18 6.75 9.5 12l8.5 5.25z"></path></svg></button><button type="button" class="study-player-play" data-player-action="toggle" aria-label="Play"><svg class="study-player-icon-play" viewBox="0 0 24 24" aria-hidden="true"><path d="m8 5.75 10 6.25-10 6.25z"></path></svg><svg class="study-player-icon-pause" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 6.5h3v11H8zM13 6.5h3v11h-3z"></path></svg></button><button type="button" class="study-player-control" data-player-action="next" aria-label="Next track"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.5 5.5v13M6 6.75 14.5 12 6 17.25z"></path></svg></button></div><button type="button" class="study-player-repeat" data-player-action="repeat" aria-label="Repeat track" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m17 3 3 3-3 3M4 11V9a3 3 0 0 1 3-3h13M7 21l-3-3 3-3m13-2v2a3 3 0 0 1-3 3H4"></path><path d="M12 9.5v5M10.5 11l1.5-1.5 1.5 1.5"></path></svg><span>Repeat</span></button></div><div class="study-player-timeline"><input type="range" min="0" max="1" step="0.1" value="0" data-player-seek="true" aria-label="Seek" disabled/><div class="study-player-time"><span data-player-elapsed="true">00:00</span><span data-player-duration="true">--:--</span></div></div><div class="study-player-queue-wrap"><span class="study-player-section-label">QUEUE</span><ol class="study-player-queue"><li><button type="button" data-player-track="rain-2" aria-label="Select Rain-2" aria-current="true"><span class="study-player-queue-index">01</span><span class="study-player-queue-copy"><strong>Rain-2</strong><small>Ambient sound</small></span><span class="study-player-queue-source">LOCAL</span></button></li><li><button type="button" data-player-track="cyberpunk" aria-label="Select Cyberpunk"><span class="study-player-queue-index">02</span><span class="study-player-queue-copy"><strong>Cyberpunk</strong><small>Study ambience</small></span><span class="study-player-queue-source">LOCAL</span></button></li><li><button type="button" data-player-track="quite-stars" aria-label="Select Quite-Stars"><span class="study-player-queue-index">03</span><span class="study-player-queue-copy"><strong>Quite-Stars</strong><small>Study ambience</small></span><span class="study-player-queue-source">LOCAL</span></button></li></ol></div><label class="study-player-volume"><span>Volume</span><input type="range" min="0" max="1" step="0.01" value="0.72" data-player-volume="true" aria-label="Volume"/><output data-player-volume-value="true">72%</output></label><p class="study-player-status" data-player-status="true" aria-live="polite"></p></section></aside><aside class="note-cheatsheet" aria-labelledby="note-cheatsheet-title"><h3 id="note-cheatsheet-title">Шпора</h3><p>Здесь скоро появится короткая шпора по этой заметке.</p></aside><div class="toc"><button type="button" class="toc-header" aria-controls="toc-11" aria-expanded="true"><h3>Оглавление</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-0" class="toc-content overflow"><li class="depth-0"><a href="#пример-1" data-for="пример-1">Пример 1)</a></li><li class="depth-0"><a href="#пример-2" data-for="пример-2">Пример 2)</a></li><li class="depth-0"><a href="#пример-3" data-for="пример-3">Пример 3)</a></li><li class="depth-0"><a href="#иной-метод-решения" data-for="иной-метод-решения">Иной метод решения</a></li><li class="depth-2"><a href="#библиотека-itertools" data-for="библиотека-itertools">Библиотека itertools</a></li><li class="depth-2"><a href="#определяем-функцию" data-for="определяем-функцию">Определяем функцию</a></li><li class="depth-2"><a href="#зачем-вообще-нужен-цикл" data-for="зачем-вообще-нужен-цикл">Зачем вообще нужен цикл</a></li><li class="depth-2"><a href="#почему-там-7-переменных-a1-a2--a7" data-for="почему-там-7-переменных-a1-a2--a7">Почему там 7 переменных a1, a2, ..., a7</a></li><li class="depth-2"><a href="#что-такое-product-01-repeat--7" data-for="что-такое-product-01-repeat--7">Что такое product ([0,1], repeat = 7)</a></li><li class="depth-2"><a href="#как-работает-строка-с-for" data-for="как-работает-строка-с-for">Как работает строка с for</a></li><li class="depth-2"><a href="#а-теперь-мы-возвращаемся-в-t" data-for="а-теперь-мы-возвращаемся-в-t">А теперь мы возвращаемся в t</a></li><li class="depth-2"><a href="#далее-условие-if-lent--lensett" data-for="далее-условие-if-lent--lensett">Далее условие if len(t) == len(set(t)):</a></li><li class="depth-2"><a href="#далее-еще-один-цикл-for-p-in-permutationsxywz" data-for="далее-еще-один-цикл-for-p-in-permutationsxywz">Далее еще один цикл for p in permutations('xywz'):</a></li><li class="depth-2"><a href="#что-такое-zip" data-for="что-такое-zip">Что такое zip</a></li><li class="depth-2"><a href="#что-такое-dict" data-for="что-такое-dict">Что такое dict</a></li><li class="depth-2"><a href="#что-такое--перед-словарём" data-for="что-такое--перед-словарём">Что такое ** перед словарём</a></li><li class="depth-2"><a href="#что-делает-вот-эта-часть-целиком" data-for="что-делает-вот-эта-часть-целиком">Что делает вот эта часть целиком</a></li><li class="depth-2"><a href="#что-значит-проверка--000" data-for="что-значит-проверка--000">Что значит проверка == [0,0,0]</a></li><li class="depth-2"><a href="#что-делает-printp" data-for="что-делает-printp">Что делает print(p)</a></li><li class="depth-1"><a href="#итого" data-for="итого">Итого</a></li><li class="depth-0"><a href="#а-теперь-к-хорошим-новостям" data-for="а-теперь-к-хорошим-новостям">А теперь к хорошим новостям</a></li><li class="depth-0"><a href="#пример-4" data-for="пример-4">Пример 4)</a></li><li class="depth-0"><a href="#пример-5" data-for="пример-5">Пример 5)</a></li><li class="depth-0"><a href="#пример-6" data-for="пример-6">Пример 6)</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Создано с помощью <a href="https://quartz.jzhao.xyz/">Quartz v5.0.0</a> © 2026</p><ul><li><a href="https://t.me/Skifcha">Telegram</a></li></ul></footer></div></div></body><script src="../../static/resource-after-e13fffa1.js" type="application/javascript" data-persist="true"></script><script src="../../static/resource-after-8b336f9a.js" type="application/javascript" data-persist="true"></script><script src="../../static/resource-after-baba652b.js" type="application/javascript" data-persist="true"></script><script src="../../static/resource-after-5eb75950.js" type="module" data-persist="true"></script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript" data-persist="true"></script><script src="../../postscript-911c8fe1.js" type="module" data-persist="true"></script></html>

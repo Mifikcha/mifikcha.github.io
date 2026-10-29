@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 140" width="320" height="140"
+     fill="none" stroke="#000" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+  <title>F and friction on a block</title>
+  <defs>
+    <radialGradient id="vg" cx="50%" cy="52%" r="85%">
+      <stop offset="0.60" stop-color="#fff"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="tl" x1="0" y1="0" x2="0.46" y2="0.56">
+      <stop offset="0" stop-color="#fff" stop-opacity="0.5"/>
+      <stop offset="1" stop-color="#fff"/>
+    </linearGradient>
+    <mask id="vignette" maskContentUnits="userSpaceOnUse">
+      <rect width="320" height="140" fill="url(#vg)"/>
+    </mask>
+    <mask id="corner" maskContentUnits="userSpaceOnUse">
+      <rect width="320" height="140" fill="url(#tl)"/>
+    </mask>
+    <marker id="ah" viewBox="0 0 10 10" refX="8.4" refY="5" markerWidth="5.2" markerHeight="5.2"
+            orient="auto-start-reverse" markerUnits="strokeWidth">
+      <path d="M0.8 1.1 L9 5 L0.8 8.9" fill="none" stroke="#000" stroke-width="1.7"
+            stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+  <g mask="url(#corner)"><g mask="url(#vignette)">
+    <line x1="34" y1="118" x2="300" y2="118" stroke-width="2.2" opacity="0.6"/>
+    <line x1="46" y1="118" x2="39.98" y2="124.69" stroke-width="1.5" opacity="0.4"/>
+    <line x1="70.8" y1="118" x2="64.78" y2="124.69" stroke-width="1.5" opacity="0.4"/>
+    <line x1="95.6" y1="118" x2="89.58" y2="124.69" stroke-width="1.5" opacity="0.4"/>
+    <line x1="120.4" y1="118" x2="114.38" y2="124.69" stroke-width="1.5" opacity="0.4"/>
+    <line x1="145.2" y1="118" x2="139.18" y2="124.69" stroke-width="1.5" opacity="0.4"/>
+    <line x1="170" y1="118" x2="163.98" y2="124.69" stroke-width="1.5" opacity="0.4"/>
+    <line x1="194.8" y1="118" x2="188.78" y2="124.69" stroke-width="1.5" opacity="0.4"/>
+    <line x1="219.6" y1="118" x2="213.58" y2="124.69" stroke-width="1.5" opacity="0.4"/>
+    <line x1="244.4" y1="118" x2="238.38" y2="124.69" stroke-width="1.5" opacity="0.4"/>
+    <line x1="269.2" y1="118" x2="263.18" y2="124.69" stroke-width="1.5" opacity="0.4"/>
+    <line x1="294" y1="118" x2="287.98" y2="124.69" stroke-width="1.5" opacity="0.4"/>
+    <rect x="128" y="66" width="92" height="52" rx="2" stroke-width="2.7"/>
+    <line x1="220" y1="92" x2="292" y2="92" stroke-width="2.7" opacity="1.0" marker-end="url(#ah)"/>
+    <line x1="128" y1="92" x2="52" y2="92" stroke-width="2.7" opacity="1.0" marker-end="url(#ah)"/>
+    <g fill="#000" stroke="none" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-weight="400">
+      <text x="268" y="84" font-size="15">F</text>
+      <text x="54" y="84" font-size="15">F<tspan font-size="9.9" dy="4.2">тр</tspan></text>
+    </g>
+  </g></g>
+</svg>

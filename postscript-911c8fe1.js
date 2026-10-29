@@ -1,0 +1,25 @@
+await Promise.all([
+  import("./static/scripts/script-0-f7c52b6a.js"),
+  import("./static/scripts/script-1-0e41d61b.js"),
+  import("./static/scripts/script-2-1f86b7bc.js"),
+  import("./static/scripts/script-3-ec880d15.js"),
+  import("./static/scripts/script-4-1f9394e6.js"),
+  import("./static/scripts/script-5-cc471ab5.js"),
+  import("./static/scripts/script-6-cc8afa9d.js"),
+  import("./static/scripts/script-7-7e107d7e.js"),
+  import("./static/scripts/script-8-632b2822.js"),
+  import("./static/scripts/script-9-d023caac.js"),
+  import("./static/scripts/script-10-296b30c3.js"),
+  import("./static/scripts/script-11-3d34dc8f.js"),
+  import("./static/scripts/script-12-e63dc0f3.js"),
+  import("./static/scripts/script-13-8f3483a0.js"),
+  import("./static/scripts/script-14-dd4a187c.js"),
+  import("./static/scripts/script-15-2d92196c.js"),
+  import("./static/scripts/script-16-84e0c511.js"),
+  import("./static/scripts/script-17-7ef71652.js"),
+  import("./static/scripts/script-18-eb544443.js"),
+  import("./static/scripts/script-19-9723fdaa.js"),
+  import("./static/scripts/script-20-310f6b76.js"),
+  import("./static/scripts/script-21-a2f22c29.js")
+]);
+await import("./static/scripts/script-22-43766dd3.js");
